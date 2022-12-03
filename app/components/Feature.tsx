@@ -2,7 +2,7 @@ import React from "react";
 
 const Feature = () => {
   return (
-    <div className="w-screen mt-32 h-full pl-44 ">
+    <div className=" w-screen mt-32 h-full md:pl-44 container">
       <span className="z-0 absolute left-0">
           <img
             src="https://html.creativegigstf.com/deski/deski/images/shape/102.svg"
@@ -15,8 +15,8 @@ const Feature = () => {
             alt=""
           />
         </span>
-      <div className="z-10 bg-white w-[85%]">
-        <div className="divide-x-[1px] flex p-10 text-2xl text-center font-normal tracking-normalS">
+      <div className=" bg-white w-[85%] ml-5  ">
+        <div className="divide-x-[1px] md:flex  p-10 text-2xl text-center font-normal tracking-normalS">
           <span className="p-8 space-y-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"

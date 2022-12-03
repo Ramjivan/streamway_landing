@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Icon from "./Images/icon.png";
-import { MODERN_BROWSERSLIST_TARGET } from "next/dist/shared/lib/constants";
+
 
 const Landing = () => {
   const [nevScroll, setNavScroll] = useState(false);
@@ -20,7 +20,8 @@ const Landing = () => {
   };
 
   const mobileSlideBar = () => {
-    mobileView ? setMobileView(false) : setMobileView(true);
+    
+    setMobileView(!mobileView) 
   };
 
   window.addEventListener("scroll", changeNavScroll);
@@ -28,21 +29,21 @@ const Landing = () => {
   return (
     <>
       <div
-        className={`justify-between  w-full fixed scroll-smooth ${
+        className={`z-0 justify-between  w-full fixed scroll-smooth ${
           nevScroll ? "bg-[#fbf3ec] shadow-lg py-6" : "bg-transparent py-12"
         } duration-500`}
       >
-        <nav className="space-x-[150px] flex">
+        <nav className="space-x-[150px] flex ">
           <div>
             <span className="flex ml-6 mb-9 absolute text-black">
-              <Image src={Icon} alt="icon" width={40} height={40} />
-              <Link className="mt-1" href={"#"}>
+              <Image src={Icon} alt="icon" width={50} height={50} />
+              <Link className="mt-1 text-2xl" href={"#"}>
                 Streamway
               </Link>
             </span>
           </div>
 
-          <div className="pl-56 hidden sm:block">
+          <div className="pl-56 hidden md:block ">
             <ul className="flex space-x-10 pt-2 text-black ">
               <Link className="hover:text-red-700  space-x-2" href={"#"}>
                 <div className="flex">
@@ -78,7 +79,7 @@ const Landing = () => {
             </ul>
           </div>
 
-          <div className="space-x-4 sm:flex hidden">
+          <div className="space-x-4 hidden md:flex ">
             <Link href={"#"} className="font-bold mt-2">
               Login
             </Link>
@@ -92,13 +93,13 @@ const Landing = () => {
         </nav>
 
         {/* Mobile  View */}
-        <div className=" mt-1 md:hidden">
-          <div className="flex flex-row-reverse mr-36">
+        <div className="  md:hidden">
+          <div className="flex flex-row-reverse mr-12">
             <svg
               onClick={() => {
                 mobileSlideBar();
               }}
-              className="w-8 h-8 stroke-white bg-[#973c56] rounded-md "
+              className="w-10 h-10 stroke-white bg-[#973c56] rounded-md "
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
@@ -133,7 +134,7 @@ const Landing = () => {
               <li>
                 <p className="ml-4 hover:text-text-red-700 mt-2">Dose</p>
               </li>
-              {/* <li ><p className='ml-4'>Home</p></li> */}
+              
               <li className="grid place-items-center">
                 <div className="space-x-4 flex mt-5">
                   <Link href={"#"} className="font-bold mt-2">
@@ -156,3 +157,5 @@ const Landing = () => {
 };
 
 export default Landing;
+
+
