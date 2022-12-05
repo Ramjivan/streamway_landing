@@ -1,6 +1,7 @@
 import React from 'react'
 import Feature from './Feature'
 import CEO from './CEO'
+
 const Main = () => {
   return (
     <div className='bg-[#fbf3ec] w-screen '>
@@ -30,8 +31,9 @@ const Main = () => {
 
       
       <Feature/>
-      <img className="bg-white absolute z-10 " src="https://html.creativegigstf.com/deski/deski/images/shape/99.svg" alt="" />
-      {/* <CEO/> */}
+      <img className="bg-white  mt-16 " src="https://html.creativegigstf.com/deski/deski/images/shape/99.svg" alt="" />
+      <CEO/>
+      
     </div>
   )
 }

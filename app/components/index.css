@@ -3,3 +3,43 @@
 .f{
     font-family: 'Roboto Slab', serif;
 }
+
+
+.imgs{
+    animation: slowBounce 1.5s linear 1s infinite alternate-reverse;
+}
+
+.img2::before{
+    content: url(https://html.creativegigstf.com/deski/deski/images/shape/104.svg);
+    position: absolute;
+    top: 26%;
+    left: -50%;
+    z-index: 1;
+}
+
+.img2::after{
+    content: url(https://html.creativegigstf.com/deski/deski/images/shape/104.svg);
+    position: absolute;
+    top: 26%;
+    right: -40%;
+    z-index: 1;
+}
+
+.stpt::before{
+    content: "";
+    position: absolute;
+    top:60%;
+    height: 25%;
+    z-index: -1;
+    width: 100%;
+    background-color: rgba(241,193,83,.50);
+}
+
+@media screen and (max-width:1000px) {
+    .img2::after{
+        visibility:hidden;
+    }
+    .img2::before{
+        visibility:hidden;
+    }
+}

@@ -29,7 +29,7 @@ const Landing = () => {
   return (
     <>
       <div
-        className={`z-0 justify-between  w-full fixed scroll-smooth ${
+        className={`z-50 justify-between  w-full fixed scroll-smooth ${
           nevScroll ? "bg-[#fbf3ec] shadow-lg py-6" : "bg-transparent py-12"
         } duration-500`}
       >
@@ -37,7 +37,7 @@ const Landing = () => {
           <div>
             <span className="flex ml-6 mb-9 absolute text-black">
               <Image src={Icon} alt="icon" width={50} height={50} />
-              <Link className="mt-1 text-2xl" href={"#"}>
+              <Link className="f mt-1 text-2xl" href={"#"}>
                 Streamway
               </Link>
             </span>

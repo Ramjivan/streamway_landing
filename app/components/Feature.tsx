@@ -15,7 +15,7 @@ const Feature = () => {
             alt=""
           />
         </span>
-      <div className=" bg-white w-[85%] ml-5  ">
+      <div className="z-40 relative  bg-white w-[85%] ml-5  ">
         <div className="divide-x-[1px] md:flex  p-10 text-2xl text-center font-normal tracking-normalS">
           <span className="p-8 space-y-3">
             <svg

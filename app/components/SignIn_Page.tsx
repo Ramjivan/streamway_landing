@@ -2,7 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 const SignIn_Page = () => {
   return (
-    <div className='container mt-40 mx-2 md:mx-20'>
+    <div>
+    <div className='container mt-40  md:mx-20 pt-40 '>
         <div className=''>
             <div className='relative  h-24'>
             <p className='text-5xl f absolute z-10 md:ml-44 text-center'>Everyone has a message to share</p>
@@ -19,6 +20,9 @@ const SignIn_Page = () => {
             <label className='text-gray-400 '>Already a member?</label>
             <Link className='hover:underline' href={'#'}>Sign in.</Link>
         </div>
+
+    </div>
+    <img className='mt-20' src="https://html.creativegigstf.com/deski/deski/images/shape/122.svg" alt="nothing"  />
     </div>
   )
 }
