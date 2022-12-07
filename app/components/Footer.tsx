@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className='bg-[#fbf3ec] w-full  h-[1000px] md:h-full '>
         
-        <div className=' w-screen h-[400px] md:flex md:space-x-32'>
+        <div className=' w-screen h-[400px] md:flex md:space-x-32 place-content-center'>
             <div>
             
             <div className='text-black ml-20 md:ml-36 md:mt-20 space-y-2'>

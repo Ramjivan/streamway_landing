@@ -35,11 +35,31 @@
     background-color: rgba(241,193,83,.50);
 }
 
+.crdheader::before{
+    content: url("./Images/dd.jpg");
+    position: absolute;
+    padding-top: 20px;
+    left: 40%;
+}
+
+.ww::before{
+    content: "";
+    position: absolute;
+    height: 25%;
+    top:60%;
+    z-index: -1;
+    width: 100%;
+    background-color: rgba(241,193,83,.50);
+}
+
 @media screen and (max-width:1000px) {
     .img2::after{
         visibility:hidden;
     }
     .img2::before{
         visibility:hidden;
+    }
+    .crdheader::before{
+        visibility: hidden;
     }
 }

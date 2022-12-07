@@ -29,11 +29,11 @@ const Landing = () => {
   return (
     <>
       <div
-        className={`z-50 justify-between  w-full fixed scroll-smooth ${
+        className={`z-50 justify-between w-[320px] md:w-full fixed scroll-smooth ${
           nevScroll ? "bg-[#fbf3ec] shadow-lg py-6" : "bg-transparent py-12"
         } duration-500`}
       >
-        <nav className="space-x-[150px] flex ">
+        <nav className="space-x-[150px] flex justify-between">
           <div>
             <span className="flex ml-6 mb-9 absolute text-black">
               <Image src={Icon} alt="icon" width={50} height={50} />
@@ -79,7 +79,7 @@ const Landing = () => {
             </ul>
           </div>
 
-          <div className="space-x-4 hidden md:flex ">
+          <div className="space-x-4 hidden md:flex md:mr-16">
             <Link href={"#"} className="font-bold mt-2">
               Login
             </Link>
@@ -94,7 +94,7 @@ const Landing = () => {
 
         {/* Mobile  View */}
         <div className="  md:hidden">
-          <div className="flex flex-row-reverse mr-12">
+          <div className="flex flex-row-reverse">
             <svg
               onClick={() => {
                 mobileSlideBar();
