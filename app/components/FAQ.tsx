@@ -6,23 +6,24 @@ const FAQ = () => {
 
 
   return (
-    <div className="w-screen bg-[#dff1ee] justify-center relative min-h-[1000px] md:h-auto ">
+    <div className="  bg-[#dff1ee] justify-center relative min-h-[1000px] md:h-auto w-screen">
+      <div className="container mx-auto">
         <div className="justify-between mt-56">
         <img className="absolute z-[-1]  top-44" src={'https://html.creativegigstf.com/deski/deski/images/shape/120.svg'} alt="nothing"  />
         <img className="absolute z-[-1]  right-0 bottom-1" src={'https://html.creativegigstf.com/deski/deski/images/shape/121.svg'} alt="nothing"  />
         </div>
-      <div className="container w-[300px] md:w-[1170px] md:mx-auto">
-        <div className="md:text-center mb-20">
+      <div className="container w-[300px] md:w-[1170px] mx-auto">
+        <div className=" w-full  text-center mb-20 ">
           <h1>FAQ</h1>
           <h1 className="f text-[38px]">
             <span className="relative z-[1] ">
-              <div className="bg-[#e7dba8] w-full absolute h-3 left-0 bottom-2 -z-[1]"></div>
+              <div className="md:bg-[#e7dba8] w-full absolute h-3 left-0 bottom-2 -z-[1]"></div>
               Question & Answer
             </span>
           </h1>
         </div>
 
-        <div className="w-[300px] md:w-[1200px] h-[796px] md:-mx-[15px]">
+        <div className="w-full md:w-[1200px] h-[796px] ">
           <div className="md:m-auto md:w-[870px] h-[796px] opacity-[1]">
             <div className=" md:w-full h-[796px] ">
               <div className="bg-white mb-3  flex flex-col h-[186] w-80 md:w-[700px] md:mx-auto">
@@ -278,7 +279,7 @@ const FAQ = () => {
                 </div>
               </div>
 
-              <p className="text-2xl mx-8 md:text-4xl md:text-center mt-5">Don’t find your answer?</p>
+              <p className="text-2xl mx-8 md:text-4xl text-center mt-5">Don’t find your answer?</p>
               <div className="relative w-40 h-10 group bg-[#655c97] text-white mx-16 md:mx-auto mt-5">
               <div className="absolute bg-[#973c56]  z-10 left-0 w-0 h-10  group-hover:w-full   duration-700"></div>
               <button className="absolute  w-40 h-10 bg-transparent z-20 ">
@@ -293,6 +294,7 @@ const FAQ = () => {
           
         </div>
         </div>
+      </div>
       </div>
     </div>
   );

@@ -54,12 +54,13 @@
 
 @media screen and (max-width:1000px) {
     .img2::after{
-        visibility:hidden;
+        display: none;
     }
     .img2::before{
-        visibility:hidden;
+        display: none;
+
     }
     .crdheader::before{
-        visibility: hidden;
+        display: none;
     }
 }
