@@ -13,11 +13,11 @@ const Full_page = () => {
     <>
     <Landing/>
     <Main/>
-    {/* <Steps/>
+    <Steps/>
     <Why/>
     <FAQ/>
     <SignIn_Page/>
-    <Footer/> */}
+    <Footer/>
     <CAB/>
     </>
   )
