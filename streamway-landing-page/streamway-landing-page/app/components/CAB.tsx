@@ -2,17 +2,18 @@ import React from "react";
 
 const CAB = () => {
   return (
-    <div className="container bg-[#f5fbff] relative  mx-auto bg-no-repeat p-10 md:p-16 pt-0 bg-cover bg-center rounded-3xl">
-      <img
+    <div className="container relative mx-auto bg-no-repeat p-10 md:p-16 pt-0 bg-cover bg-center ">
+      
+        <img
         src="https://deskireact.ibthemespro.com/images/shape/211.svg"
         className="absolute w-[15%] left-0 top-0"
         alt=""
-      />
-      <img
+        />
+        <img
         src="https://deskireact.ibthemespro.com/images/shape/210.svg"
         className="absolute w-[15%] bottom-0 right-0"
         alt=""
-      />
+        />
       <div className="text-center pt-5 md:p-16 ">
         <div>
           <span className="f text-4xl md:text-6xl font-semibold relative tracking-wider inline-block">
