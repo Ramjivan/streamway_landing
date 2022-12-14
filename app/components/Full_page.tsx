@@ -15,6 +15,7 @@ import CEO from './CEO'
 import Sliders from './Sliders'
 import Hemb from './Images/Hemb'
 import Testimonial_Page from './Testimonial_Page'
+import Cab from "./CAB";
 
 const Full_page = () => {
   return (
@@ -23,7 +24,7 @@ const Full_page = () => {
     <Landing/>
     <Main/>
     <Testimonial_Page/>
-    
+    <Cab/>
 {/* <Ourclients /> */}
       {/* <Hemb/>
       <Feature/>
