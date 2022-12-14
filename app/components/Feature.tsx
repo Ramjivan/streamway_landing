@@ -2,8 +2,8 @@ import React from "react";
 
 const Feature = () => {
   return (
-    <div className=" bg-[#fbf3ec]    ">
-      <div className="mx-auto container">
+    <div className=" bg-white    ">
+      <div className="mx-auto container ">
       <span className="z-0 absolute left-0">
           <img
             src="https://html.creativegigstf.com/deski/deski/images/shape/102.svg"
@@ -16,7 +16,7 @@ const Feature = () => {
             alt=""
           />
         </span>
-      <div className="z-40 relative  bg-white w-[85%] mx-auto  ">
+      <div className="z-40 relative  bg-white w-[85%] mx-auto  `backdrop-[`saturate(180%) blur(15px)] backdrop-blur-[15px] border-l-indigo-100 opacity-100 bg-transparent shadow-lg">
         <div className="divide-x-[1px] md:flex  p-10 text-2xl text-center font-normal tracking-normalS">
           <span className="p-8 space-y-3">
             <svg

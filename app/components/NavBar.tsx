@@ -9,6 +9,7 @@ const Landing = () => {
   const [nevScroll, setNavScroll] = useState(false);
   // Mobile View
   const [mobileView, setMobileView] = useState(false);
+  const [closeIcon , setCloseIcon] = useState(false)
   //GO To Top
   const [visibleIcon, setVisibleIcon] = useState(false);
 
@@ -22,6 +23,7 @@ const Landing = () => {
 
   const mobileSlideBar = () => {
     setMobileView(!mobileView);
+    setCloseIcon(!closeIcon)
   };
 
   const goT0Top = () => {
@@ -42,21 +44,24 @@ const Landing = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", hideTopIcon);
+    window.addEventListener("scroll", changeNavScroll);
   }, []);
-  window.addEventListener("scroll", changeNavScroll);
+  
+  const [isOpen, setIsOpen] = useState(false);
+  const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-white transition ease transform duration-300`;
 
   return (
     <>
       <div
         className={`w-screen  z-50 overflow-hidden fixed  scroll-smooth ${
-          nevScroll ? "bg-[#fbf3ec] shadow-lg py-6" : "bg-transparent py-12"
+          nevScroll ? "backdrop-blur-sm border-l-indigo-100 bg-opacity-70 shadow-lg py-6" : "bg-transparent py-12"
         } duration-500 `}
       >
         <div className="container mx-auto ">
           <nav className=" flex justify-between ">
             <div>
-              <span className="flex ml-6 mb-9 absolute text-black">
-                <Image src={Icon} alt="icon" width={50} height={50} />
+              <span className="flex ml-6 mb-9 absolute text-black space-x-3">
+                <Image src={Icon} alt="icon" width={45} height={45} />
                 <Link className="f mt-1 text-2xl" href={"#"}>
                   Streamway
                 </Link>
@@ -114,27 +119,36 @@ const Landing = () => {
         </div>
 
         {/* Mobile  View */}
-        <div className="  md:hidden">
+        <div className="  md:hidden" onClick={()=>mobileSlideBar()}>
           <div className="flex flex-row-reverse mr-3">
-            <svg
-              onClick={() => {
-                mobileSlideBar();
-              }}
-              className="w-10 h-10 stroke-white bg-[#973c56] rounded-md "
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-              />
-            </svg>
+          <button
+      className="bg-[#973c56]  flex flex-col h-12 w-12 bg- rounded justify-center items-center group"
+      onClick={() => setIsOpen(!isOpen)}
+    >
+      <div
+        className={`${genericHamburgerLine} ${
+          isOpen
+            ? "rotate-45 translate-y-3 opacity-50 group-hover:opacity-100"
+            : "opacity-50 group-hover:opacity-100"
+        }`}
+      />
+      <div
+        className={`${genericHamburgerLine} ${
+          isOpen ? "opacity-0" : "opacity-50 group-hover:opacity-100"
+        }`}
+      />
+      <div
+        className={`${genericHamburgerLine} ${
+          isOpen
+            ? "-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100"
+            : "opacity-50 group-hover:opacity-100"
+        }`}
+      />
+    </button>
           </div>
+          
           <div
-            className={`w-screen h-[340px] bg-[#fbf3ec] pt-5 ${
+            className={`w-screen mt-3 pb-6 ttransition ease transform duration-800 bg-[#fbf3ec] pt-5 ${
               mobileView ? "block" : "hidden "
             } `}
           >

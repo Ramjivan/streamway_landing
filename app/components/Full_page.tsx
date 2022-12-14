@@ -1,5 +1,6 @@
 import React from 'react'
 import Main from './main'
+import Ourclients from './Ourclients'
 import Landing from './NavBar'
 import Steps from './Steps'
 import SignIn_Page from './SignIn_Page'
@@ -11,21 +12,31 @@ import Test from './Test'
 import Pricing from './Pricing'
 import Feature from './Feature'
 import CEO from './CEO'
+import Sliders from './Sliders'
+import Hemb from './Images/Hemb'
+import Testimonial_Page from './Testimonial_Page'
+
 const Full_page = () => {
   return (
     <>
     
     <Landing/>
     <Main/>
-    <Feature/>
-      <CEO/>
-    <Steps/>
-    <Why/>
-    <Pricing/>
-    <Test/>
-    <FAQ/>
-    <SignIn_Page/>
+    <Testimonial_Page/>
+    
+{/* <Ourclients /> */}
+      {/* <Hemb/>
+      <Feature/>
+        <CEO/>
+      <Steps/>
+      <Why/>
+      <Pricing/>
+      <Test/>
+      <Sliders/>
+      <FAQ/>
+      <SignIn_Page/> */}
     <Footer/>
+    
     
     </>
   )

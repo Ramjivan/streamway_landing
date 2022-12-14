@@ -2,21 +2,19 @@
 import React, { useState } from "react";
 
 const Test = () => {
-  const [hideFirstPera, setHideFirstPera] = useState(true);
-  const [hideSecondPera, setHideSecondPera] = useState(false);
+  const [hideFirstPera, setHideFirstPera] = useState("0");
+  const [hideSecondPera, setHideSecondPera] = useState(true);
   let i = 700;
   const Leftslide = () => {
-    setHideFirstPera(false);
+    setHideFirstPera("2");
     setHideSecondPera(true);
-    
-    while(i>0){
-      i--;
-    }
+
+
   };
 
   const Rightslide = () => {
-    setHideFirstPera(true);
-    setHideSecondPera(false);
+    setHideFirstPera("1");
+    // setHideSecondPera(false);
   };
 
   return (
@@ -33,7 +31,7 @@ const Test = () => {
             alt=""
           />
           <div className="flex w-[700px] h-96 overflow-hidden relative">
-            <div className={`${hideFirstPera ? `w-full left-0` : ` animate-fade left-[-700px] w-[700px]`}  absolute `}>
+            <div className={`${hideFirstPera==="2"?`animate-fade left-[-700px] w-[700px]`:``}} ${hideFirstPera==="1"?`animate-fade animation-direction-reverse`:``} w-[700px] absolute `}>
               <p className=" md:text-2xl text-xl f leading-[35px] md:leading-[48px] text-slate-600 mt-5">
                 Havin a home based business is a wonderful asset to your life.
                 The problem still stands it comes time advertise your business
@@ -47,7 +45,7 @@ const Test = () => {
               </span>
             </div>
 
-            <div className={`${hideSecondPera ? `animate-fadeRight right-[-700px] w-[700px]` : `w-full`} absolute`}>
+            {/* <div className={`${hideSecondPera ? `animate-fadeRight right-0 w-[700px]` : `w-full`} absolute`}>
               <p className="md:text-2xl text-xl f leading-[35px] md:leading-[48px] text-slate-600 mt-5">
                 Having a home based business is a wonderful asset to your life.
                 The problem still stands it comes time advertise your business
@@ -59,7 +57,7 @@ const Test = () => {
               <span className="desig f text-xl font-medium text-slate-400">
                 Designer
               </span>
-            </div>
+            </div> */}
           </div>
 
           <ul className="flex place-content-center mt-10 ">

@@ -6,9 +6,9 @@ import Link from "next/link";
 import Icon from "./Images/icon.png";
 const Footer = () => {
   return (
-    <div className="bg-[#fbf3ec] ">
+    <div className="bg-[#fbf3ec] h-screen">
       <div className="mx-auto container">
-      <div className="  h-[400px] md:flex md:space-x-32 place-content-center">
+      <div className="  h-[400px] lg:flex md:space-x-32 place-content-center">
         <div>
           <div className="text-black ml-20 md:ml-36 md:mt-20 space-y-2">
             <span className="  flex ">
@@ -35,7 +35,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="ml-20 space-y-6 md:space-y-0 mt-10 md:mt-20 md:flex md:space-x-36 justify-center font-medium">
+        <div className="mx-auto  space-y-6 md:space-y-0 mt-10 md:mt-20 md:flex md:space-x-36 justify-center font-medium">
           <div className="space-y-2">
             <label className="text-2xl f ">Links</label>
             <div>

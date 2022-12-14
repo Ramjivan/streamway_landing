@@ -4,7 +4,7 @@ const SignIn_Page = () => {
   return (
     <div>
       <div  className='container  mx-auto'>
-    <div className=' mt-20  pt-40 w-full  '>
+    <div className=' mt-20  pt-40 container mx-auto '>
         <div className='w-200'>
             <div className='relative  h-24'>
             <p className='text-3xl text-center md:text-5xl f absolute z-10 md:ml-44 md:text-center'>Everyone has a message to share</p>
