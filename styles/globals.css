@@ -1,3 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+.notosans{
+    font-family: 'Noto Sans', sans-serif;
+}
 html,
 body {
   padding: 0;
@@ -15,12 +24,103 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.roboto{
+  font-family: 'Roboto', sans-serif;
+}
+
+.fstfeature-headline{
+  position: relative;
+}
+/* .fstfeature-headline::before{
+content: url('../pages/images/Group.png');
+height: 21px;
+position: absolute;
+bottom: -5px;
+left: 38%;
+} */
+
+.global-container{
+  width: 1320px !important;
+  margin: auto;
+}
+
+@keyframes bouncee {
+  0% {
+    transform: translateZ(0);
   }
-  body {
-    color: white;
-    background: black;
+
+  50% {
+    transform: translate3d(0, 20px, 0);
   }
+
+  100% {
+    transform: translateZ(0);
+  }
+}
+
+@keyframes bouncerev {
+  0% {
+    transform: translateZ(0);
+  }
+
+  50% {
+    transform: translate3d(0, -20px, 0);
+  }
+
+  100% {
+    transform: translateZ(0);
+  }
+}
+@keyframes rotatee {
+  0%{
+      rotate: 360deg;
+  }
+  100%{
+    rotate: 0deg;
+  }
+}
+@keyframes rotateerev {
+  0%{
+      rotate: 0deg;
+  }
+  100%{
+    rotate: 360deg;
+  }
+}
+/* .fstfeature-headline span::after{
+content: "";
+animation: changetxt 10s linear infinite;
+}
+@keyframes changetxt{
+  0%{content:"Audience" ;}
+  10%{content:"crowdcast" ;}
+  20%{content:"community" ;}
+  30%{content:"business" ;}
+  40%{content:"reach" ;}
+  50%{content:"confidence" ;}
+  60%{content:"dream" ;}
+  70%{content:"Live Shows" ;}
+  80%{content:"Conferences" ;}
+  90%{content:"events" ;}
+  100%{content: "popularity";}
+} */
+
+
+
+/*------OUR PARTNERS------- */
+
+/* Icon shacking animation in OUR PARTNERS section  */
+.downBounce{
+  animation: slowBounce 2s linear 1.8s infinite alternate-reverse;
+}
+@keyframes slowBounce {
+  from{ top: 32px;}
+  to{ top: 9px;}
+}
+.upBounce{
+  animation: Bounce 2s linear 1.8s infinite alternate-reverse;
+}
+@keyframes Bounce {
+  from{ top: 9px;}
+  to{ top: 33px;}
 }
