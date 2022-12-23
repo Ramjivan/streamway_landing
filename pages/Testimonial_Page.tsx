@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import User from "./Images/User.png";
-import Swastik from "./Images/swastik.png";
-import OM from "./Images/OM.png"
+import User from "./images/User.png";
+import Swastik from "./images/swastik.png";
+import OM from "./images/OM.png"
 const Testimonial_Page = () => {
   const styling = {
     backgroundImage: `url('http://deskireact.ibthemespro.com/static/media/bg.b81274dde6e4aad74b33.svg')`,

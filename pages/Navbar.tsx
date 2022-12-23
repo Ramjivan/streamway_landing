@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Icon from "./Images/icon.png";
+import Icon from "./images/icon.png";
 
 
 const Navbar = () => {

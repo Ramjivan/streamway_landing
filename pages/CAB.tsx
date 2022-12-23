@@ -1,6 +1,6 @@
 import React from "react";
-import Im1 from "./Images/210.svg"
-import Im2 from "./Images/211.svg"
+import Im1 from "./images/210.svg"
+import Im2 from "./images/211.svg"
 import Image from "next/image";
 const CAB = () => {
   return (

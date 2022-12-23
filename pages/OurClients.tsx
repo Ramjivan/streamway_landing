@@ -1,12 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
-import youtubeLogo from "../pages/Images/ytl.png"
-import facebookLogo from "../pages/Images/fbLogo.webp"
-import instagramLogo from "../pages/Images/instaLogo.png"
-import twitchLogo from "../pages/Images/twitchLogo.webp"
-import twitterLogo from "../pages/Images/twitterLogo.png"
-import istartLogo from "../pages/Images/istart.png"
-import linkedinLogo from "../pages/Images/linkedInLogo.png"
+import youtubeLogo from "../pages/images/ytl.png"
+import facebookLogo from "../pages/images/fbLogo.webp"
+import instagramLogo from "../pages/images/instaLogo.png"
+import twitchLogo from "../pages/images/twitchLogo.webp"
+import twitterLogo from "../pages/images/twitterLogo.png"
+import istartLogo from "../pages/images/istart.png"
+import linkedinLogo from "../pages/images/linkedInLogo.png"
 
 
 
