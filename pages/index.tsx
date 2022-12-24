@@ -12,9 +12,9 @@ const index = () => {
       <Navbar />
       <Heropage />
       <Features />
-      <Testimonial />
       <OurClients />
       <CAB />
+      <Testimonial />
     </div>
   )
 }
