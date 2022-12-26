@@ -50,7 +50,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`w-screen  z-50 overflow-hidden   scroll-smooth ${
+        className={`w-screen z-50 overflow-hidden scroll-smooth ${
           NevScroll ? "backdrop-blur-[20px] border-l-indigo-100 bg-opacity-70 shadow-lg py-6 fixed" : "bg-transparent py-12"
         } duration-500 `}
       >
@@ -79,7 +79,7 @@ const Navbar = () => {
                 <Link className="hover:text-red-700" href={""}>
                   Pages
                 </Link>
-                <Link className="hover:text-red-700" href={"#"}>
+                <Link className="hover:text-red-700" href={"Blog"}>
                   Blogs
                 </Link>
                 <Link className="hover:text-red-700" href={"#"}>
