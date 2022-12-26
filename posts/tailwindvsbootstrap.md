@@ -1,8 +1,10 @@
 ---
 title: 'What is multistreaming and what are abenefits of it?'
 date: 'Dec 11, 2022'
-# excerpt: 'Both Tailwind and Bootstrap are very popular CSS frameworks. In this article, we will compare them'
-cover_image: '/images/posts/img2.jpg'
+desc: 'Both Tailwind and Bootstrap are very popular CSS frameworks. In this article, we will compare them'
+cover_image: '/images/posts/Blog.jpg'
+# avatar_image: ''
+blog_writer: 'Unknown'
 ---
 
 Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat

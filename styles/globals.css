@@ -7,6 +7,7 @@
 .notosans{
     font-family: 'Noto Sans', sans-serif;
 }
+
 html,
 body {
   padding: 0;
@@ -123,4 +124,21 @@ animation: changetxt 10s linear infinite;
 @keyframes Bounce {
   from{ top: 9px;}
   to{ top: 33px;}
+}
+
+
+/* ----------Blog Section------------ */
+p{
+  font-size: larger;
+}
+
+h2{
+  font-size: 40px;
+  font-weight: 500;
+}
+
+img[alt~="hi"]{
+  width: 40%;
+  margin: 0 auto;
+  padding: 60px;
 }

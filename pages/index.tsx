@@ -5,6 +5,7 @@ import Testimonial from './Testimonial_Page'
 import OurClients from './OurClients'
 import Features from './Features'
 import CAB from './CAB'
+import Footer from './Footer'
 
 const index = ({posts}:{posts:any}) => {
   return (
@@ -15,6 +16,7 @@ const index = ({posts}:{posts:any}) => {
       <Testimonial />
       <OurClients />
       <CAB />
+      <Footer/>
     </div>
   )
 }

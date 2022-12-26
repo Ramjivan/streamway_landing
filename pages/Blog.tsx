@@ -9,7 +9,7 @@ export default function Blog({posts}:{posts:any}) {
   return (
     <>
     <Navbar/>
-    <div className='bg-[#f7faff]'>
+    <div className='bg-[#f7faff] mb-96 '>
       
       <div className='py-20 tb:w-[85%] lg:w-[75%] md:w-[60%] w-[90%] mx-auto md:space-y-2'>
       <p className='text-sm md:text-lg tracking-tight text-center text-gray-400'>YOU WILL FIND HERE OUR COMPANY NEWS AND LATEST UPDATE</p>
