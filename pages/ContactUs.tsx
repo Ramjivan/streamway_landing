@@ -1,3 +1,5 @@
+/* ------ CONTACT US PAGE ------ */
+
 import React from "react";
 import Navbar from './Navbar'
 import logo from "./images/icon.png";
@@ -16,7 +18,9 @@ const ContactUs = () => {
     {/* Navbar >.>>>>>>>>>>>>>>>>>>>>>>>> */}
 
 
-      <div className="xl:container md:w-[90%] lg:w-[80%] mx-auto">
+      {/* /* ------ Page Title ------ */ }
+
+      <div className="xl:container md:w-[90%] lg:w-[80%] mx-auto mb-96">
         <div className="text-center notosans">
           <h1 className="xl:text-6xl text-4xl font-bold pb-5 xl:pb-14 lg:tracking-wider">
             Contact customer support
@@ -44,6 +48,9 @@ const ContactUs = () => {
             Help
           </button>
         </div>
+
+        {/* COMPANY DETAILS */}
+
         <div className="container lg:w-[880px] p-5 mx-auto flex flex-col-reverse lg:flex lg:flex-row mt-[90px] notosans">
           <div className="flex flex-col gap-3 lg:gap-5 leading-5 lg:tracking-wider mr-[136px] pt-10 lg:pt-0">
             <Image src={logo} alt="Hello" className="xl:w-52 w-44 mb-5" />

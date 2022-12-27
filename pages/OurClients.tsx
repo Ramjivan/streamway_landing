@@ -1,3 +1,5 @@
+// ------ Our client or partner page ------
+
 import React from 'react'
 import Image from 'next/image'
 import youtubeLogo from "../pages/images/ytl.png"

@@ -1,10 +1,12 @@
+/* ------ CALL BY ACTION PAGE ------ */
+
 import React from "react";
 import Im1 from "./images/210.svg"
 import Im2 from "./images/211.svg"
 import Image from "next/image";
 const CAB = () => {
   return (
-    <div className=" bg-[#f5fbff] mt-10 md:mt-0  relative max-w-full mx-auto">
+    <div className=" bg-[#f5fbff]  relative max-w-full mx-auto">
       <Image
           src={Im2}
           className="absolute w-[15%] lg:w-[inherit] left-0px top-0"
@@ -15,16 +17,14 @@ const CAB = () => {
           className="absolute w-[15%] lg:w-[inherit] bottom-0 right-0"
           alt=""
         ></Image>
+
+      {/* MAIL BOX */}
+
       <div className="container  relative z-10 mx-auto bg-no-repeat p-10 md:p-16 pt-0 bg-cover bg-center ">    
         <div className="container text-center pt-5 md:p-16 z-10">
           <div>
             <span className="f text-4xl md:text-6xl font-semibold relative tracking-wider inline-block">
               Try Streamway Free
-              {/* <img
-              src="https://deskireact.ibthemespro.com/images/shape/line-shape-3.svg"
-              className="w-[100%] absolute left-0 -z-1 "
-              alt=""
-            /> */}
             </span>
           </div>
           <span className=" text-xl md:text-3xl tracking-wider block mt-8">

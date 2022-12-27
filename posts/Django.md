@@ -1,8 +1,10 @@
 ---
 title: 'How many Platforms can be streamed on streamway'
 date: 'Dec 15, 2022'
-# excerpt: 'Streamway can connect multiple platforms at same time'
-cover_image: '/images/posts/img3.jpg'
+desc: 'Streamway can connect multiple platforms at same time'
+cover_image: '/images/posts/Blog.jpg'
+# avatar_image: ''
+blog_writer: 'Unknown'
 ---
 
 Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat

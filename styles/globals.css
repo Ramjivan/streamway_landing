@@ -7,6 +7,7 @@
 .notosans{
     font-family: 'Noto Sans', sans-serif;
 }
+
 html,
 body {
   padding: 0;
@@ -124,3 +125,27 @@ animation: changetxt 10s linear infinite;
   from{ top: 9px;}
   to{ top: 33px;}
 }
+
+
+/* ----------Blog Section------------ */
+
+@media screen and (min-width:760px) {
+  p{
+    font-size:28px ;
+    line-height: 2.5rem;
+  }
+  
+  h2{
+    font-size: 45px;
+    font-weight: 600;
+    padding: 50px 0 50px 0;
+  }
+  img[alt~="hi"]{
+    width: 40%;
+    margin: 0 auto;
+    padding: 60px;
+  }
+}
+
+
+
