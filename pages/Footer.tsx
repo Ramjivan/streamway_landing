@@ -1,12 +1,18 @@
+/* -------- Footer Section --------- */
+
 import React from "react";
 import Image from "next/image";
 import Flag from "./images/Flag.png";
 
 const Footer = () => {
   return (
+
     <div className="mx-auto container mb-10">
-      <div className="xl:flex place-content-center ">
-        <div className="md:flex tb:w-[75%] tb:mx-auto">
+
+      {/* Links div and Image div  */}
+
+      <div className="xl:flex place-content-center "> {/* parent div*/}
+        <div className="md:flex tb:w-[75%] tb:mx-auto">{/* Link main div */}
           <div className="md:p-10 p-5">
             <p className="md:text-4xl text-2xl font-semibold">Services</p>
             <div className="md:pt-10 pt-2 md:leading-loose">
@@ -35,7 +41,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="">
+        <div className=""> {/* Image div */}
           <Image
             src={Flag}
             alt=""
@@ -43,6 +49,9 @@ const Footer = () => {
           ></Image>
         </div>
       </div>
+
+      {/* End of Footer */}
+
       <div className="flex gap-10 place-content-center">
         <p>Privacy</p>
         <p>Security</p>

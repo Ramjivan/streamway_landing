@@ -128,17 +128,24 @@ animation: changetxt 10s linear infinite;
 
 
 /* ----------Blog Section------------ */
-p{
-  font-size: larger;
+
+@media screen and (min-width:760px) {
+  p{
+    font-size:28px ;
+    line-height: 2.5rem;
+  }
+  
+  h2{
+    font-size: 45px;
+    font-weight: 600;
+    padding: 50px 0 50px 0;
+  }
+  img[alt~="hi"]{
+    width: 40%;
+    margin: 0 auto;
+    padding: 60px;
+  }
 }
 
-h2{
-  font-size: 40px;
-  font-weight: 500;
-}
 
-img[alt~="hi"]{
-  width: 40%;
-  margin: 0 auto;
-  padding: 60px;
-}
+
