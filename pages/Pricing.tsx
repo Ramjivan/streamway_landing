@@ -3,6 +3,8 @@ import Image from 'next/image'
 import Navbar from './Navbar'
 import Tick from './images/tick.png'
 import Testimonals from './Testimonals'
+import Faq from './Faq'
+import Pathline from '../pages/images/Pathline.png'
 
 export const Pricing = () => {
   const [monthly, setMonthly] = useState(true);
@@ -116,11 +118,16 @@ export const Pricing = () => {
         </div>
       </div>
       {/* Pricing >.>>>>>>>>>>>>>>>>>>>>>>>> */}
+        <Image src={Pathline} alt="img" className='mx-auto -w-full mt-20' />
 
       {/* Testimonals >.>>>>>>>>>>>>>>>>>>>>>>>> */}
       <Testimonals />
       {/* Testimonals >.>>>>>>>>>>>>>>>>>>>>>>>> */}
+      <Image src={Pathline} alt="img" className='mx-auto -w-full mt-20' />
 
+      {/* FAQ >.>>>>>>>>>>>>>>>>>>>>>>>> */}
+      <Faq />
+      {/* FAQ >.>>>>>>>>>>>>>>>>>>>>>>>> */}
     </div>
   )
 }

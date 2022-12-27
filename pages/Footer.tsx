@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Flag from "./images/Flag.png";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -52,10 +53,10 @@ const Footer = () => {
 
       {/* End of Footer */}
 
-      <div className="flex gap-10 place-content-center">
-        <p>Privacy</p>
-        <p>Security</p>
-        <p>Terms</p>
+      <div className="flex gap-10 text-base text-gray-500 place-content-center">
+        <Link href={'Privacypolicy'}>Privacy</Link>
+        <Link href={'#'}>Security</Link>
+        <Link href={'#'}>Terms</Link>
       </div>
     </div>
   );
