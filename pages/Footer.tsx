@@ -4,12 +4,12 @@ import Flag from "./images/Flag.png";
 
 const Footer = () => {
   return (
-    <div className="container mb-10">
-      <div className="tb:flex md:mx-auto md:w-[95%] md:mt-10">
-        <div className="tb:flex md:space-x-14 md:pl-28">
-          <div className="p-10">
-            <p className="md:text-4xl">Services</p>
-            <div className="pt-10 md:leading-loose">
+    <div className="mx-auto container mb-10">
+      <div className="xl:flex place-content-center ">
+        <div className="md:flex tb:w-[75%] tb:mx-auto">
+          <div className="md:p-10 p-5">
+            <p className="md:text-4xl text-2xl font-semibold">Services</p>
+            <div className="md:pt-10 pt-2 md:leading-loose">
               <p>Web Design</p>
               <p>Development</p>
               <p>Wordpress</p>
@@ -17,9 +17,9 @@ const Footer = () => {
               <p>Content</p>
             </div>
           </div>
-          <div className="p-10">
-            <p className="md:text-4xl">About us</p>
-            <div className="pt-10 md:leading-loose">
+          <div className="md:p-10 p-5">
+            <p className="md:text-4xl text-2xl font-semibold">About us</p>
+            <div className="md:pt-10 pt-2 md:leading-loose">
               <p>About us</p>
               <p>Work Portfolio</p>
               <p>Team</p>
@@ -27,9 +27,9 @@ const Footer = () => {
               <p>News</p>
             </div>
           </div>
-          <div className="p-10">
-            <p className="md:text-4xl">Address</p>
-            <div className="pt-10 md:leading-loose">
+          <div className="md:p-10 p-5">
+            <p className="md:text-4xl text-2xl font-semibold">Address</p>
+            <div className="md:pt-10 pt-2 md:leading-loose">
               <p>companyinfo@mail.com</p>
               <p>+91-8386853447</p>
             </div>
@@ -39,13 +39,11 @@ const Footer = () => {
           <Image
             src={Flag}
             alt=""
-            className="w-full p-10"
-            width={1000}
-            height={1000}
+            className="xl:w-full md:w-[50%] md:mx-auto p-10"
           ></Image>
         </div>
       </div>
-      <div className="flex gap-10 w-[5%] ml-10 md:mx-auto">
+      <div className="flex gap-10 place-content-center">
         <p>Privacy</p>
         <p>Security</p>
         <p>Terms</p>
