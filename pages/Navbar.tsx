@@ -8,7 +8,7 @@ const Navbar = () => {
   const [NevScroll, setNavScroll] = useState(false);
   // Mobile View
   const [MobileView, setMobileView] = useState(false);
-  const [CloseIcon , setCloseIcon] = useState(false)
+  const [CloseIcon, setCloseIcon] = useState(false)
   //GO To Top
   const [VisibleIcon, setVisibleIcon] = useState(false);
 
@@ -25,34 +25,23 @@ const Navbar = () => {
     setCloseIcon(!CloseIcon)
   };
 
- 
 
-  const hideTopIcon = () => {
-    const onPoint = 250;
-    const breakPoint =
-      document.body.scrollTop || document.documentElement.scrollTop;
 
-    if (breakPoint > onPoint) {
-      setVisibleIcon(true);
-    } else {
-      setVisibleIcon(false);
-    }
-  };
+
 
   useEffect(() => {
-    window.addEventListener("scroll", hideTopIcon);
+
     window.addEventListener("scroll", changeNavScroll);
   }, []);
-  
+
   const [isOpen, setIsOpen] = useState(false);
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-white transition ease transform duration-300`;
 
   return (
     <>
       <div
-        className={`w-screen  z-50 overflow-hidden   scroll-smooth ${
-          NevScroll ? "backdrop-blur-[20px] border-l-indigo-100 bg-opacity-70 shadow-lg py-6 fixed" : "bg-transparent py-12"
-        } duration-500 `}
+        className={`w-screen  z-50 overflow-hidden   scroll-smooth ${NevScroll ? "backdrop-blur-[20px] border-l-indigo-100 bg-opacity-70 shadow-lg py-6 fixed" : "bg-transparent py-12"
+          } duration-500 `}
       >
         <div className="container mx-auto ">
           <nav className=" flex justify-between ">
@@ -70,14 +59,14 @@ const Navbar = () => {
                 <Link className="hover:text-red-700  space-x-2" href={"/"}>
                   <div className="flex">
                     Home
-                   
+
                   </div>
                 </Link>
                 <Link className="hover:text-red-700" href={"ContactUs"}>
                   Contact
                 </Link>
-                <Link className="hover:text-red-700" href={""}>
-                  Pages
+                <Link className="hover:text-red-700" href={"Pricing"}>
+                  Pricing
                 </Link>
                 <Link className="hover:text-red-700" href={"#"}>
                   Blogs
@@ -103,38 +92,34 @@ const Navbar = () => {
         </div>
 
         {/* Mobile  View */}
-        <div className="  md:hidden" onClick={()=>mobileSlideBar()}>
+        <div className="  md:hidden" onClick={() => mobileSlideBar()}>
           <div className="flex flex-row-reverse mr-3">
-          <button
-      className="bg-[#973c56]  flex flex-col h-12 w-12 bg- rounded justify-center items-center group"
-      onClick={() => setIsOpen(!isOpen)}
-    >
-      <div
-        className={`${genericHamburgerLine} ${
-          isOpen
-            ? "rotate-45 translate-y-3 opacity-50 group-hover:opacity-100"
-            : "opacity-50 group-hover:opacity-100"
-        }`}
-      />
-      <div
-        className={`${genericHamburgerLine} ${
-          isOpen ? "opacity-0" : "opacity-50 group-hover:opacity-100"
-        }`}
-      />
-      <div
-        className={`${genericHamburgerLine} ${
-          isOpen
-            ? "-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100"
-            : "opacity-50 group-hover:opacity-100"
-        }`}
-      />
-    </button>
+            <button
+              className="bg-[#973c56]  flex flex-col h-12 w-12 bg- rounded justify-center items-center group"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              <div
+                className={`${genericHamburgerLine} ${isOpen
+                    ? "rotate-45 translate-y-3 opacity-50 group-hover:opacity-100"
+                    : "opacity-50 group-hover:opacity-100"
+                  }`}
+              />
+              <div
+                className={`${genericHamburgerLine} ${isOpen ? "opacity-0" : "opacity-50 group-hover:opacity-100"
+                  }`}
+              />
+              <div
+                className={`${genericHamburgerLine} ${isOpen
+                    ? "-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100"
+                    : "opacity-50 group-hover:opacity-100"
+                  }`}
+              />
+            </button>
           </div>
-          
+
           <div
-            className={`w-screen mt-3 pb-6 ttransition ease transform duration-800 bg-[#fbf3ec] pt-5 ${
-              MobileView ? "block" : "hidden "
-            } `}
+            className={`w-screen mt-3 pb-6 ttransition ease transform duration-800 bg-[#fbf3ec] pt-5 ${MobileView ? "block" : "hidden "
+              } `}
           >
             <ul className="divide-y-[1px] divide-opacity-10 divide-gray-400 space-y-4 ">
               <li></li>
@@ -169,25 +154,6 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-        </div>
-        <div
-          className={`${VisibleIcon?'block':'hidden'}`}
-          
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-8 h-8 fixed  z-[1] bottom-6 right-5 animate-bounce "
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
         </div>
       </div>
     </>
