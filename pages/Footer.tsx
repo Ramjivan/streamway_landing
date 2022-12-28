@@ -54,9 +54,9 @@ const Footer = () => {
       {/* End of Footer */}
 
       <div className="flex gap-10 text-base text-gray-500 place-content-center">
-        <Link href={'Privacypolicy'}>Privacy</Link>
-        <Link href={'#'}>Security</Link>
-        <Link href={'#'}>Terms</Link>
+        <Link href={'Privacypolicy'}>Privacy Policy</Link>
+        <Link href={'Return-and-cancallation-policy'}>Return and Cancallation Policy</Link>
+        <Link href={'Terms-and-service'}>Terms of Service</Link>
       </div>
     </div>
   );
