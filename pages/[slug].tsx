@@ -8,7 +8,7 @@ import matter from "gray-matter";
 import Image from "next/image";
 import { marked } from "marked";
 import Link from "next/link";
-import Navbar from "../Navbar";
+import Navbar from "./Navbar";
 
 
 const PostPage = ({
@@ -74,7 +74,6 @@ export async function getStaticPaths() {
       slug: filename.replace(".md", ""),
     },
   }));
-  console.log(paths);
 
   return {
     paths,

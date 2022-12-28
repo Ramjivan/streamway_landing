@@ -22,10 +22,10 @@ const ContactUs = () => {
 
       <div className="xl:container md:w-[90%] lg:w-[80%] mx-auto mb-96">
         <div className="text-center notosans">
-          <h1 className="xl:text-6xl text-4xl font-bold pb-5 xl:pb-14 lg:tracking-wider">
+          <h1 className="xl:text-6xl text-4xl font-bold pb-5 xl:pb-14 lg:tracking-wide">
             Contact customer support
           </h1>
-          <h4 className="xl:text-xl tracking-wide text-slate-600 ">
+          <h4 className="xl:text-xl text-slate-600 ">
             Have a question? Need help? Click this button to chat with our support
             team! <span className="hidden xl:inline"><br /></span>
             You can also email us at contact@streamway.com
@@ -51,8 +51,8 @@ const ContactUs = () => {
 
         {/* COMPANY DETAILS */}
 
-        <div className="container lg:w-[880px] p-5 mx-auto flex flex-col-reverse lg:flex lg:flex-row mt-[90px] notosans">
-          <div className="flex flex-col gap-3 lg:gap-5 leading-5 lg:tracking-wider mr-[136px] pt-10 lg:pt-0">
+        <div className="container lg:w-[880px] p-5 mx-auto flex flex-col-reverse lg:flex lg:flex-row mt-[30px] notosans">
+          <div className="flex flex-col gap-3 lg:gap-5 leading-5 lg:tracking-wide mr-[136px] pt-10 lg:pt-10">
             <Image src={logo} alt="Hello" className="xl:w-52 w-44 mb-5" />
             <h3 className="text-2xl font-bold ">Contact info</h3>
             <h5 className="text-slate-500 xl:text-md text-sm">
@@ -66,7 +66,7 @@ const ContactUs = () => {
               contact@streamway.com
             </h5>
           </div>
-          <div className="flex gap-10 flex-col xl:tracking-wider">
+          <div className="flex gap-5 flex-col xl:tracking-wide">
             <div>
               <h2 className="xl:text-2xl text-2xl font-semibold pb-4">Suggest a feature</h2>
               <h4 className="xl:text-xl text-lg text-slate-500">

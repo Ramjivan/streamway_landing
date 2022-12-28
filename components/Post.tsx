@@ -7,8 +7,8 @@ import Image from 'next/image'
 const Post = ({post}:{post:any}) => {
   return (
     <div className='mt-10 md:mt-0 mx-5'>
-      <Link href={`/blog/${post.slug}`} className="space-y-3">
-        <Image src={post.frontmatter.cover_image} width={500} height={10} className="w-full" alt=""/>
+      <Link href={`/${post.slug}`} className="space-y-3">
+        <Image src={post.frontmatter.cover_image} width={1000} height={10} className="w-[50%] mx-auto" alt=""/>
 
       <div className='text-black text-lg md:text-xl'>Posted on {post.frontmatter.date}</div>
 
