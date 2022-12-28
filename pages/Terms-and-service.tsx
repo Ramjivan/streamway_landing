@@ -12,7 +12,7 @@ const Termsandservice = () => {
 
             {/* Terms of Service >.>>>>>>>>>>>>>>>>>>>>>>>>*/}
             <div className='container mx-auto p-10'>
-                <h1 className='text-center text-7xl text-gray-800  roboto font-bold'>Terms of Service</h1>
+                <h1 className='text-center  text-[44px] md:text-7xl text-gray-800  roboto font-bold'>Terms of Service</h1>
                 <div className='mt-11'>
                     <p className='text-justify text-xl mt-4'>Please read these Terms of Service (“Terms”, “Terms of Service”) carefully before using the https://streamway.in website (the “Service”) operated by Streamway, Inc (“us”, “we”, or “our”).</p>
                     <p className='text-justify text-xl mt-4'>Your access to and use of the Service is conditioned upon your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who wish to access or use the Service.</p>

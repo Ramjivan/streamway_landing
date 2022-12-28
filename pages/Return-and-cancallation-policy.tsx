@@ -11,7 +11,7 @@ const Returnandcancallationpolicy = () => {
 
             {/* Return and Cancallation Policy  >.>>>>>>>>>>>>>>>>>>>>>>>>*/}
             <div className='container mx-auto p-10'>
-                <h1 className='text-center text-7xl text-gray-800  roboto font-bold'>Return and Cancallation Policy</h1>
+                <h1 className='text-center text-[44px] md:text-7xl text-gray-800  roboto font-bold'>Return and Cancallation Policy</h1>
                 <div className='mt-11'>
                     <p className='text-justify text-xl mt-4'>Streamway, Inc (“us”, “we”, or “our”) operates the https://streamway.in website (the “Service”).</p>
                     <p className='text-justify text-xl mt-4'>Streamway offers a 15 day trial to all registered users to use the Streamway Restreaming without any financial obligation. To continue using the SaaS product, the user must choose a User Package, as defined on Streamway's website and purchase a monthly or annual subscription. In addition there are some prepaid plans ranging from 1 day(24 hour) lifecycle to 25 days. This policy applies to subscribers and prepaid plan buyers that have paid a premium to use Streamway's Cloud Restreaming defined as "The Customer" in the below policy.</p>
