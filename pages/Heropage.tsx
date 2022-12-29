@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export const Heropage = () => {
     return (
-        <div className='container mx-auto pl-[40px] py-16 lg:pt-4 lg:pb-32 '>
+        <div className='container mx-auto lg:pl-[40px] py-16 lg:pt-4 lg:pb-32 '>
             <div className='flex lg:flex-row flex-col justify-between gap-2'>
                 <div className='pt-16'>
                     <h1 className='max-w-[550px] overflow-re  md:overflow-hidden lg:mx-0 lg:text-left text-center mx-auto mb-[130px] relative roboto text-[40px] lg:text-[80px] leading-[48px] lg:leading-[88px] before:content-[url(../pages/images/Group.png)] xl:before:content-[url(../pages/images/Groupline.png)]  before:absolute before:h-[18px] before:bottom-[-12px] lg:before:bottom-[123px] '>Make Your Live Stream Viral</h1>
@@ -31,11 +31,11 @@ export const Heropage = () => {
                         </div>
                     </ul>
                 </div>
-                <div className='relative left-5'>
+                <div className='relative left-0 lg:left-5'>
                     {/* <video src={Herovideo} autoPlay muted loop style={{ width: "400px" }} /> */}
                     {/* <Image src={Commentone} alt="img" /> */}
-                    <div className='table  relative before:content-[url(../pages/images/cmntthree.png)] before:absolute before:animate-animation-cmntbouncii before:top-[55%] before:z-20 before:left-[-14%]'>
-                        <div className='table  relative before:content-[url(../pages/images/commentstwo.png)] before:absolute before:animate-animation-cmntbouncii-rev before:top-[40%] before:z-20 before:left-[-2.5%]'>
+                    <div className='table  relative md:before:content-[url(../pages/images/cmntthree.png)] md:before:absolute md:before:animate-animation-cmntbouncii md:before:top-[70%] md:before:z-20 md:before:right-[-3%]'>
+                        <div className='table  relative md:before:content-[url(../pages/images/commentstwo.png)] md:before:absolute md:before:animate-animation-cmntbouncii-rev md:before:top-[50%] md:before:z-20 md:before:left-[-6.5%]'>
                             <video className='mt-7 lg:mt-0 mb-7 w-full relative z-10 ' autoPlay muted >
                                 <source src="./videoo.mp4" />
                             </video>
