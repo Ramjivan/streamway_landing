@@ -1,9 +1,13 @@
 // Blog section main page
 
-import Post from "../components/Post";
-import Navbar from "./Navbar";
-import Link from "next/link";
-const Blog=({posts , butn }:{posts:any , butn:boolean},)=> {
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
+import Link from 'next/link'
+import Post from '../components/Post'
+// import {sortByDate} from '../utils'
+import Navbar from './Navbar'
+export default function Blog({posts, butn}:{posts:any ,butn:boolean}) {
   return (
     <>
       <Navbar />
@@ -37,4 +41,36 @@ const Blog=({posts , butn }:{posts:any , butn:boolean},)=> {
   );
 }
 
-export default Blog
+// Reading frontmatter from .md files
+
+export async function getStaticProps(){
+  const files = fs.readdirSync(path.join('posts'))
+  
+  const posts = files.map((filename)=>{
+    const slug = filename.replace('.md','')
+
+    const markdownWithMeta = fs.readFileSync(
+      path.join('posts',filename),
+      'utf-8'
+      )
+    
+    const{data:frontmatter} = matter(markdownWithMeta)
+
+// frontmatter(title,image,description and date) and slug(body of blog)
+
+    return{
+      slug,
+      frontmatter,
+    }
+    
+  })
+ 
+// Returning sorted dates for blog 
+
+  return{
+    props:{
+      posts,
+      // :posts.sort(sortByDate),
+    },
+  }
+}

@@ -1,5 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
+import Link from 'next/link'
+import Footer from './Footer'
 
 const Privacypolicy = () => {
     return (
@@ -10,7 +12,7 @@ const Privacypolicy = () => {
 
             {/* Privacy Policy  >.>>>>>>>>>>>>>>>>>>>>>>>>*/}
             <div className='container mx-auto p-10'>
-                <h1 className='text-center text-7xl text-gray-800  roboto font-bold'>Privacy Policy</h1>
+                <h1 className='text-center  text-[44px] md:text-7xl text-gray-800  roboto font-bold'>Privacy Policy</h1>
                 <div className='mt-11'>
                     <p className='text-justify text-xl mt-4'>Streamway, Inc (“us”, “we”, or “our”) operates the https://streamway.in website (the “Service”).</p>
                     <p className='text-justify text-xl mt-4'>We will not use or share your information with anyone except as described in this Privacy Policy.</p>
@@ -66,7 +68,7 @@ const Privacypolicy = () => {
                 {/* Personal Information Collected from Connected Third Party Accounts */}
                 <h3 className='text-3xl mt-14 mb-6  roboto text-gray-700  font-semibold'>Personal Information Collected from Connected Third Party Accounts</h3>
                 <p className='text-justify text-xl '>If you link Streamway to a third party account, we may collect and store certain information.</p>
-                <p className='text-justify text-xl mt-4'>Streamway may allow you to connect a YouTube channel to your Streamway account. In this case, we will access certain information from YouTube about your channel using YouTube API Services. We may collect channel title, channel thumbnail, username / profile ID, email, access tokens, and live broadcasts. This includes information related to your live videos (such as comments, live viewer counts, ingest address, stream name). If you decide to connect a YouTube channel to your Streamway account, see Google’s privacy policy. When disconnecting a YouTube channel on Streamway, Streamway will delete the stored data associated with that YouTube channel. In addition, you can revoke access via Google’s security settings page. Similiarly Streamway allows you to collect more platforms like Facebook Twitch LinkedIn and many more. In that case, we will access certain information from that Third Party's API services. We will only collect necessary information to help you live broadcast on those Third Party platforms and to aggrigate and show analytics combined of all platforms. If you decide to connect a Third party Social platform (e.g. Facebook), we request you to check out respective platform's privacy policy. When disconnecting a Third party platform (e.g. Facebook page) on Streamway, Streamway will delete the stored data associated with that respective platform. In addition, you can revoke access via respective platform’s security settings page.</p>
+                <p className='text-justify text-xl mt-4'>Streamway may allow you to connect a YouTube channel to your Streamway account. In this case, we will access certain information from YouTube about your channel using YouTube API Services. We may collect channel title, channel thumbnail, username / profile ID, email, access tokens, and live broadcasts. This includes information related to your live videos (such as comments, live viewer counts, ingest address, stream name). If you decide to connect a YouTube channel to your Streamway account, see Google&lsquo;s privacy policy. When disconnecting a YouTube channel on Streamway, Streamway will delete the stored data associated with that YouTube channel. In addition, you can revoke access via Google&lsquo;s security settings page. Similiarly Streamway allows you to collect more platforms like Facebook Twitch LinkedIn and many more. In that case, we will access certain information from that Third Party&lsquo;s API services. We will only collect necessary information to help you live broadcast on those Third Party platforms and to aggrigate and show analytics combined of all platforms. If you decide to connect a Third party Social platform (e.g. Facebook), we request you to check out respective platform&lsquo;s privacy policy. When disconnecting a Third party platform (e.g. Facebook page) on Streamway, Streamway will delete the stored data associated with that respective platform. In addition, you can revoke access via respective platform&lsquo;s security settings page.</p>
 
                 {/* Children’s Privacy */}
                 <h3 className='text-3xl mt-14 mb-6  roboto text-gray-700  font-semibold'>Children’s Privacy</h3>
@@ -81,8 +83,14 @@ const Privacypolicy = () => {
 
                 {/* Contact Us */}
                 <h3 className='text-3xl mt-14 mb-6  roboto text-gray-700  font-semibold'>Contact Us</h3>
-                <p className='text-justify text-xl '>If you have any questions about this Privacy Policy, please contact us.</p>
+                <p className='text-justify text-xl '>If you have any questions about this Privacy Policy, please <Link href={"ContactUs"} className="text-blue-600 underline" >contact us.</Link> </p>
             </div>
+
+<hr />
+
+             {/* Footer >.>>>>>>>>>>>>>>>>>>>>>>>> */}
+             <Footer />
+            {/* Footer >.>>>>>>>>>>>>>>>>>>>>>>>> */}
         </div>
     )
 }

@@ -50,7 +50,7 @@ const Navbar = () => {
               <span className="flex ml-6 mb-9 absolute text-black space-x-3">
                 <Image src={Icon} alt="icon" width={45} height={45} />
                 <Link className="f mt-1 text-2xl" href={"#"}>
-                  Streamway
+                  StreamWay
                 </Link>
               </span>
             </div>

@@ -72,6 +72,33 @@ left: 38%;
     transform: translateZ(0);
   }
 }
+@keyframes cmntbouncee {
+  0% {
+    transform: translateZ(0);
+  }
+
+  50% {
+    transform: translate3d(0, 10px, 0);
+  }
+
+  100% {
+    transform: translateZ(0);
+  }
+}
+
+@keyframes cmntbouncerev {
+  0% {
+    transform: translateZ(0);
+  }
+
+  50% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  100% {
+    transform: translateZ(0);
+  }
+}
 @keyframes rotatee {
   0%{
       rotate: 360deg;
