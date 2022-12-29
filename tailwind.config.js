@@ -5,6 +5,8 @@ module.exports = {
   ],
   theme: {
     screens: {
+      'smm':'350px',
+      'sml':'400px',
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
@@ -26,7 +28,9 @@ module.exports = {
         'animation-bouncii': 'bouncee 4.5s linear infinite',
         'animation-bouncii-rev': 'bouncerev 4.5s linear infinite',
         'animation-rotatee': 'rotatee 60s linear infinite',
-        'animation-rotatee-rev': 'rotateerev 60s linear infinite'
+        'animation-rotatee-rev': 'rotateerev 60s linear infinite',
+        'marquee': 'marquee 20s linear infinite',
+        'marquee2': 'marquee2 20s linear infinite'
       }
     },
   },

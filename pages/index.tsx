@@ -9,8 +9,8 @@ import Footer from './Footer'
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import Post from '../components/Post'
 import Blog from './Blog'
+import Ourclient from './Ourclient'
 
 const index = ({posts, butn}:{posts:any, butn:boolean}) => {
   
@@ -18,6 +18,7 @@ const index = ({posts, butn}:{posts:any, butn:boolean}) => {
     <div>
       <Navbar />
       <Heropage />
+      <Ourclient/>
       <Features />
       <Testimonial />
       <OurClients />
