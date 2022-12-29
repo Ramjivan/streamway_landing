@@ -156,7 +156,7 @@ animation: changetxt 10s linear infinite;
 
 /* ----------Blog Section------------ */
 
-@media screen and (min-width:760px) {
+/* @media screen and (min-width:760px) {
   p{
     font-size:28px ;
     line-height: 2.5rem;
@@ -172,7 +172,7 @@ animation: changetxt 10s linear infinite;
     margin: 0 auto;
     padding: 60px;
   }
-}
+} */
 
 
 
