@@ -12,7 +12,8 @@ import matter from "gray-matter";
 import Post from '../components/Post'
 import Blog from './Blog'
 
-const index = ({posts}:{posts:any}) => {
+const index = ({posts, butn}:{posts:any, butn:boolean}) => {
+  
   return (
     <div>
       <Navbar />
@@ -20,7 +21,7 @@ const index = ({posts}:{posts:any}) => {
       <Features />
       <Testimonial />
       <OurClients />
-      <Blog posts={posts}/>
+      <Blog posts={posts} butn={butn}/>
       <CAB />
       <Footer/>
     </div>
@@ -49,10 +50,11 @@ export async function getStaticProps() {
   });
 
   // Returning sorted dates for blog
-
+  let butn = true;
   return {
     props: {
       posts,
+      butn
       // posts.sort(sortByDate),
     },
   };

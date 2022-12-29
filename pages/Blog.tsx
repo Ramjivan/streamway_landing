@@ -3,11 +3,11 @@
 import Post from "../components/Post";
 import Navbar from "./Navbar";
 import Link from "next/link";
-const Blog=({posts}:{posts:any})=> {
+const Blog=({posts , butn }:{posts:any , butn:boolean},)=> {
   return (
     <>
       <Navbar />
-      <div className="bg-[#f7faff] mb-96 ">
+      <div className="bg-[#f7faff]">
         <div className="py-20 tb:w-[85%] lg:w-[75%] md:w-[60%] w-[90%] mx-auto md:space-y-2">
           <p className="text-sm md:text-lg tracking-tight text-center text-gray-400">
             YOU WILL FIND HERE OUR COMPANY NEWS AND LATEST UPDATE
@@ -17,18 +17,20 @@ const Blog=({posts}:{posts:any})=> {
           </p>
           <div className="tb:grid tb:grid-cols-3 md:pt-20 pt-8">
             {/* Showing blogs on main blog page with Array  */}
-
-            {posts.map((post: any, index: any) => (
+         
+            {!butn?posts.map((post: any, index: any) => (
+              <Post key={index} post={post} />
+            )):
+            posts.slice(0,3).map((post: any, index: any) => (
               <Post key={index} post={post} />
             ))}
-
-            
+           
             
           </div>
-          <></>
-          <div className="flex place-content-center">
+          
+          {butn?<div className="flex place-content-center">
             <Link href={'MainBlog'} className="bg-[#fd6a5e] p-2 text-xl rounded-md text-white">More Posts</Link>
-            </div>
+            </div>:""}
         </div>
       </div>
     </>
