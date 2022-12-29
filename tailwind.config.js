@@ -13,6 +13,8 @@ module.exports = {
       'md': '768px',
       // => @media (min-width: 768px) { ... }
 
+      'tb': '900px',
+
       'lg': '1024px',
       // => @media (min-width: 1024px) { ... }
 
@@ -20,7 +22,12 @@ module.exports = {
       // => @media (min-width: 1280px) { ... }
 
       '2xl': '1536px',
-      'tb': '900px',
+
+      '3xl': '2000',
+
+      '4xl': '2500'
+
+      
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
@@ -33,8 +40,8 @@ module.exports = {
         'animation-bouncii-rev': 'bouncerev 4.5s linear infinite',
         'animation-rotatee': 'rotatee 60s linear infinite',
         'animation-rotatee-rev': 'rotateerev 60s linear infinite',
-        'marquee': 'marquee 20s linear infinite',
-        'marquee2': 'marquee2 20s linear infinite'
+        'marquee': 'marquee 25s linear infinite',
+        'marquee2': 'marquee2 25s linear infinite'
       }
     },
   },

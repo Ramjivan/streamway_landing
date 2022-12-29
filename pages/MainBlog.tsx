@@ -1,3 +1,5 @@
+// SEPARATE BLOG PAGE
+
 import React from 'react'
 import Blog from './Blog'
 import fs from 'fs'
