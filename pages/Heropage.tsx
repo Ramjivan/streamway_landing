@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export const Heropage = () => {
     return (
-        <div className='container mx-auto lg:pl-[40px] py-16 lg:pt-4 lg:pb-32 '>
+        <div className='container mx-auto px-3 md:px-0  lg:pl-[40px] py-16 lg:pt-4 lg:pb-32 '>
             <div className='flex lg:flex-row flex-col justify-between gap-2'>
                 <div className='pt-16'>
                     <h1 className='max-w-[550px] overflow-re  md:overflow-hidden lg:mx-0 lg:text-left text-center mx-auto mb-[130px] relative roboto text-[40px] lg:text-[80px] leading-[48px] lg:leading-[88px] before:content-[url(../pages/images/Group.png)] xl:before:content-[url(../pages/images/Groupline.png)]  before:absolute before:h-[18px] before:bottom-[-12px] lg:before:bottom-[123px] '>Make Your Live Stream Viral</h1>

@@ -1,19 +1,13 @@
 // Blog section main page
 
-<<<<<<< HEAD
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
+import Link from 'next/link'
 import Post from '../components/Post'
 // import {sortByDate} from '../utils'
 import Navbar from './Navbar'
-export default function Blog({posts}:{posts:any}) {
-=======
-import Post from "../components/Post";
-import Navbar from "./Navbar";
-import Link from "next/link";
-const Blog=({posts , butn }:{posts:any , butn:boolean},)=> {
->>>>>>> 6f2a7401e96f4628e40583729380b37579ef8e42
+export default function Blog({posts, butn}:{posts:any ,butn:boolean}) {
   return (
     <>
       <Navbar />
@@ -47,7 +41,6 @@ const Blog=({posts , butn }:{posts:any , butn:boolean},)=> {
   );
 }
 
-<<<<<<< HEAD
 // Reading frontmatter from .md files
 
 export async function getStaticProps(){
@@ -81,6 +74,3 @@ export async function getStaticProps(){
     },
   }
 }
-=======
-export default Blog
->>>>>>> 6f2a7401e96f4628e40583729380b37579ef8e42
