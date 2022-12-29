@@ -19,24 +19,31 @@ const Ourclient = () => {
 
         {/* First Layer of div */}
 
-        <div className="py-12 flex 2xl:gap-x-64 xl:gap-x-48 lg:gap-x-[163px] md:gap-x-28 sml:gap-x-16 smm:gap-x-9 gap-x-6 animate-marquee whitespace-nowrap overflow-hidden">
-          <Image src={c1} alt="" className="w-full"/>
+        <div className="py-12 flex animate-marquee whitespace-nowrap overflow-hidden">
+          <Image src={c1} alt="" className="w-full 3xl:px-40 2xl:px-32 xl:px-28 lg:px-20 md:px-12 sml:px-8 smm:px-4 px-3"/>
+          <Image src={c2} alt="" className="w-full 3xl:px-40 2xl:px-32 xl:px-28 lg:px-20 md:px-12 sml:px-8 smm:px-4 px-3"/>
+          <Image src={c1} alt="" className="w-full 3xl:px-40 2xl:px-32 xl:px-28 lg:px-20 md:px-12 sml:px-8 smm:px-4 px-3"/>
+          <Image src={c2} alt="" className="w-full 3xl:px-40 2xl:px-32 xl:px-28 lg:px-20 md:px-12 sml:px-8 smm:px-4 px-3"/>
+          <Image src={c1} alt="" className="w-full 3xl:px-40 2xl:px-32 xl:px-28 lg:px-20 md:px-12 sml:px-8 smm:px-4 px-3"/>
+          {/* <Image src={c2} alt="" className="w-full"/>
           <Image src={c2} alt="" className="w-full"/>
           <Image src={c1} alt="" className="w-full"/>
-          <Image src={c2} alt="" className="w-full"/>
-          <Image src={c1} alt="" className="w-full"/>
-          <Image src={c2} alt="" className="w-full"/>
+          <Image src={c2} alt="" className="w-full"/> */}
+
         </div>
 
         {/* Second Hidden layer of div */}
 
-        <div className="absolute flex 2xl:gap-x-64 xl:gap-x-48 lg:gap-x-[163px] md:gap-x-28 sml:gap-x-16 smm:gap-x-9 gap-x-6 top-0 py-12 animate-marquee2 whitespace-nowrap overflow-hidden">
-          <Image src={c1} alt="" className="w-full"/>
+        <div className="absolute flex top-0 py-12 animate-marquee2 whitespace-nowrap overflow-hidden">
+          <Image src={c1} alt="" className="w-full 3xl:px-40 2xl:px-32 xl:px-28 lg:px-20 md:px-12 sml:px-8 smm:px-4 px-3"/>
+          <Image src={c2} alt="" className="w-full 3xl:px-40 2xl:px-32 xl:px-28 lg:px-20 md:px-12 sml:px-8 smm:px-4 px-3"/>
+          <Image src={c1} alt="" className="w-full 3xl:px-40 2xl:px-32 xl:px-28 lg:px-20 md:px-12 sml:px-8 smm:px-4 px-3"/>
+          <Image src={c2} alt="" className="w-full 3xl:px-40 2xl:px-32 xl:px-28 lg:px-20 md:px-12 sml:px-8 smm:px-4 px-3"/>
+          <Image src={c1} alt="" className="w-full 3xl:px-40 2xl:px-32 xl:px-28 lg:px-20 md:px-12 sml:px-8 smm:px-4 px-3"/>
+          {/* <Image src={c2} alt="" className="w-full"/>
           <Image src={c2} alt="" className="w-full"/>
           <Image src={c1} alt="" className="w-full"/>
-          <Image src={c2} alt="" className="w-full"/>
-          <Image src={c1} alt="" className="w-full"/>
-          <Image src={c2} alt="" className="w-full"/>
+          <Image src={c2} alt="" className="w-full"/> */}
         </div>
       </div>
     </div>
@@ -44,3 +51,4 @@ const Ourclient = () => {
 };
 
 export default Ourclient;
+// 2xl:gap-x-60 xl:gap-x-48 lg:gap-x-[163px] md:gap-x-28 sml:gap-x-16 smm:gap-x-9 gap-x-6
