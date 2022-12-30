@@ -11,6 +11,7 @@ import path from "path";
 import matter from "gray-matter";
 import Post from '../components/Post'
 import Blog from './Blog'
+import Whatwedo from './What-we-do'
 
 const index = ({posts, butn}:{posts:any, butn:boolean}) => {
   
@@ -18,6 +19,7 @@ const index = ({posts, butn}:{posts:any, butn:boolean}) => {
     <div>
       <Navbar />
       <Heropage />
+      <Whatwedo />
       <Features />
       <Testimonial />
       <OurClients />
