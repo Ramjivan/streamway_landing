@@ -14,7 +14,7 @@ import Typewriter from 'typewriter-effect'
 const Features = () => {
     return (
         <div>
-            <div className='container mx-auto'>
+            <div className='container mx-auto py-20'>
 
                 {/* Use StreamWay to drive growth at Your Audience  ----HEAD LINE---- */}
                 <div className='px-2 '>

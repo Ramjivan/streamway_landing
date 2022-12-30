@@ -12,7 +12,7 @@ const Privacypolicy = () => {
 
             {/* Privacy Policy  >.>>>>>>>>>>>>>>>>>>>>>>>>*/}
             <div className='container mx-auto p-10'>
-                <h1 className='text-center  text-[44px] md:text-7xl text-gray-800  roboto font-bold'>Privacy Policy</h1>
+                <h1 className='text-left text-[44px] md:text-[55px] text-gray-800  roboto font-bold'>Privacy Policy</h1>
                 <div className='mt-11'>
                     <p className='text-justify text-xl mt-4'>Streamway, Inc (“us”, “we”, or “our”) operates the https://streamway.in website (the “Service”).</p>
                     <p className='text-justify text-xl mt-4'>We will not use or share your information with anyone except as described in this Privacy Policy.</p>

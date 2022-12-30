@@ -5,7 +5,18 @@ import Faq_question_answer from './Faq-question-answer'
 
 const Faq = () => {
   const [data, setData] = useState(Faq_question_answer);
-  const [show, setShow] = useState(false)
+  const [show, showToggle] = useState(10000)
+
+
+  let toggleFAQ = (n: any) => {
+    if (n === show) {
+      showToggle(10000)
+    }
+    else {
+      showToggle(n)
+    }
+
+  }
   return (
     <div className='container mx-auto'>
       <div>
@@ -14,17 +25,24 @@ const Faq = () => {
         <div className='py-10'>
           {/*  faq */}
           {
-            data.map((curElement) => {
-              const { id, question, answer } = curElement;
+            data.map((curElement, index) => {
+              console.log(curElement)
               return (
-
-                <div className='max-w-[900px] mx-auto my-10'>
-                  <h2 onClick={() => setShow(!show)} className='cursor-pointer shadow-lg shadow-cyan-500/50  text-2xl text-left py-8 px-7 relative'>
+                <div className="max-w-[900px] mx-auto my-10 ">
+                  <h2
+                    key={index}
+                    onClick={() => toggleFAQ(index)}
+                    className='cursor-pointer shadow-lg shadow-black-500/50  text-2xl text-left py-8 px-7 relative'
+                  >
                     {curElement.question}
-                    <Image src={Dropdown} alt="img" className={`inline-block w-[25px] absolute right-[3%] top-[40%] ${show ? `rotate-180` : `rotate-0`}`} />
+                    <Image src={Dropdown} alt="img" className={`inline-block w-[25px] absolute right-[3%] top-[40%] ${show === index ? `rotate-180` : `rotate-0`}`} />
                   </h2>
                   {
-                    show && <p className='shadow-lg shadow-cyan-500/50 duration-1000 text-2xl text-left pt-3 pb-8 px-7'> {curElement.answer} </p>
+                    show === index
+                      ?
+                      <p className='shadow-lg shadow-black-500/50 duration-1000 text-2xl text-left pt-3 pb-8 px-7'> {curElement.answer} </p>
+                      :
+                      ''
                   }
                 </div>
               )

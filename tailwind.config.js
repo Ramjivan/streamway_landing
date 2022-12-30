@@ -25,8 +25,8 @@ module.exports = {
       animation: {
         'animation-cmntbouncii': 'cmntbouncee 5.5s linear infinite',
         'animation-cmntbouncii-rev': 'cmntbouncerev 5.5s linear infinite',
-        'animation-rotatee': 'rotatee 60s linear infinite',
-        'animation-rotatee-rev': 'rotateerev 60s linear infinite',
+        'animation-rotatee': 'rotatee 120s linear infinite',
+        'animation-rotatee-rev': 'rotateerev 120s linear infinite',
         'animation-bouncii': 'bouncee 4.5s linear infinite',
         'animation-bouncii-rev': 'bouncerev 4.5s linear infinite',
       }

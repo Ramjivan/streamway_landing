@@ -90,9 +90,9 @@ export const footer = () => {
                 <hr />
                 <div className='flex md:justify-between'>
                     <div className='my-[30px]'>
-                        <span className='hover:underline mr-8'><Link href={'#'} className='text-sm text-[#2D2D2F] font-medium'>A Hopin Company </Link></span>
-                        <span className='hover:underline mr-8'><Link href={'#'} className='text-sm text-[#2D2D2F] font-medium'>Terms of Service </Link></span>
-                        <span className='hover:underline mr-8'><Link href={'#'} className='text-sm text-[#2D2D2F] font-medium'>Privacy Policy </Link></span>
+                        <span className='hover:underline mr-8'><Link href={'Return-and-cancallation-policy'} className='text-sm text-[#2D2D2F] font-medium'>Return and cancellation policy</Link></span>
+                        <span className='hover:underline mr-8'><Link href={'Terms-and-service'} className='text-sm text-[#2D2D2F] font-medium'>Terms of Service </Link></span>
+                        <span className='hover:underline mr-8'><Link href={'Privacypolicy'} className='text-sm text-[#2D2D2F] font-medium'>Privacy Policy </Link></span>
                         <span className='hover:underline mr-8'><Link href={'#'} className='text-sm text-[#2D2D2F] font-medium'>Help Center </Link></span>
                         <span className='hover:underline mr-8'><Link href={'#'} className='text-sm text-[#2D2D2F] font-medium'>Trademarks </Link></span>
                     </div>
