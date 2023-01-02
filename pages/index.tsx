@@ -9,7 +9,6 @@ import Footer from './Footer'
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import Post from '../components/Post'
 import Blog from './Blog'
 import Whatwedo from './What-we-do'
 

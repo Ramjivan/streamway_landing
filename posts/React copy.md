@@ -1,47 +1,25 @@
 ---
-title: 'How to start multiple streaming on streamway'
-date: 'Dec 18, 2022'
-desc: 'You Can setup your streamway platform by just following three simple steps.You Can setup your streamway platform by just following three simple steps.'
-cover_image: '/images/posts/Blog.jpg'
+title: 'स्ट्रीमवे पर मल्टीपल स्ट्रीमिंग कैसे शुरू करें'
+date: '18 दिसंबर 2022'
+desc: 'आप केवल तीन सरल चरणों का पालन करके अपना स्ट्रीमवे प्लेटफ़ॉर्म सेटअप कर सकते हैं। आप केवल तीन सरल चरणों का पालन करके अपना स्ट्रीमवे प्लेटफ़ॉर्म सेट कर सकते हैं।'
+cover_image: '/images/posts/streaming3.jpeg'
 # avatar_image: ''
 blog_writer: 'Unknown'
 ---
 
-Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
-haec praepes [partes epulae](http://cui.com/), in egisse de. Caecisque ter
-manus. Munere in exhalat, ferre sed [habe quaeque saepe](http://ne.org/fretum)
-verba caput ferarum _nubila_? Patriam Cyparisse tamen, **saxum** fide postponere
-pavida ne omnes etiam, atque. Sonuit omina sed sine haerebat illic fit a mora
-in.
+****************
+लोरेम इप्सम एक छद्म-लैटिन पाठ है जिसका उपयोग मुद्रण और टाइपसेटिंग उद्योगों में किया जाता है। 1500 के दशक के बाद से, जब एक अज्ञात प्रिंटर ने एक प्रकार की नमूना पुस्तक बनाने के लिए एक गैली टाइप किया, लोरेम इप्सम उद्योग का मानक डमी टेक्स्ट रहा है। यह न केवल पांच शताब्दियों तक जीवित रहा है, बल्कि इलेक्ट्रॉनिक टाइपसेटिंग में भी परिवर्तन हुआ है, जो अनिवार्य रूप से अपरिवर्तित है। इसने 1960 के दशक में लोरेम इप्सम पैसेज वाले लेट्रासेट शीट्स के रिलीज के साथ लोकप्रियता हासिल की, और हाल ही में एल्डस पेजमेकर जैसे डेस्कटॉप प्रकाशन सॉफ्टवेयर के साथ, जिसमें लोरेम इप्सम संस्करण शामिल हैं।
 
 
-## Turpius Aegides membris colat volentes fallere
+## स्ट्रीमवे पर एकाधिक स्ट्रीमिंग
 
-Ille fida formosus, et addunt viscera perdidit ad pondere quia tellus
-consequitur et quoque scinditque in. Ratis laborum instabat quaedam partem
-Phoebus, manus _partibus poenas_. Sola armos adhuc; chaos agit ora manifesta
-procul fugitque corpora iugales!
+लोरेम इप्सम केवल यादृच्छिक पाठ नहीं है, लोकप्रिय धारणा के विपरीत है। शास्त्रीय लैटिन साहित्य में इसकी उत्पत्ति का पता 45 ईसा पूर्व में लगाया जा सकता है, जिससे यह 2000 वर्ष से अधिक पुराना हो गया है। वर्जीनिया में हैम्पडेन-सिडनी कॉलेज के एक लैटिन प्रोफेसर रिचर्ड मैक्लिंटॉक ने लोरेम इप्सम मार्ग से अधिक अस्पष्ट लैटिन शब्दों में से एक को देखा, और शास्त्रीय साहित्य में शब्द के उद्धरणों के माध्यम से निर्विवाद स्रोत की खोज की। लोरेम इप्सम सिसरो के 'डी फिनिबस बोनोरम एट मालोरम' (द एक्सट्रीम ऑफ गुड एंड एविल) से लिया गया है, जिसे 45 ईसा पूर्व में लिखा गया था। यह पुस्तक पुनर्जागरण के दौरान नैतिकता के सिद्धांत पर एक लोकप्रिय ग्रंथ है। Lorem Ipsum की पहली पंक्ति, 'Lorem ipsum dolor Sit amet..', खंड 1.10.32 की एक पंक्ति से आती है। रुचि रखने वालों के लिए, लोरेम इप्सम का मानक हिस्सा 1500 के दशक से उपयोग किया जाता है, नीचे पुन: प्रस्तुत किया गया है। सिसेरो के 'डी फिनिबस बोनोरम एट मालोरम' के खंड 1.10.32 और 1.10.33 को भी उनके सटीक मूल रूप में पुन: प्रस्तुत किया गया है, साथ में एच. रैकहम के 1914 के अनुवाद से अंग्रेजी अनुवाद भी शामिल हैं।
 
-## O contra diu
+यह एक सर्वविदित तथ्य है कि एक पाठक पृष्ठ की पठनीय सामग्री से उसके लेआउट को देखते समय विचलित हो जाएगा। लोरेम इप्सम का उपयोग करने का मुद्दा यह है कि इसमें 'यहां सामग्री, यहां सामग्री' का उपयोग करने के विपरीत, कम या ज्यादा सामान्य पत्र वितरण है, जो इसे पठनीय अंग्रेजी की तरह दिखता है। कई डेस्कटॉप प्रकाशन पैकेज और वेब पेज संपादक अब लोरेम इप्सम को अपने डिफ़ॉल्ट मॉडल टेक्स्ट के रूप में उपयोग करते हैं, और 'लोरेम इप्सम' की खोज कई नई वेब साइटों को प्रकट करेगी। समय के साथ विभिन्न संस्करण सामने आए हैं, कभी संयोग से, कभी उद्देश्य पर (इंजेक्शन हास्य और इसी तरह)।
 
-Descendit _auras cum misi_ contactu tenax lacus, **quaerensque invitum
-premuntur** patria. Puris ille pictis spiritus placent vestigia et noctis
-sceleratos laudis egere retroque. Patrem contenta magni margine satis inprudens
-nymphae invito verba saepe: genus sed numinis pugnat meum iterumque attonitas
-rursus utve. Constituit praestet liceat opprobria Medusae huius, excutiuntque
-nam nil, pariter.
-
-![hi](/images/posts/Blog.jpg)
+![hi](/images/posts/streaming2.jpg)
 
 
-Coma **laudes manet** ausus hortaturque matrisque Veneris proximus tu iamque
-aptius claudit. Tmolus tetigere iussos animumque quid poplite Hippotaden? Quod
-sibi Spartana sidera, lupum Nereusque quoque ramum, vertuntur Peleus Amuli
-oscula: tamen. Surgere Epidaurius movit crede soceri Euboicam quoque.
+**लोरेम इप्सम** केवल यादृच्छिक पाठ नहीं है, लोकप्रिय धारणा के विपरीत है। शास्त्रीय लैटिन साहित्य में इसकी उत्पत्ति का पता 45 ईसा पूर्व में लगाया जा सकता है, जिससे यह 2000 वर्ष से अधिक पुराना हो गया है। वर्जीनिया में हैम्पडेन-सिडनी कॉलेज के एक लैटिन प्रोफेसर रिचर्ड मैक्लिंटॉक ने लोरेम इप्सम मार्ग से अधिक अस्पष्ट लैटिन शब्दों में से एक को देखा, और शास्त्रीय साहित्य में शब्द के उद्धरणों के माध्यम से निर्विवाद स्रोत की खोज की। लोरेम इप्सम सिसरो के 'डी फिनिबस बोनोरम एट मालोरम' (द एक्सट्रीम ऑफ गुड एंड एविल) से लिया गया है, जिसे 45 ईसा पूर्व में लिखा गया था। यह पुस्तक पुनर्जागरण के दौरान नैतिकता के सिद्धांत पर एक लोकप्रिय ग्रंथ है। Lorem Ipsum की पहली पंक्ति, 'Lorem ipsum dolor Sit amet..', खंड 1.10.32 की एक पंक्ति से आती है। रुचि रखने वालों के लिए, लोरेम इप्सम का मानक हिस्सा 1500 के दशक से उपयोग किया जाता है, नीचे पुन: प्रस्तुत किया गया है। सिसेरो के 'डी फिनिबस बोनोरम एट मालोरम' के खंड 1.10.32 और 1.10.33 को भी उनके सटीक मूल रूप में पुन: प्रस्तुत किया गया है, साथ में एच. रैकहम के 1914 के अनुवाद से अंग्रेजी अनुवाद भी शामिल हैं।
 
-Dolet certamina velle dexteriore mutatus saepe, tellure ubi unguibus, gestu.
-Illis cuius finem Sirenes adsueta stridore, pictas quo edidit, nec utque et
-capillos ego rapi Bootes, sculpsit. Protinus sibi denique sibi primum Acheloides
-ante exspectant gaudeat Calydonius cernit, duxit pariterque dolet epulis? Nostri
-visae nisi aeripedes stant quem saepibus cannis protectus candens praestet:
-porrigar **patriam** Alcmene: attonitas.
+यह एक सर्वविदित तथ्य है कि एक पाठक पृष्ठ की पठनीय सामग्री से उसके लेआउट को देखते समय विचलित हो जाएगा। लोरेम इप्सम का उपयोग करने का मुद्दा यह है कि इसमें 'यहां सामग्री, यहां सामग्री' का उपयोग करने के विपरीत, कम या ज्यादा सामान्य पत्र वितरण है, जो इसे पठनीय अंग्रेजी की तरह दिखता है। कई डेस्कटॉप प्रकाशन पैकेज और वेब पेज संपादक अब लोरेम इप्सम को अपने डिफ़ॉल्ट मॉडल टेक्स्ट के रूप में उपयोग करते हैं, और 'लोरेम इप्सम' की खोज कई नई वेब साइटों को प्रकट करेगी। समय के साथ विभिन्न संस्करण सामने आए हैं, कभी संयोग से, कभी उद्देश्य पर (इंजेक्शन हास्य और इसी तरह)।

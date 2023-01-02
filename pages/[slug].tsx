@@ -33,15 +33,15 @@ const PostPage = ({
             <div className="p-2 rounded-md text-white bg-stone-500 inline">
               Posted On {date}
             </div>
-            <div className="md:text-6xl text-3xl font-bold mt-5 md:leading-[75px]" >{title}</div>
-            <div className="md:text-3xl py-10  tracking-wider md:leading-10" >{desc}</div>
-            <div className="flex text-xl"><span className="p-2">Author:</span><span className=" bg-slate-500 p-2 text-white rounded-md">{blog_writer}</span></div>
+            <div className="md:text-6xl text-3xl font-bold mt-5 " >{title}</div>
+            <div className="md:text-3xl py-10  md:leading-10" >{desc}</div>
+            <div className="flex text-xl"><span className="p-2">Writer :</span><span className=" bg-slate-500 p-2 text-white rounded-md">{blog_writer}</span></div>
           </div>
 
           <div className="tb:w-[50%] grid place-items-center">
             <Image
               src={cover_image}
-              className="md:w-96 rounded-md"
+              className="md:w-full rounded-md"
               width="1000"
               height="800"
               alt=""
@@ -90,8 +90,6 @@ export async function getStaticProps({ params: { slug } }: { params: any }) {
   );
 
   const { data: frontmatter, content } = matter(markdownWithMeta);
-
-  console.log(slug);
   return {
     props: {
       frontmatter,

@@ -6,14 +6,14 @@ import Image from 'next/image'
 
 const Post = ({post}:{post:any}) => {
   return (
-    <div className='mt-10 md:mt-0 mx-5'>
-      <Link href={`/${post.slug}`} className="space-y-3">
-        <Image src={post.frontmatter.cover_image} width={1000} height={10} className="w-[50%] mx-auto" alt=""/>
+    <div className='mt-10 md:mt-0 mx-5 rounded-xl bg-white shadow-lg roboto'>
+      <Link href={`/${post.slug}`} className="space-y-2">
+        <div className='w-[90%] mx-auto pt-5'><Image src={post.frontmatter.cover_image} width={1000} height={10} className="shadow-lg rounded-lg" alt=""/></div>
 
-      <div className='text-black text-lg md:text-xl'>Posted on {post.frontmatter.date}</div>
+      <div className='px-5 pb-5 pt-2 space-y-4 '><div className='text-white text-sm w-fit p-2 mt-2 rounded-lg bg-stone-600 md:text-md'>Posted on {post.frontmatter.date}</div>
 
-      <h3 className='md:text-2xl leading-5 f'>{post.frontmatter.title}</h3> 
-      <div className='w-fit p-2 mt-20 rounded-md text-white'>{post.frontmatter.blog_writer}</div>   
+      <p className='md:text-2xl'>{post.frontmatter.title}</p>  
+      </div> 
       </Link>
 
     </div>

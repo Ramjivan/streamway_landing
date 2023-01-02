@@ -2,11 +2,11 @@
 title: 'How many Platforms can be streamed on streamway'
 date: 'Dec 15, 2022'
 desc: 'Streamway can connect multiple platforms at same time'
-cover_image: '/images/posts/Blog.jpg'
-# avatar_image: ''
+cover_image: '/images/posts/streaming.jpg'
+# avatar_image: '/images/posts/blogwriter.jpeg'
 blog_writer: 'Unknown'
 ---
-
+************
 Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
 haec praepes [partes epulae](http://cui.com/), in egisse de. Caecisque ter
 manus. Munere in exhalat, ferre sed [habe quaeque saepe](http://ne.org/fretum)
