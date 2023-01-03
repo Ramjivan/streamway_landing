@@ -4,7 +4,7 @@
 
     const testimonals = () => {
         return (
-            <div className='container mx-auto  mt-[130px] relative before:content-[url(../pages/images/fullopdot.svg)] before:animate-animation-bouncii before:absolute before:right-[10%] before:bottom-[0%] before:z-[]'>
+            <div className='container mx-auto  my-[80px] relative before:content-[url(../pages/images/fullopdot.svg)] before:animate-animation-bouncii before:absolute before:right-[10%] before:bottom-[0%] before:z-[]'>
                 <div className='flex flex-col lg:flex-row justify-evenly relative before:content-[url(../pages/images/fullopdot.svg)] before:opacity-30 before:animate-animation-bouncii-rev before:absolute before:left-[8%] before:bottom-0 before:z-[]'>
                     <div className='mx-auto lg:m-0 relative before:content-[url(../pages/images/tringrl.svg)] before:animate-animation-bouncii before:absolute before:left-[-15%] before:top-0 before:z-[6]'>
                         <div className='w-[300px] h-[300px] md:w-[441px] md:h-[441px] rounded-full bg-[#d4e5f7] relative before:content-[url(../pages/images/fullopdot.svg)] before:animate-animation-bouncii-rev before:absolute before:left-[-15%] before:top-0 before:z-[]'>

@@ -19,8 +19,8 @@ const Features = () => {
                 {/* Use StreamWay to drive growth at Your Audience  ----HEAD LINE---- */}
                 <div className='px-2 '>
                     <p className='text-center roboto text-[#adb1b5] text-[20px]'>FEATURES</p>
-                    <h1 className='text-5xl lg:text-[58px] relative before:content-[url(../pages/images/Group.png)] before:h-[21px] before:absolute before:bottom-[-5px] before:left-[13%] md:before:left-[38%]  leading-[64px] roboto max-w-[1000px] tracking-wide text-center mx-auto '>Use StreamWay to drive growth at your  &nbsp; 
-                    <div className='tracking-wide  text-5xl lg:text-[58px] roboto leading-[64px] inline-block'>
+                    <h1 className='text-3xl md:text-5xl lg:text-[58px] font-medium relative before:content-[url(../pages/images/Group.png)] before:h-[21px] before:absolute before:bottom-[-5px] before:left-[13%] md:before:left-[38%]  md:leading-[64px] roboto max-w-[1000px] tracking-wide text-center mx-auto '>Use StreamWay to drive growth at your  &nbsp; 
+                    <div className='tracking-wide text-3xl md:text-5xl lg:text-[58px] roboto leading-[64px] inline-block'>
                         <Typewriter
                             options={{
                                 autoStart: true,

@@ -18,10 +18,10 @@ const Faq = () => {
 
   }
   return (
-    <div className='container mx-auto'>
+    <div className='container mx-auto mt-20'>
       <div>
         <p className='roboto text-xl text-[#8A8A8A] tracking-widest text-center uppercase pb-2 leading-[28px]'>FAQ</p>
-        <h1 className='text-[58px] text-[#101621] text-center capitalize font-bold pb-2 leading-[28px]'>Question & Answer</h1>
+        <h1 className='text-[40px] md:text-[58px] text-[#101621] text-center capitalize font-bold pb-2 leading-[40px] md:leading-[58px]'>Question & Answer</h1>
         <div className='py-10'>
           {/*  faq */}
           {

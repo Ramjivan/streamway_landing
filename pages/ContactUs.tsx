@@ -1,6 +1,7 @@
 /* ------ CONTACT US PAGE ------ */
 import React from "react";
 import Navbar from './Navbar'
+import Footer from "./Footer";
 import Call_to_action from './Calltoaction'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
@@ -14,7 +15,7 @@ import Link from "next/link";
 const ContactUs = () => {
   return (
 
-    <div className="bg-[#ecf6ff] h-[580px]">
+    <div className="bg-[#ecf6ff] h-[1200px] md:h-[850px] lg:h-[570px]">
       {/* Navbar >.>>>>>>>>>>>>>>>>>>>>>>>> */}
       <Navbar />
       {/* Navbar >.>>>>>>>>>>>>>>>>>>>>>>>> */}
@@ -27,7 +28,7 @@ const ContactUs = () => {
           <h1 className="px-2 mx-auto text-center max-w-[800px] font-bold leading-[55px] lg:leading-[75px] tracking-tight text-[50px] lg:text-[70px] text-[#101621]">Feel free to contact us or just say hi!</h1>
         </div>
         <div className='relative  md:before:content-[url(../pages/images/Rectangleicon.png)] md:before:absolute md:before:animate-animation-bouncii md:before:top-[-12%] md:before:left-[4%] md:before:h-[57px] md:before:z-[-1]'>
-          <div className='flex justify-evenly mt-[90px]  max-w-[1080px] mx-auto flex-wrap px-5 relative z-10 lg:before:content-[url(../pages/images/Groupiconn.png)] before:animate-animation-rotatee md:before:absolute md:before:bottom-[4%] md:before:right-[-1%] md:before:h-[57px] md:before:z-[-1]'>
+          <div className='flex justify-evenly mt-[90px]  max-w-[1080px] mx-auto flex-wrap relative z-10 lg:before:content-[url(../pages/images/Groupiconn.png)] before:animate-animation-rotatee md:before:absolute md:before:bottom-[4%] md:before:right-[-1%] md:before:h-[57px] md:before:z-[-1]'>
             <Link href={'https://maps.app.goo.gl/XX5aG4NLcdp3y6Ag7'} target='_blank' >
               <div className=' max-w-[300px] h-[286px]  shadow-lg shadow-black-500/50  pt-[20px] pb-[45px] mt-5 md:mx-5 px-5 md:px-[41.5px] rounded-lg bg-white flex flex-col items-center'>
                 <div className="w-[100px] h-[100px] flex justify-center items-center">   <Image src={Locationicon} width={70} alt="img" className='inline-block' /></div>
@@ -42,7 +43,7 @@ const ContactUs = () => {
                 <p className=' w-[265px] font-medium text-xl  text-center relative bottom-2'>Contact@streamway.in <br /> <Link href={'tel:+918386853447'}>+91-8386853447</Link> <br /><Link href={'tel:+918764588825'}>+91-8764588825</Link></p>
               </div>
             </Link>
-            <div className='max-w-[300px] h-[286px] shadow-lg shadow-black-500/50  pt-[20px] pb-[45px] mt-5 md:mx-5 px-5 md:px-[41.5px] rounded-lg bg-white flex flex-col items-center'>
+            <div className='max-w-[300px] h-[286px] shadow-lg shadow-black-500/50  pt-[20px] pb-[45px] mt-5 md:mx-5 px-[41.5px] rounded-lg bg-white flex flex-col place-items-center'>
               <div className="w-[100px] h-[100px] flex justify-center items-center">  <Image src={Whatsappicon} width={180} alt="img" className="w-[90]" /></div>
               <span className="roboto text-xl text-[#8E8E8E] leading-[22px] pt-[17px] mb-[22px] border-b-4 rounded-[5%] border-solid border-b-[#ffb840]">Whatsapp</span>
               {/* <p className=' w-[265px] font-medium text-xl  text-center relative bottom-2'>Find on social media</p> */}
@@ -53,7 +54,7 @@ const ContactUs = () => {
       </div>
 
       {/*-------- Enquiry Now -------- */}
-      <div className="max-w-[1170px] mx-auto my-32">
+      <div className="max-w-[1170px] mx-auto my-32 px-5 ">
         <form action="" className="">
           <div className="flex justify-between">
             <div className="w-[48.8%] border-b-2 border-solid border-black">
@@ -93,6 +94,11 @@ const ContactUs = () => {
 
       {/*--------- Call To Action ---------- */}
       <Call_to_action />
+
+
+       {/* Navbar >.>>>>>>>>>>>>>>>>>>>>>>>> */}
+       <Footer />
+      {/* Navbar >.>>>>>>>>>>>>>>>>>>>>>>>> */}
     </div>
   );
 };

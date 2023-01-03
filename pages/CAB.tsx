@@ -6,7 +6,7 @@ import Im2 from "./images/211.svg"
 import Image from "next/image";
 const CAB = () => {
   return (
-    <div className=" bg-[#f5fbff]  relative max-w-full mx-auto">
+    <div className=" bg-[#f5fbff] relative max-w-full mx-auto">
       <Image
           src={Im2}
           className="absolute w-[15%] lg:w-[inherit] left-0px top-0"

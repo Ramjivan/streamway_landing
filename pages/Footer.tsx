@@ -32,12 +32,12 @@ export const footer = () => {
         <div>
             <div className=' mx-auto sm:container md:container pt-[72px] px-5 pb-10'>
                 <div className=''>
-                    <Link href={'#'}>  <Image src={Logo} width={100} alt="logo" /></Link>
+                    <Link href={'/'}>  <Image src={Logo} width={100} alt="logo" /></Link>
                     <p className='text-lg text-[#505868] font-medium mt-3'>The easiest way to create professional live streams</p>
                 </div>
                 <div className='mb-[55px] mt-[35px] flex flex-col md:flex-row  justify-center md:justify-between'>
                     <div>
-                        <h4 onClick={() => Companybtn()} className='text-base text-[#000000ce] relative font-bold mb-[30px] md:mb-[14px]'>Company <Image alt='img' className='text-[12px] block lg:hidden absolute right-0 mb-1 ml-1 w-[20px] h-[20px]' src={Dropdown} /></h4>
+                        <h4 onClick={() => Companybtn()} className='text-base text-[#000000ce] relative font-bold mt-[30px] mb-[5px] md:mb-[14px]'>Company <Image alt='img' className='text-[12px] block lg:hidden absolute right-0 mb-1 ml-1 w-[20px] h-[20px]' src={Dropdown} /></h4>
                         <ul className={`lg:block ${Company ? `block` : `hidden`} `}>
                             <li><Link href={'#'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>About</Link></li>
                             <li><Link href={'#'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Careers</Link></li>
@@ -46,7 +46,7 @@ export const footer = () => {
                         </ul>
                     </div>
                     <div>
-                        <h4 onClick={() => Productbtn()} className='text-base text-[#000000ce] relative font-bold mb-[30px] md:mb-[14px]'>Product <Image alt='img' className='text-[12px] block lg:hidden absolute right-0 mb-1 ml-1 w-[20px] h-[20px]' src={Dropdown} /></h4>
+                        <h4 onClick={() => Productbtn()} className='text-base text-[#000000ce] relative font-bold mt-[30px] mb-[5px] md:mb-[14px]'>Product <Image alt='img' className='text-[12px] block lg:hidden absolute right-0 mb-1 ml-1 w-[20px] h-[20px]' src={Dropdown} /></h4>
                         <ul className={`lg:block ${Product ? `block` : `hidden`} `}>
                             <li><Link href={'#'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Why StreamYard</Link></li>
                             <li><Link href={'#'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Multistreaming</Link></li>
@@ -61,7 +61,7 @@ export const footer = () => {
                         </ul>
                     </div>
                     <div>
-                        <h4 onClick={() => Communitybtn()} className='text-base text-[#000000ce] relative font-bold mb-[30px]  md:mb-[14px]'>Community <Image alt='img' className='text-[12px] block lg:hidden absolute right-0 mb-1 ml-1 w-[20px] h-[20px]' src={Dropdown} /></h4>
+                        <h4 onClick={() => Communitybtn()} className='text-base text-[#000000ce] relative font-bold mt-[30px] mb-[5px]  md:mb-[14px]'>Community <Image alt='img' className='text-[12px] block lg:hidden absolute right-0 mb-1 ml-1 w-[20px] h-[20px]' src={Dropdown} /></h4>
                         <ul className={`lg:block ${Community ? `block` : `hidden`} `}>
                             <li><Link href={'#'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Blog</Link></li>
                             <li><Link href={'#'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Affiliates</Link></li>
@@ -71,12 +71,12 @@ export const footer = () => {
                         </ul>
                     </div>
                     <div>
-                        <h4 onClick={() => StreamYardbtn()} className='text-base text-[#000000ce] relative font-bold mb-[30px] md:mb-[14px]'>StreamYard for <Image alt='img' className='text-[12px] block lg:hidden absolute right-0 mb-1 ml-1 w-[20px] h-[20px]' src={Dropdown} /></h4>
+                        <h4 onClick={() => StreamYardbtn()} className='text-base text-[#000000ce] relative font-bold mt-[30px] mb-[5px] md:mb-[14px]'>StreamYard for <Image alt='img' className='text-[12px] block lg:hidden absolute right-0 mb-1 ml-1 w-[20px] h-[20px]' src={Dropdown} /></h4>
                         <ul className={`lg:block ${StreamYard ? `block` : `hidden`} `}>
                             <li><Link href={'#'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Enterprise</Link></li>
                         </ul>
                     </div>
-                    <div>
+                    <div className='mt-10'>
                         <h4 className='text-base text-[#000000ce] font-bold  mb-[14px]'>Join us</h4>
                         <ul className='grid grid-cols-2 sm:grid-cols-5 lg:grid-cols-none'>
                             <li><Link href={'#'} className='hover:underline text-base leading-10 text-[#2d2d2fe2] font-medium'><Image alt='img' className='mr-1  relative inline-block  h-[20px] w-[20px]  top-[-1px]' src={Envelope} /> Webinar</Link></li>

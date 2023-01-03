@@ -15,14 +15,14 @@ import Whatwedo from './What-we-do'
 const index = ({posts, butn}:{posts:any, butn:boolean}) => {
   
   return (
-    <div>
+    <div className='overflow-hidden'>
       <Navbar />
       <Heropage />
       <Whatwedo />
       <Features />
       <Testimonial />
-      <OurClients />
       <Blog posts={posts} butn={butn}/>
+      <OurClients />
       <CAB />
       <Footer/>
     </div>
