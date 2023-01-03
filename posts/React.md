@@ -2,11 +2,12 @@
 title: 'How to start multiple streaming on streamway'
 date: 'Dec 18, 2022'
 desc: 'You Can setup your streamway platform by just following three simple steps.You Can setup your streamway platform by just following three simple steps.'
-cover_image: '/images/posts/Blog.jpg'
+cover_image: '/images/posts/streaming3.jpeg'
 # avatar_image: ''
 blog_writer: 'Unknown'
 ---
 
+*************
 Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
 haec praepes [partes epulae](http://cui.com/), in egisse de. Caecisque ter
 manus. Munere in exhalat, ferre sed [habe quaeque saepe](http://ne.org/fretum)

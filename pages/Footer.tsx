@@ -30,7 +30,7 @@ export const footer = () => {
     }
     return (
         <div>
-            <div className='lg:globe-container mx-auto sm:container md:container pt-[72px] px-5 pb-10'>
+            <div className=' mx-auto sm:container md:container pt-[72px] px-5 pb-10'>
                 <div className=''>
                     <Link href={'#'}>  <Image src={Logo} width={100} alt="logo" /></Link>
                     <p className='text-lg text-[#505868] font-medium mt-3'>The easiest way to create professional live streams</p>

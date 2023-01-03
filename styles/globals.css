@@ -156,23 +156,31 @@ animation: changetxt 10s linear infinite;
 
 /* ----------Blog Section------------ */
 
-/* @media screen and (min-width:760px) {
+@media screen and (min-width:760px) {
   p{
-    font-size:28px ;
-    line-height: 2.5rem;
+    font-size:24px ;
+    line-height: 2rem;
   }
   
   h2{
-    font-size: 45px;
+    font-size: 42px;
     font-weight: 600;
     padding: 50px 0 50px 0;
   }
+
+  hr{
+    margin-bottom: 50px;
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background-color: black;
+  }
+
   img[alt~="hi"]{
-    width: 40%;
     margin: 0 auto;
     padding: 60px;
   }
-} */
+}
 
 
 
