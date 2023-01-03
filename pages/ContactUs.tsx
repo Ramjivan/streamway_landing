@@ -86,7 +86,7 @@ const ContactUs = () => {
         </iframe>
         <div className="hidden md:block absolute rounded top-[14%] left-[20%] shadow-lg shadow-black-500/50  bg-white max-w-[440px] pr-[30px] py-[35px] pl-[50px]">
           <h3 className="text-[#101621] text-[42px] leading-[50px] font-bold ">Come say Hi!</h3>
-          <p className="text-lg roboto text-[#2A2A2A] pt-[5px] pb-[25px]">We're based in Jodhpur, a beautiful city just hours from the Rajasthan!</p>
+          <p className="text-lg roboto text-[#2A2A2A] pt-[5px] pb-[25px]">We&#39;re based in Jodhpur&#39; a beautiful city just hours from the Rajasthan!</p>
           <Link href={'https://maps.app.goo.gl/XX5aG4NLcdp3y6Ag7'} target='_blank'> <span className=" text-lg  roboto text-[#000000A1] bg-[#ffb840] cursor-pointer py-4 px-7 rounded-2xl hover:bg-yellow-900 duration-500 hover:text-red-600">WE ARE HERE</span> </Link>
         </div>
       </div>

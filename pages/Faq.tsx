@@ -28,9 +28,9 @@ const Faq = () => {
             data.map((curElement, index) => {
               console.log(curElement)
               return (
-                <div className="max-w-[900px] mx-auto my-10 ">
+                <div key={index} className="max-w-[900px] mx-auto my-10 ">
+
                   <h2
-                    key={index}
                     onClick={() => toggleFAQ(index)}
                     className='cursor-pointer shadow-lg shadow-black-500/50  text-2xl text-left py-8 px-7 relative'
                   >
