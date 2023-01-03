@@ -11,22 +11,22 @@ import Downarrow from './images/downarrow.png'
 import Dropdown from './images/dropdown.png'
 import Globe from './images/globe.png'
 
-export const footer = () => {
-    const [Company, SetCompany] = useState(false);
-    const [Product, SetProduct] = useState(false);
-    const [Community, SetCommunity] = useState(false);
-    const [StreamYard, SetStreamYard] = useState(false);
+export const Footer = () => {
+    const [Company, setCompany] = useState(false);
+    const [Product, setProduct] = useState(false);
+    const [Community, setCommunity] = useState(false);
+    const [StreamYard, setStreamYard] = useState(false);
     const Companybtn = () => {
-        SetCompany(!Company)
+        setCompany(!Company)
     }
     const Productbtn = () => {
-        SetProduct(!Product)
+        setProduct(!Product)
     }
     const Communitybtn = () => {
-        SetCommunity(!Community)
+        setCommunity(!Community)
     }
     const StreamYardbtn = () => {
-        SetStreamYard(!StreamYard)
+        setStreamYard(!StreamYard)
     }
     return (
         <div>
@@ -67,7 +67,7 @@ export const footer = () => {
                             <li><Link href={'#'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Affiliates</Link></li>
                             <li><Link href={'#'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Merchandise</Link></li>
                             <li><Link href={'#'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Help Center</Link></li>
-                            <li><Link href={'#'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>What's New</Link></li>
+                            <li><Link href={'#'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>What&#39;s New</Link></li>
                         </ul>
                     </div>
                     <div>
@@ -105,4 +105,4 @@ export const footer = () => {
         </div>
     )
 }
-export default footer
+export default Footer
