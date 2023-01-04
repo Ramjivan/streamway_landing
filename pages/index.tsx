@@ -10,6 +10,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Blog from './Blog'
+import Ourclient from './Ourclient'
 import Whatwedo from './What-we-do'
 
 const index = ({posts, butn}:{posts:any, butn:boolean}) => {
@@ -18,6 +19,7 @@ const index = ({posts, butn}:{posts:any, butn:boolean}) => {
     <div>
       <Navbar />
       <Heropage />
+      <Ourclient/>
       <Whatwedo />
       <Features />
       <Testimonial />

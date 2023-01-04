@@ -29,6 +29,8 @@ module.exports = {
         'animation-rotatee-rev': 'rotateerev 120s linear infinite',
         'animation-bouncii': 'bouncee 4.5s linear infinite',
         'animation-bouncii-rev': 'bouncerev 4.5s linear infinite',
+        'marquee': 'marquee 25s linear infinite',
+        'marquee2': 'marquee2 25s linear infinite',
       }
     },
   },
