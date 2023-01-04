@@ -3,6 +3,9 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+  .pause:hover div {
+    animation-play-state: paused;
+  }
 
 .notosans{
     font-family: 'Noto Sans', sans-serif;

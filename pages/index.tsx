@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './Navbar' 
 import Heropage from './Heropage'
 import Testimonial from './Testimonals'
-import OurClients from './OurClients'
+import Ourpartners from './Ourpartners'
 import Features from './Features'
 import CAB from './CAB'
 import Footer from './Footer'
@@ -24,7 +24,7 @@ const index = ({posts, butn}:{posts:any, butn:boolean}) => {
       <Features />
       <Testimonial />
       <Blog posts={posts} butn={butn}/>
-      <OurClients />
+      <Ourpartners />
       <CAB />
       <Footer/>
     </div>

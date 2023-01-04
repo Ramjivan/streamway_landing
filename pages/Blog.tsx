@@ -38,6 +38,7 @@ export default function Blog({ posts, butn }: { posts: any, butn: boolean }) {
             </div> : ""}
           </div>
         </div>
+        {butn?"":<Footer/>}
       </div>
     </>
   );

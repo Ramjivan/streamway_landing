@@ -31,7 +31,7 @@ export const Heropage = () => {
                         </div>
                     </ul>
                 </div>
-                <div className='relative left-0 lg:left-5'>
+                <div className='relative  lg:left-5'>
                     {/* <video src={Herovideo} autoPlay muted loop style={{ width: "400px" }} /> */}
                     {/* <Image src={Commentone} alt="img" /> */}
                     <div className='table  relative md:before:content-[url(../pages/images/cmntthree.png)] md:before:absolute md:before:animate-animation-cmntbouncii md:before:top-[70%] md:before:z-20 md:before:right-[-3%]'>

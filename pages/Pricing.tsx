@@ -119,7 +119,7 @@ export const Pricing = () => {
         </div>
       </div>
       {/* Pricing >.>>>>>>>>>>>>>>>>>>>>>>>> */}
-        <Image src={Pathline} alt="img" className='mx-auto -w-full mt-20' />
+      <Image src={Pathline} alt="img" className='mx-auto -w-full mt-20' />
 
       {/* Testimonals >.>>>>>>>>>>>>>>>>>>>>>>>> */}
       <Testimonals />

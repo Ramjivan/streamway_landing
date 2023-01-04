@@ -4,6 +4,7 @@ import c2 from "./images/client1.png";
 import Image from "next/image";
 
 const Ourclient = () => {
+
   return (
     <div className="w-full roboto ">
 
@@ -15,7 +16,7 @@ const Ourclient = () => {
 
       {/* smm,sml,md,lg,xl,2xl are screen sizes from tailwing.config.js */}
 
-      <div className="relative flex overflow-hidden 2xl:w-[85%] w-[90%] mx-auto">
+      <div className="pause relative cursor-pointer  flex overflow-hidden 2xl:w-[85%] w-[90%] mx-auto">
 
         {/* First Layer of div */}
 
