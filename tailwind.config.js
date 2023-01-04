@@ -22,6 +22,9 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
+      backgroundImage: {
+        'Call-to-action': "url('../pages/images/calltoactionbgimg.svg')",
+      },
       animation: {
         'animation-cmntbouncii': 'cmntbouncee 5.5s linear infinite',
         'animation-cmntbouncii-rev': 'cmntbouncerev 5.5s linear infinite',

@@ -47,12 +47,12 @@ const Navbar = () => {
         <div className="container mx-auto ">
           <nav className=" flex justify-between ">
             <div>
-              <span className="flex ml-6 mb-9 absolute text-black space-x-3">
+              <Link href={'/'} className="flex ml-6 mb-9 absolute text-black space-x-3">
                 <Image src={Icon} alt="icon" width={45} height={45} />
-                <Link className="f mt-1 text-2xl" href={"#"}>
+                <span className="f mt-1 text-2xl" >
                   StreamWay
-                </Link>
-              </span>
+                </span>
+              </Link>
             </div>
 
             <div className="pl-56 hidden md:block ">
@@ -60,7 +60,6 @@ const Navbar = () => {
                 <Link className="hover:text-red-700  space-x-2" href={"/"}>
                   <div className="flex">
                     Home
-
                   </div>
                 </Link>
                 <Link className="hover:text-red-700" href={"ContactUs"}>

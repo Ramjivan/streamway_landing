@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Navbar from './Navbar'
+import Footer from './Footer'
 import Tick from './images/tick.png'
 import Testimonals from './Testimonals'
 import Faq from './Faq'
@@ -128,6 +129,10 @@ export const Pricing = () => {
       {/* FAQ >.>>>>>>>>>>>>>>>>>>>>>>>> */}
       <Faq />
       {/* FAQ >.>>>>>>>>>>>>>>>>>>>>>>>> */}
+
+      {/* Navbar >.>>>>>>>>>>>>>>>>>>>>>>>> */}
+      <Footer />
+      {/* Navbar >.>>>>>>>>>>>>>>>>>>>>>>>> */}
     </div>
   )
 }
