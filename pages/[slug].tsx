@@ -1,6 +1,6 @@
 
 /* -------- Blog Content Individually --------- */ 
-
+import {NextSeo} from 'next-seo';
 import React from "react";
 import fs from "fs";
 import path from "path";
@@ -20,7 +20,31 @@ const PostPage = ({
   slug: any;
 }) => {
   return (
+
     <>
+    <NextSeo
+            title={title}
+            description={desc}
+            openGraph={{
+              type: 'article',
+              article: {
+                  publishedTime: `${date}`,
+                  // modifiedTime: '2022-01-21T18:04:43Z',
+                  authors: [
+                      `${blog_writer}`
+                  ],
+                  tags: ['Tag A', 'Tag B', 'Tag C'],
+              },
+              url: 'www.example.com/next-seo-blog',
+              // images: {
+              //     url: 'https://www.test.ie/images/cover.jpg',
+              //     width: 850,
+              //     height: 650,
+              //     alt: 'Photo of text',
+              // },
+              site_name: 'StreamWay'
+          }}
+            />
     {/* Navbar Imported */}
 
       <Navbar />
