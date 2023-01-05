@@ -11,7 +11,7 @@ const Returnandcancallationpolicy = () => {
 
             {/* Return and Cancallation Policy  >.>>>>>>>>>>>>>>>>>>>>>>>>*/}
             <div className='container mx-auto p-10'>
-                <h1 className='text-left text-[44px] md:text-[50px] text-gray-800  roboto font-bold'>Return and Cancallation Policy</h1>
+                <h4 className='text-left text-[44px] md:text-[50px] text-gray-800  roboto font-bold'>Return and Cancallation Policy</h4>
                 <div className='mt-11'>
                     <p className='text-justify text-xl mt-4'>Streamway, Inc (“us”, “we”, or “our”) operates the https://streamway.in website (the “Service”).</p>
                     <p className='text-justify text-xl mt-4'>Streamway offers a 15 day trial to all registered users to use the Streamway Restreaming without any financial obligation. To continue using the SaaS product, the user must choose a User Package, as defined on Streamway&#39;s website and purchase a monthly or annual subscription. In addition there are some prepaid plans ranging from 1 day(24 hour) lifecycle to 25 days. This policy applies to subscribers and prepaid plan buyers that have paid a premium to use Streamway&#39;s Cloud Restreaming defined as &#34;The Customer&#34; in the below policy.</p>
@@ -22,7 +22,7 @@ const Returnandcancallationpolicy = () => {
                 </div>
 
                 {/* Prorating */}
-                <h3 className='text-3xl mt-14 mb-6  roboto text-gray-700  font-semibold'>Prorating:</h3>
+                <h5 className='text-3xl mt-14 mb-6  roboto text-gray-700  font-semibold'>Prorating:</h5>
                 <ul className='list-disc ml-14' >
                     <li>
                         <p className='text-justify text-xl mt-4'>If a customer cancels a subscription during the ongoing billing month, effective cancellation date is the next billing date (end of billing cycle). This means that the customer will not be billed next time and will have until that date to use the Streamway Cloud Product - SaaS.</p>
@@ -39,14 +39,14 @@ const Returnandcancallationpolicy = () => {
                 </ul>
 
                 {/* Contact Us */}
-                <h3 className='text-3xl mt-14 mb-6  roboto text-gray-700  font-semibold'>Contact Us</h3>
+                <h5 className='text-3xl mt-14 mb-6  roboto text-gray-700  font-semibold'>Contact Us</h5>
                 <p className='text-justify text-xl '>If you have any further questions or need clearification about the Refund and Cancellation Policy, please reach out us. </p>
             </div>
 
-<hr />
+            <hr />
 
-             {/* Footer >.>>>>>>>>>>>>>>>>>>>>>>>> */}
-             <Footer />
+            {/* Footer >.>>>>>>>>>>>>>>>>>>>>>>>> */}
+            <Footer />
             {/* Footer >.>>>>>>>>>>>>>>>>>>>>>>>> */}
         </div>
     )

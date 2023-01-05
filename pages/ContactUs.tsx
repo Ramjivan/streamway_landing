@@ -30,7 +30,7 @@ const ContactUs = () => {
         <div className="container mx-auto">
           <div>
             <p className='roboto uppercase text-lg tracking-widest text-center text-[#878c90] mb-2'>contact us</p>
-            <h1 className="px-2 mx-auto text-center max-w-[800px] font-bold leading-[55px] lg:leading-[75px] tracking-tight text-[50px] lg:text-[70px] text-[#101621]">Feel free to contact us or just say hi!</h1>
+            <h3 className="px-2 mx-auto text-center max-w-[800px] font-bold leading-[55px] lg:leading-[75px] tracking-tight text-[50px] lg:text-[70px] text-[#101621]">Feel free to contact us or just say hi!</h3>
           </div>
           <div className='relative  md:before:content-[url(../pages/images/Rectangleicon.png)] md:before:absolute md:before:animate-animation-bouncii md:before:top-[-12%] md:before:left-[4%] md:before:h-[57px] md:before:z-[-1]'>
             <div className='flex justify-evenly mt-[90px]  max-w-[1080px] mx-auto flex-wrap relative z-10 lg:before:content-[url(../pages/images/Groupiconn.png)] before:animate-animation-rotatee md:before:absolute md:before:bottom-[4%] md:before:right-[-1%] md:before:h-[57px] md:before:z-[-1]'>

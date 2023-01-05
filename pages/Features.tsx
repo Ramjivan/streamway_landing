@@ -19,7 +19,7 @@ const Features = () => {
                 {/* Use StreamWay to drive growth at Your Audience  ----HEAD LINE---- */}
                 <div className='px-2 '>
                     <p className='text-center roboto text-[#adb1b5] text-[20px]'>FEATURES</p>
-                    <h1 className='text-3xl md:text-5xl lg:text-[58px] font-medium relative before:content-[url(../pages/images/Group.png)] before:h-[21px] before:absolute before:bottom-[-5px] before:left-[13%] md:before:left-[38%]  md:leading-[64px] roboto max-w-[1000px] tracking-wide text-center mx-auto '>Use StreamWay to drive growth at your  &nbsp; 
+                    <h2 className='text-3xl md:text-5xl lg:text-[58px] font-medium relative before:content-[url(../pages/images/Group.png)] before:h-[21px] before:absolute before:bottom-[-5px] before:left-[13%] md:before:left-[38%]  md:leading-[64px] roboto max-w-[1000px] tracking-wide text-center mx-auto '>Use StreamWay to drive growth at your  &nbsp; 
                     <div className='tracking-wide text-3xl md:text-5xl lg:text-[58px] roboto leading-[64px] inline-block'>
                         <Typewriter
                             options={{
@@ -40,14 +40,14 @@ const Features = () => {
                                     "Popularity"
                                 ]
                             }} />
-                        </div></h1>
+                        </div></h2>
                 </div>
 
                 {/* Reach more viewers, Go live on all platforms */}
                 <div className='flex flex-col-reverse lg:flex-row lg:mt-[68px] lg:py-[78px] px-4   justify-around relative before:content-[url(../pages/images/Rectangle.png)] before:absolute before:animate-animation-bouncii-rev before:right-[32%] before:bottom-0'>
                     <div className='m-auto lg:m-0'>
                         <div className='sm:mt-6 lg:mt-0'><Image src={Untitledblub} alt="img" className='inline mb-2 mr-[9px]' /><p className='inline roboto text-[#6d6d6d] text-sm md:text-lg '>feature-hint You can go live to over 40 streaming sites with few clicks</p> </div>
-                        <h1 className='text-[42px] max-w-[440px] leading-[53px] lg:ml-4'>Reach more viewers, Go live on all platforms</h1>
+                        <h2 className='text-[42px] max-w-[440px] leading-[53px] lg:ml-4'>Reach more viewers, Go live on all platforms</h2>
                         <p className='lg:ml-4 max-w-[520px] roboto text-[22px] leading-[34px] text-[#6d6d6d] tracking-wide mt-10 mb-[17px]'>Reach more viewers by live streaming to multiple platforms simultaneously such as Facebook Page, YouTube, Twitch, Vimeo, and many more.</p>
                         <div className="bg-[#f4f9fc] pt-9 pb-6 px-3 lg:pl-9 relative max-w-[460px] rounded lg:ml-4 mt-[55px] before:content-[url(../pages/images/right-quote.png)] before:h-[57px] before:absolute before:top-[-30px] before:left-5 before:rounded-[50%]  before:bg-white">
                             <p className='max-w-[400px] text-lg roboto leading-[28px]'>“Our team really feels great to use StreamWay specially their quality”</p>
@@ -66,7 +66,7 @@ const Features = () => {
                 <div className='flex flex-col-reverse lg:flex-row-reverse lg:mt-[68px] lg:py-[78px] px-4  justify-around  relative before:content-[url(../pages/images/Rectangle.png)] before:animate-animation-bouncii before:absolute before:right-[32%] before:bottom-0'>
                     <div className='m-auto lg:m-0'>
                         <div className='sm:mt-6 lg:mt-0 mx-auto'><Image src={Untitleddesign} alt="img" className='inline mr-[9px]' /><p className='inline roboto text-[#6d6d6d] md:text-lg '>FEATURE</p> </div>
-                        <h1 className='text-[42px] max-w-[460px] leading-[53px] ml-4'>Easy account integration</h1>
+                        <h4 className='text-[42px] max-w-[460px] leading-[53px] ml-4'>Easy account integration</h4>
                         <p className='ml-4 max-w-[500px] roboto text-[22px] leading-[34px] text-[#6d6d6d] tracking-wide mt-10 mb-[17px]'>No need to copy/paste RTMP ingests from popular streaming sites, each time you go live. Simply link your account
                         </p>
                         <p className='ml-4 max-w-[500px] roboto text-[22px] leading-[34px] text-[#6d6d6d] tracking-wide mt-10 mb-[17px]'>Add and link your accounts pr pages from Facebook, Twitch, Youtube to enjoy one-click streaming to all
@@ -87,7 +87,7 @@ const Features = () => {
                 <div className='flex flex-col-reverse lg:flex-row lg:mt-[68px] lg:py-[78px] px-4 justify-around  relative before:content-[url(../pages/images/Rectangle.png)] before:animate-animation-bouncii before:absolute before:right-[32%] before:bottom-0'>
                     <div className='m-auto lg:m-0'>
                         <div className='sm:mt-6 lg:mt-0'><Image src={Untitleddesignstar} alt="img" className='inline mb-2 mr-[9px]' /><p className='inline roboto text-[#6d6d6d] text-lg '>Do you want to add your livestreams to your website ?</p> </div>
-                        <h1 className='text-[42px] max-w-[500px] leading-[53px] ml-4'>Watch live streams directly from your Website</h1>
+                        <h3 className='text-[42px] max-w-[500px] leading-[53px] ml-4'>Watch live streams directly from your Website</h3>
                         <p className='ml-4 max-w-[520px] roboto text-[22px] leading-[34px] text-[#6d6d6d] tracking-wide mt-10 mb-[17px]'>Livepush offers HTML5 web player code to be placed into your website as Iframe snippet.</p>
                         <div className="bg-[#f4f9fc] pt-9 pb-6 px-3 lg:pl-9 relative max-w-[460px] rounded lg:ml-4 mt-[55px] before:content-[url(../pages/images/right-quote.png)] before:h-[57px] before:absolute before:top-[-30px] before:left-5 before:rounded-[50%]  before:bg-white">
                             <div className='grid grid-cols-2 leading-7'>
@@ -122,7 +122,7 @@ const Features = () => {
                 <div className='flex flex-col-reverse lg:flex-row-reverse lg:mt-[68px] lg:py-[78px] px-4 justify-around  relative before:content-[url(../pages/images/Rectangle.png)] before:animate-animation-bouncii before:absolute md:before:right-[32%] before:left-[0%]  before:bottom-0'>
                     <div className='m-auto lg:m-0'>
                         <div className='sm:mt-6 lg:mt-0'><Image src={FeaIcon} width={49} alt="img" className='inline mb-4 ml-4 mr-[9px]' /><p className='inline roboto text-[#6d6d6d] text-lg '>FEATURE</p> </div>
-                        <h1 className='text-[42px] max-w-[440px] leading-[53px] ml-4'>Make live streams Interactive with Multi Chat Overlays</h1>
+                        <h4 className='text-[42px] max-w-[440px] leading-[53px] ml-4'>Make live streams Interactive with Multi Chat Overlays</h4>
                         <p className='ml-4 max-w-[520px] roboto text-[22px] leading-[34px] text-[#6d6d6d] tracking-wide mt-10 mb-[17px]'>You can use our Multi Chat overlay url to create an HTML/Browser overlay using your favorite encoders like OBS, Xplit, SLOBS etc.
                         </p>
                         <div className="bg-[#f4f9fc] pt-9 pb-6 px-3 lg:pl-9 relative max-w-[460px] rounded lg:ml-4 mt-[55px] before:content-[url(../pages/images/right-quote.png)] before:h-[57px] before:absolute before:top-[-30px] before:left-5 before:rounded-[50%]  before:bg-white">

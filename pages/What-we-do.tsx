@@ -6,11 +6,11 @@ import Wwd_thrdimg from './images/wwdimg3.png'
 
 export const Whatwedo = () => {
   return (
-    <div className='bg-[#f2f7ff7a] '>
+    <div className='bg-[#f8f9fa] '>
       <div className='container mx-auto pt-[100px] pb-[120px] px-10'>
         <div>
           <p className='roboto uppercase text-base text-center text-[#ADB1B5]'>What we do</p>
-          <h2 className='mx-auto max-w-[700px] text-3xl font-bold md:font-semibold  lg:text-[58px] lg:leading-[64px] text-center  relative lg:before:content-[url(../pages/images/wline.png)] before:absolute before:left-[5%]  before:top-[61%] before:z-[1]'>Be everywhere at once</h2>
+          <h3 className='mx-auto max-w-[700px] text-3xl font-bold md:font-semibold  lg:text-[58px] lg:leading-[64px] text-center  relative lg:before:content-[url(../pages/images/wline.png)] before:absolute before:left-[5%]  before:top-[61%] before:z-[1]'>Be everywhere at once</h3>
           <h4 className='mx-auto max-w-[900px] text-2xl lg:text-[40px]  lg:leading-[64px] text-center mt-4'>Multistream anywhere you need at the same time.</h4>
         </div>
         <div className='relative  md:before:content-[url(../pages/images/Rectangleicon.png)] md:before:absolute md:before:animate-animation-bouncii md:before:top-[-12%] md:before:left-[4%] md:before:h-[57px] md:before:z-[-1]'>

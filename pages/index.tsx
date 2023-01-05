@@ -19,7 +19,7 @@ const index = ({ posts, butn }: { posts: any, butn: boolean }) => {
   return (
     <div className='overflow-hidden'>
       <NextSeo
-        title="StreamWay | The Premier Multistreaming Platform"
+        title="StreamWay | Your highway to live streaming"
         description="StreamWay is the ultimate destination for all your live streaming needs. With our advanced multistreaming technology, you can easily stream to multiple platforms at once. Join the StreamWay community and start streaming today!"
         openGraph={{
           url: 'https://www.mypage.com',
