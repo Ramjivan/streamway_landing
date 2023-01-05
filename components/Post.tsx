@@ -2,9 +2,11 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
+
 // Design of Main blog page 
 
 const Post = ({post}:{post:any}) => {
+  
   return (
     <div className='mt-10 md:mt-0 mx-5 rounded-xl bg-white shadow-lg roboto'>
       <Link href={`/${post.slug}`} className="space-y-2">

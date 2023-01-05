@@ -1,5 +1,5 @@
 // Blog section main page
-
+import {NextSeo} from 'next-seo';
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
@@ -10,6 +10,27 @@ import Navbar from './Navbar'
 export default function Blog({ posts, butn }: { posts: any, butn: boolean }) {
   return (
     <>
+    {butn?"":
+    <NextSeo
+            title="StreamWay Blogs-StreamWay | Discover the Benefits of Streamway"
+            description="Are you tired of only being able to stream on one platform at a time? Streamway allows you to simultaneously broadcast your content on multiple platforms, reaching a wider audience and increasing your engagement. In this blog post, we'll explore the top benefits of streamway and how it can help you grow your online presence."
+            canonical="www.example.com/next-seo-blog"
+            openGraph={{
+                type: 'article',
+                article: {
+                    publishedTime: '2022-06-21T23:04:13Z',
+                    modifiedTime: '2022-01-21T18:04:43Z',
+                    authors: [
+                        'https://www.example.com/authors/@firstnameA-lastnameA',
+                        'https://www.example.com/authors/@firstnameB-lastnameB',
+                    ],
+                    tags: ['Tag A', 'Tag B', 'Tag C'],
+                },
+                url: 'www.example.com/next-seo-blog',
+                site_name: 'Next Blog'
+            }}
+        />
+        }
       <div className='bg-[#ffff]'>
         <Navbar />
         <div className="bg-[#ffff]">
