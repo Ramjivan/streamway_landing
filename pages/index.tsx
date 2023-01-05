@@ -1,5 +1,6 @@
 import React from 'react'
-import Navbar from './Navbar' 
+import { NextSeo } from "next-seo";
+import Navbar from './Navbar'
 import Heropage from './Heropage'
 import Testimonial from './Testimonals'
 import Ourpartners from './Ourpartners'
@@ -13,20 +14,36 @@ import Blog from './Blog'
 import Ourclient from './Ourclient'
 import Whatwedo from './What-we-do'
 
-const index = ({posts, butn}:{posts:any, butn:boolean}) => {
-  
+const index = ({ posts, butn }: { posts: any, butn: boolean }) => {
+
   return (
     <div className='overflow-hidden'>
+      <NextSeo
+        title="StreamWay | The Premier Multistreaming Platform"
+        description="StreamWay is the ultimate destination for all your live streaming needs. With our advanced multistreaming technology, you can easily stream to multiple platforms at once. Join the StreamWay community and start streaming today!"
+        openGraph={{
+          url: 'https://www.mypage.com',
+          title: 'StreamWay',
+          description: 'StreamWay is the ultimate destination for all your live streaming needs. With our advanced multistreaming technology, you can easily stream to multiple platforms at once. Join the StreamWay community and start streaming today!',
+          images: [
+            {
+              url: 'https://www.mypage.com/image1.jpg',
+              alt: 'Image Alt Text'
+            }
+          ],
+          site_name: 'StreamWay'
+        }}
+      />
       <Navbar />
       <Heropage />
-      <Ourclient/>
+      <Ourclient />
       <Whatwedo />
       <Features />
       <Testimonial />
-      <Blog posts={posts} butn={butn}/>
+      <Blog posts={posts} butn={butn} />
       <Ourpartners />
       <CAB />
-      <Footer/>
+      <Footer />
     </div>
   )
 }

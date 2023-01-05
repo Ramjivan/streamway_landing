@@ -82,7 +82,7 @@ const Faq = () => {
                     className='cursor-pointer shadow-lg shadow-black-500/50  text-2xl text-left py-8 px-7 relative'
                   >
                     {curElement.question}
-                    <Image src={Dropdown} alt="img" className={`inline-block w-[25px] absolute right-[3%] top-[40%] ${show === index ? `rotate-180` : `rotate-0`}`} />
+                    <Image src={Dropdown} alt="img" className={`inline-block w-[25px] absolute right-[3%] top-[40%] ${show === index ? `rotate-180 duration-500` : `rotate-0 duration-500`}`} />
                   </h2>
                   {
                     show === index
