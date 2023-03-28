@@ -2,9 +2,16 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Icon from "./images/icon.png";
+import { useRouter } from "next/router";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 
 const Navbar = () => {
+
+  const router = useRouter()
+  const currentRoute = router.pathname
+
   const [NevScroll, setNavScroll] = useState(false);
   // Mobile View
   const [MobileView, setMobileView] = useState(false);
@@ -40,68 +47,83 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`w-screen  z-50 overflow-hidden   scroll-smooth ${
-          NevScroll ? "backdrop-blur-[20px] border-l-indigo-100 bg-opacity-70 shadow-lg py-6 fixed" : "bg-transparent py-12"
-        } duration-500 `}
+        className={`w-screen  z-50 scroll-smooth ${NevScroll ? "backdrop-blur-[20px] border-l-indigo-100 bg-opacity-70 shadow-lg py-4 fixed duration-700" : "bg-transparent py-6"
+          } duration-500 `}
       >
         <div className="container mx-auto ">
-          <nav className=" flex justify-between ">
+          <nav className=" flex justify-between items-center ">
             <div>
-              <Link href={'/'} className="flex ml-6 mb-9 absolute text-black space-x-3">
-                <Image src={Icon} alt="icon" width={45} height={45} />
-                <span className="f mt-1 text-2xl" >
+              <Link href={'/'} className="flex items-center text-black ">
+                <Image src={Icon} alt="icon" className="w-12 md:w-16" />
+                <span className="f text-lg lg:text-2xl ml-2 font-medium" >
                   StreamWay
                 </span>
               </Link>
             </div>
 
-            <div className="pl-56 hidden md:block ">
-              <ul className="flex space-x-10 pt-2 text-black ">
-                <Link className="hover:text-red-700  space-x-2" href={"/"}>
+            <div className="hidden md:block ">
+              <ul className="flex space-x-6 lg:space-x-10 pt-2 text-black ">
+                <Link href={"/"} className={`${currentRoute === '/' ? `text-red-900` : ``} hover:text-red-700  font-medium md:text-[14px] lg:text-[15px] xl:text-[17px]  `}>
                   <div className="flex">
                     Home
                   </div>
                 </Link>
-                <Link className="hover:text-red-700" href={"ContactUs"}>
+                <Link href={"../ContactUs"} className={`${currentRoute === '/ContactUs' ? `text-red-900` : ``} hover:text-red-700  font-medium md:text-[14px] lg:text-[15px] xl:text-[17px]  `}>
                   Contact
                 </Link>
-                <Link className="hover:text-red-700" href={"Pricing"}>
+                <Link href={"../Pricing"} className={`${currentRoute === '/Pricing' ? `text-red-900` : ``} hover:text-red-700  font-medium md:text-[14px] lg:text-[15px] xl:text-[17px] `}>
                   Pricing
                 </Link>
-                <Link className="hover:text-red-700" href={"MainBlog"}>
-                  Blogs
+                <Link href={""} className={`${currentRoute === '/Solution/Religious' || currentRoute === '/Solution/Fitness' ||  currentRoute === '/Solution/Game'  ? `text-red-900` : ``} hover:text-red-700  font-medium md:text-[14px] lg:text-[15px] xl:text-[17px] dropdown-menu `}>
+                  <div className="relative">
+                    <span className="">Solution <FontAwesomeIcon icon={faAngleDown} className='relative top-[1px]' /></span>
+                    <ul className="hidden bg-white absolute z-30 pt-2 top-[100%] shadow-lg w-[280px] p-1 rounded-md">
+                      <Link href={'../Solution/Religious'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Religious</li></Link>
+                      <Link href={'../Solution/Fitness'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Fitness</li></Link>
+                      <Link href={'../Solution/Game'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Game</li></Link>
+                      <Link href={'../Solution/Religious'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Life Couch</li></Link>
+                      <Link href={'../Solution/Religious'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Marketers</li></Link>
+                      <Link href={'../Solution/Religious'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Online Learning</li></Link>
+                      <Link href={'../Solution/Religious'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Music</li></Link>
+                      <Link href={'../Solution/Religious'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Product Launch</li></Link>
+                    </ul>
+                  </div>
                 </Link>
-                <Link className="hover:text-red-700" href={"#"}>
+                <Link href={"../MainBlog"} className={`${currentRoute === '/MainBlog' ? `text-red-900` : ``} hover:text-red-700  font-medium md:text-[14px] lg:text-[15px] xl:text-[17px]  `}>
+                  Blogs & howTo
+                </Link>
+                <Link href={"#"} className={`${currentRoute === '' ? `text-red-900` : ``} hover:text-red-700  font-medium md:text-[14px] lg:text-[15px] xl:text-[17px]  `} >
                   Docs
                 </Link>
               </ul>
             </div>
-
-            <div className="space-x-4 hidden md:flex md:mr-16">
-              <Link href={"#"} className="font-bold mt-2">
-                Login
-              </Link>
-              <div className="relative w-40 h-10 group bg-[#655c97] text-white">
-                <div className="absolute bg-[#973c56]  z-10 left-0 w-0 h-10  group-hover:w-full   duration-700"></div>
-                <button className="absolute  w-40 h-10 bg-transparent z-20 ">
-                  Create Your Event
-                </button>
+            <div className="hidden md:block">
+              <div className="flex ">
+                <Link href={"https://localhost:3000/login"} className="font-bold mt-2 mr-4">
+                  <span className="px-4 lg:px-8 py-2 rounded-[5px] text-white bg-[#EF6458] hover:bg-[#aa1e12] duration-200 ">
+                    Login
+                  </span>
+                </Link>
+                <Link href={"https://localhost:3000/signup"} className="font-bold mt-2">
+                  <span>
+                    SignUp
+                  </span>
+                </Link>
               </div>
             </div>
           </nav>
         </div>
-
         {/* Mobile  View */}
-        <div className="  md:hidden" onClick={() => mobileSlideBar()}>
-          <div className="flex flex-row-reverse mr-3">
+        <div className=" md:hidden" onClick={() => mobileSlideBar()}>
+          <div className="fixed  top-6 right-0 inline-block mr-3">
             <button
               className="bg-[#973c56]  flex flex-col h-12 w-12 bg- rounded justify-center items-center group"
               onClick={() => setIsOpen(!isOpen)}
             >
               <div
                 className={`${genericHamburgerLine} ${isOpen
-                    ? "rotate-45 translate-y-3 opacity-50 group-hover:opacity-100"
-                    : "opacity-50 group-hover:opacity-100"
+                  ? "rotate-45 translate-y-3 opacity-50 group-hover:opacity-100"
+                  : "opacity-50 group-hover:opacity-100"
                   }`}
               />
               <div
@@ -110,8 +132,8 @@ const Navbar = () => {
               />
               <div
                 className={`${genericHamburgerLine} ${isOpen
-                    ? "-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100"
-                    : "opacity-50 group-hover:opacity-100"
+                  ? "-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100"
+                  : "opacity-50 group-hover:opacity-100"
                   }`}
               />
             </button>
@@ -122,39 +144,50 @@ const Navbar = () => {
               } `}
           >
             <ul className="divide-y-[1px] divide-opacity-10 divide-gray-400 space-y-4 ">
-              <li></li>
-              <li>
-                <p className="ml-4 hover:text-text-red-700 mt-2">Home</p>
-              </li>
-              <li>
-                <p className="ml-4 hover:text-text-red-700 mt-2">Porifolio</p>
-              </li>
-              <li>
-                <p className="ml-4 hover:text-text-red-700 mt-2">Pages</p>
-              </li>
-              <li>
-                <p className="ml-4 hover:text-text-red-700 mt-2">Blog</p>
-              </li>
-              <li>
-                <p className="ml-4 hover:text-text-red-700 mt-2">Dose</p>
-              </li>
+              <Link href={"/"} className={`${currentRoute === '/' ? `text-red-900` : ``}`}>
+                <li className="flex">
+                  Home
+                </li>
+              </Link>
+              <Link href={"ContactUs"} className={`${currentRoute === '/ContactUs' ? `text-red-900` : ``} ml-4 hover:text-text-red-700 mt-2`} >
+                <li>
+                  Contact
+                </li>
+              </Link>
+              <Link href={"Pricing"} className={`${currentRoute === '/Pricing' ? `text-red-900` : ``} ml-4 hover:text-text-red-700 mt-2`} >
+                <li>
+                  Pricing
+                </li>
+              </Link>
+              <Link href={"Solution"} className={`${currentRoute === '/Solution' ? `text-red-900` : ``} ml-4 hover:text-text-red-700 mt-2`}>
+                <li>
+                  Solution
+                </li>
+              </Link>
+              <Link href={"MainBlog"} className={`${currentRoute === '/MainBlog' ? `text-red-900` : ``} ml-4 hover:text-text-red-700 mt-2`} >
+                <li>
+                  Blogs
+                </li>
+              </Link>
+              <Link href={"#"} className={` ml-4 hover:text-text-red-700 mt-2`}>
+                <li>
+                  Docs
+                </li>
+              </Link>
 
               <li className="grid place-items-center">
                 <div className="space-x-4 flex mt-5">
                   <Link href={"#"} className="font-bold mt-2">
-                    Login
+                    <span>
+                      Login & SignUp
+                    </span>
                   </Link>
-                  <div className="relative w-40 h-10 group bg-[#655c97] text-white">
-                    <div className="absolute bg-[#973c56]  z-10 left-0 w-0 h-10  group-hover:w-full   duration-700"></div>
-                    <button className="absolute  w-40 h-10 bg-transparent z-20 ">
-                      Create Your Event
-                    </button>
-                  </div>
                 </div>
               </li>
             </ul>
           </div>
         </div>
+
       </div>
     </>
   );

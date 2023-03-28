@@ -1,8 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
   .pause:hover div {
     animation-play-state: paused;
   }
@@ -118,23 +120,6 @@ left: 38%;
     rotate: 360deg;
   }
 }
-/* .fstfeature-headline span::after{
-content: "";
-animation: changetxt 10s linear infinite;
-}
-@keyframes changetxt{
-  0%{content:"Audience" ;}
-  10%{content:"crowdcast" ;}
-  20%{content:"community" ;}
-  30%{content:"business" ;}
-  40%{content:"reach" ;}
-  50%{content:"confidence" ;}
-  60%{content:"dream" ;}
-  70%{content:"Live Shows" ;}
-  80%{content:"Conferences" ;}
-  90%{content:"events" ;}
-  100%{content: "popularity";}
-} */
 
 
 
@@ -196,4 +181,28 @@ animation: changetxt 10s linear infinite;
 @keyframes marquee{
   0%{transform: translateX(0%);}
   100%{transform: translateX(-100%);}
+}
+
+.link__active:active {
+  color: red
+}
+.dropdown-menu:hover ul {
+ display: block;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #d18585; 
 }

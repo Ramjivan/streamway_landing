@@ -18,12 +18,18 @@ module.exports = {
       // => @media (min-width: 1280px) { ... }
 
       '2xl': '1536px',
-      'tb': '900px',
       // => @media (min-width: 1536px) { ... }
+
+      // custom 
+      'tb': '900px',
+      'vsm': '340px',
+
     },
     extend: {
       backgroundImage: {
         'Call-to-action': "url('../pages/images/calltoactionbgimg.svg')",
+        'Solution-Religious-Banner': "url('../pages/images/solution-relious-banner.png')",
+        'Solution-Fitness-Banner': "url('../pages/images/fitness_banner.png')",
       },
       animation: {
         'animation-cmntbouncii': 'cmntbouncee 5.5s linear infinite',

@@ -1,38 +1,28 @@
 ---
-title: 'How many Platforms can be streamed on streamway'
-date: 'Dec 15, 2022'
-desc: 'Streamway can connect multiple platforms at same time'
+title: 'What is live streaming software?'
+date: 'March 15, 2023'
+desc: 'Our guide to the best streaming software walks you through the most popular options and reviews their features, so you can find the one that works best for you.'
 cover_image: '/images/posts/streaming.jpg'
 # avatar_image: '/images/posts/blogwriter.jpeg'
 blog_writer: 'Unknown'
 ---
 ************
-Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
-haec praepes [partes epulae](http://cui.com/), in egisse de. Caecisque ter
-manus. Munere in exhalat, ferre sed [habe quaeque saepe](http://ne.org/fretum)
-verba caput ferarum _nubila_? Patriam Cyparisse tamen, **saxum** fide postponere
-pavida ne omnes etiam, atque. Sonuit omina sed sine haerebat illic fit a mora
-in.
+Live streaming software is the workhorse of a booming industry, and it continues to grow. New live streaming services appear all the time — every social network has one now — so sifting through the options and picking the best streamer can be challenging. We created this guide to demystify live broadcasting software and help you pick the best one.
 
-1. Serrae enim Etruscam aquis
-2. Et premis et flumine frontem minatur oppressos
-3. Inquam rector Icarus possum vim tumulo propiusque
-4. Vulnus se Latreus
-5. Aptumque bis
 
-## Turpius Aegides membris colat volentes fallere
+## What is live streaming software?
 
-Ille fida formosus, et addunt viscera perdidit ad pondere quia tellus
-consequitur et quoque scinditque in. Ratis laborum instabat quaedam partem
-Phoebus, manus _partibus poenas_. Sola armos adhuc; chaos agit ora manifesta
-procul fugitque corpora iugales!
+Live streaming software allows you to turn live video into a format that can be broadcasted on the internet. It's called encoding, and it's the most essential function of any live streaming software.
 
-    var ethics_font_drive = cycleSystemProgram + deprecatedTransferIp.ide(3) /
-            rgb + nybbleBaseband;
-    permalinkCertificateMacintosh(ergonomicsIsdnDns);
-    boot = bridgeDaemonActive;
+There are two types of live streaming software:
 
-## O contra diu
+1> The first type is software that you need to download and install on your computer. This type of software is more powerful and requires a more powerful computer to run properly.
+
+2> The second type is browser-based, meaning that you don't need to download or install anything. Instead, you can use the software directly from your web browser. This type of software is less demanding on your computer's resources.
+
+In summary, live streaming software converts live video into a format that can be broadcasted online, and it comes in two types: downloadable software that requires more resources, and browser-based software that is less demanding on your computer.
+
+## What to consider when choosing streaming software
 
 Descendit _auras cum misi_ contactu tenax lacus, **quaerensque invitum
 premuntur** patria. Puris ille pictis spiritus placent vestigia et noctis
