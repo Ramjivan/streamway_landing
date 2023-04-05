@@ -92,9 +92,9 @@ export const Footer = () => {
                 <hr />
                 <div className='flex md:justify-between'>
                     <div>
-                        <span className='hover:underline mr-8'><Link href={'Return-and-cancallation-policy'} className='text-sm text-[#2D2D2F] font-medium'>Return and cancellation policy</Link></span>
-                        <span className='hover:underline mr-8'><Link href={'Terms-and-service'} className='text-sm text-[#2D2D2F] font-medium'>Terms of Service </Link></span>
-                        <span className='hover:underline mr-8'><Link href={'Privacypolicy'} className='text-sm text-[#2D2D2F] font-medium'>Privacy Policy </Link></span>
+                        <span className='hover:underline mr-8'><Link href={'../res/rcpolicy'} className='text-sm text-[#2D2D2F] font-medium'>Return and cancellation policy</Link></span>
+                        <span className='hover:underline mr-8'><Link href={'../res/terms'} className='text-sm text-[#2D2D2F] font-medium'>Terms of Service </Link></span>
+                        <span className='hover:underline mr-8'><Link href={'../res/privacypolicy'} className='text-sm text-[#2D2D2F] font-medium'>Privacy Policy </Link></span>
                         <span className='hover:underline mr-8'><Link href={'#'} className='text-sm text-[#2D2D2F] font-medium'>Help Center </Link></span>
                         <span className='hover:underline mr-8'><Link href={'#'} className='text-sm text-[#2D2D2F] font-medium'>Trademarks </Link></span>
                     </div>

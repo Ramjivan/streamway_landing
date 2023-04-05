@@ -2,15 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 
-  .pause:hover div {
-    animation-play-state: paused;
-  }
+.pause:hover div {
+  animation-play-state: paused;
+}
 
-.notosans{
-    font-family: 'Noto Sans', sans-serif;
+.notosans {
+  font-family: "Noto Sans", sans-serif;
 }
 
 html,
@@ -30,11 +30,11 @@ a {
   box-sizing: border-box;
 }
 
-.roboto{
-  font-family: 'Roboto', sans-serif;
+.roboto {
+  font-family: "Roboto", sans-serif;
 }
 
-.fstfeature-headline{
+.fstfeature-headline {
   position: relative;
 }
 /* .fstfeature-headline::before{
@@ -45,7 +45,7 @@ bottom: -5px;
 left: 38%;
 } */
 
-.global-container{
+.global-container {
   width: 1320px !important;
   margin: auto;
 }
@@ -105,58 +105,63 @@ left: 38%;
   }
 }
 @keyframes rotatee {
-  0%{
-      rotate: 360deg;
+  0% {
+    rotate: 360deg;
   }
-  100%{
+  100% {
     rotate: 0deg;
   }
 }
 @keyframes rotateerev {
-  0%{
-      rotate: 0deg;
+  0% {
+    rotate: 0deg;
   }
-  100%{
+  100% {
     rotate: 360deg;
   }
 }
 
-
-
 /*------OUR PARTNERS------- */
 
 /* Icon shacking animation in OUR PARTNERS section  */
-.downBounce{
+.downBounce {
   animation: slowBounce 2s linear 1.8s infinite alternate-reverse;
 }
 @keyframes slowBounce {
-  from{ top: 32px;}
-  to{ top: 9px;}
+  from {
+    top: 32px;
+  }
+  to {
+    top: 9px;
+  }
 }
-.upBounce{
+.upBounce {
   animation: Bounce 2s linear 1.8s infinite alternate-reverse;
 }
 @keyframes Bounce {
-  from{ top: 9px;}
-  to{ top: 33px;}
+  from {
+    top: 9px;
+  }
+  to {
+    top: 33px;
+  }
 }
-
 
 /* ----------Blog Section------------ */
 
-@media screen and (min-width:760px) {
-  p{
-    font-size:24px ;
+@media screen and (min-width: 760px) {
+  p {
+    font-size: 24px;
     line-height: 2rem;
   }
-  
-  h2{
+
+  h2 {
     font-size: 42px;
     font-weight: 600;
     padding: 50px 0 50px 0;
   }
 
-  hr{
+  hr {
     margin-bottom: 50px;
     border: 0;
     height: 1px;
@@ -164,30 +169,40 @@ left: 38%;
     background-color: black;
   }
 
-  img[alt~="hi"]{
+  img[alt~="hi"] {
     margin: 0 auto;
     padding: 60px;
   }
 }
 
 /* -------OurClient Marquee ---------*/
-
-
-@keyframes marquee2{
-  0% { transform: translateX(100%) }
-  100% { transform: translateX(0%) }
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
 }
 
-@keyframes marquee{
-  0%{transform: translateX(0%);}
-  100%{transform: translateX(-100%);}
+@keyframes marquee2 {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100%{
+    transform: translateX(-200%);
+
+  }
 }
+
+
 
 .link__active:active {
-  color: red
+  color: red;
 }
 .dropdown-menu:hover ul {
- display: block;
+  display: block;
 }
 
 /* Scrollbar Styling */
@@ -204,5 +219,5 @@ left: 38%;
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  background: #d18585; 
+  background: #d18585;
 }

@@ -13,6 +13,7 @@ import matter from "gray-matter";
 import Blog from './Blog'
 import Ourclient from './Ourclient'
 import Whatwedo from './What-we-do'
+import News from './News'
 
 const index = ({ posts, butn }: { posts: any, butn: boolean }) => {
 
@@ -34,6 +35,7 @@ const index = ({ posts, butn }: { posts: any, butn: boolean }) => {
           site_name: 'StreamWay'
         }}
       />
+      <News />
       <Navbar />
       <Heropage />
       <Ourclient />

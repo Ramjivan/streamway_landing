@@ -32,7 +32,6 @@ const Features = () => {
                                     "Community",
                                     "Business",
                                     "Reach",
-                                    "Confidence",
                                     "Dream",
                                     "Live Shows",
                                     "Conferences",
@@ -54,7 +53,7 @@ const Features = () => {
                             <p className='text-base roboto leading-[25px] mt-5 text-[#706d6d]'><b className='text-[#191717] font-normal text-base roboto '>Gautam jangid,</b> Product Manager <br /> <span className='text-[#999999] text-base roboto '>ska.ind.in</span> </p>
                         </div>
                     </div>
-                    <div className='m-auto mt-20 lg:m-0 relative before:content-[url(../pages/images/Rectangleicon.png)] before:animate-animation-bouncii-rev before:absolute before:top-[-10px] before:left-[-100px] before:h-[57px]'>
+                    <div className='m-auto mt-20 py-10 lg:m-0 relative before:content-[url(../pages/images/Rectangleicon.png)] before:animate-animation-bouncii-rev before:absolute before:top-[-10px] before:left-[-100px] before:h-[57px]'>
                         <div className='relative  before:w-[10px] md:before:h-[10px] md:before:bg-[#f77a56]  md:before:absolute md:before:animate-animation-bouncii md:before:right-[-60px] md:top-[8%]' ></div>
                         <Image src={Featurefstimg} alt="img" className=" w-full md:max-w-[522px]"/>
                         <div className='relative before:content-[url(../pages/images/Groupiconn.png)] before:animate-animation-rotatee before:absolute before:right-[50px] md:before:right-[-10px] top-[3%]'></div>
@@ -78,7 +77,7 @@ const Features = () => {
                     </div>
                     <div className='mx-auto lg:m-0 bg-white  relative before:content-[url(../pages/images/Groupiconn.png)]  before:animate-animation-rotatee-rev    before:absolute before:top-[-20px] before:left-[-80px] '>
                         <div className='relative  before:w-[10px] md:before:h-[10px] md:before:bg-[#f77a56]  md:before:absolute md:before:animate-animation-bouncii md:before:right-[-60px] md:top-[8%]' ></div>
-                        <Image src={Destinationsscreenshot} alt="img" className="mx-auto z-10 w-full md:w-[522px] relative mt-10 " />
+                        <Image src={Destinationsscreenshot} alt="img" className="rounded-md mx-auto z-10 w-full md:w-[522px] relative mt-10 " />
                     </div>
                 </div>
                 <Image src={Pathline} alt="img" className='mx-auto min-w-full mt-20' />
@@ -119,7 +118,7 @@ const Features = () => {
                 <Image src={Pathline} alt="img" className='mx-auto min-w-full mt-20' />
 
                 {/* Make live streams Interactive with Multi Chat Overlays */}
-                <div className='flex flex-col-reverse lg:flex-row-reverse lg:mt-[68px] lg:py-[78px] px-4 justify-around  relative before:content-[url(../pages/images/Rectangle.png)] before:animate-animation-bouncii before:absolute md:before:right-[32%] before:left-[0%]  before:bottom-0'>
+                {/* <div className='flex flex-col-reverse lg:flex-row-reverse lg:mt-[68px] lg:py-[78px] px-4 justify-around  relative before:content-[url(../pages/images/Rectangle.png)] before:animate-animation-bouncii before:absolute md:before:right-[32%] before:left-[0%]  before:bottom-0'>
                     <div className='m-auto lg:m-0'>
                         <div className='sm:mt-6 lg:mt-0'><Image src={FeaIcon} width={49} alt="img" className='inline mb-4 ml-4 mr-[9px]' /><p className='inline roboto text-[#6d6d6d] text-lg '>FEATURE</p> </div>
                         <h4 className='text-[42px] max-w-[440px] leading-[53px] ml-4'>Make live streams Interactive with Multi Chat Overlays</h4>
@@ -135,8 +134,8 @@ const Features = () => {
                         <Image src={Learnmoreimagebranding} alt="img" className="mt-6 relative z-10 w-full md:w-[522px]" />
                         <div className='relative before:content-[url(../pages/images/Rectangleicon.png)] before:absolute before:left-[46px] before:animate-animation-bouncii  before:top-[0px] rotate-180'></div>
                     </div>
-                </div>
-                <Image src={Pathline} alt="img" className='mx-auto min-w-full mt-20' />
+                </div> */}
+                {/* <Image src={Pathline} alt="img" className='mx-auto min-w-full mt-20' /> */}
             </div>
         </div>
     )

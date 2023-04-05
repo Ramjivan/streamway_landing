@@ -26,9 +26,10 @@ export const Pricing = () => {
       const response = await fetch('https://api.streamway.in/v1/pricing');
       const data = await response.json();
       setDataArray(data);
+      console.log("byybyy", dataArray)
     }
     fetchData();
-  }, []);
+  }, [dataArray]);
  
   const filteredArray =  dataArray.filter(plan => plan.validity_period.time_unit === data)
   console.log("Pricing array", filteredArray)
@@ -65,7 +66,7 @@ export const Pricing = () => {
           <div className='mx-auto flex max-w-[1170px] flex-wrap mt-[133px] z-10 bg-white justify-center '>
             {/*  */}
             {filteredArray.map((plan, index) => (
-              <div className=' border border-1 border-solid border-[#eaeaea] pt-7 '>
+              <div key={index} className=' border border-1 border-solid border-[#eaeaea] pt-7 '>
                 <div className='flex flex-col items-center'>
                   <h6 className='text-center text-lg roboto mb-4 uppercase tracking-widest'>{plan.name}</h6>
                   <h4 className='text-[60px] font-semibold mx-7 text-center relative table '>{plan.amount} <span className='text-base ml-[-5px] tracking-widest font-medium'>INR</span></h4>
@@ -75,7 +76,7 @@ export const Pricing = () => {
                 <div className='border border-t border-b-0 border-r-0 border-l-0 pt-[39px] px-[29px]'>
                   <ul>
                     {plan.features && plan.features.map((feature: any) => {
-                      return <li className='text-[15px] text-[#4d4d4d] roboto mb-7'><Image src={Tick} alt="img" className='inline-block mr-[13px]' />{feature}</li>
+                      return <li key={index} className='text-[15px] text-[#4d4d4d] roboto mb-7'><Image src={Tick} alt="img" className='inline-block mr-[13px]' />{feature}</li>
                     })}
                   </ul>
                 </div>

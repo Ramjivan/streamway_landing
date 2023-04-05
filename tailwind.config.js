@@ -1,4 +1,5 @@
 module.exports = {
+
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -30,6 +31,9 @@ module.exports = {
         'Call-to-action': "url('../pages/images/calltoactionbgimg.svg')",
         'Solution-Religious-Banner': "url('../pages/images/solution-relious-banner.png')",
         'Solution-Fitness-Banner': "url('../pages/images/fitness_banner.png')",
+        'Solution-Game-Banner': "url('../pages/images/GameBannerImage.png')",
+        'Testimonal-bg-img': "url('../pages/images/testimonalBgImg.png')",
+        'Testimonal-maharaj' : "url('../pages/images/maharaj.png')"
       },
       animation: {
         'animation-cmntbouncii': 'cmntbouncee 5.5s linear infinite',
@@ -38,8 +42,8 @@ module.exports = {
         'animation-rotatee-rev': 'rotateerev 120s linear infinite',
         'animation-bouncii': 'bouncee 4.5s linear infinite',
         'animation-bouncii-rev': 'bouncerev 4.5s linear infinite',
-        'marquee': 'marquee 25s linear infinite',
-        'marquee2': 'marquee2 25s linear infinite',
+        'marquee': 'marquee 35s linear infinite',
+        'marquee2': 'marquee2 35s linear infinite',
       }
     },
   },

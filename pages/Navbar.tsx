@@ -20,7 +20,7 @@ const Navbar = () => {
   const [VisibleIcon, setVisibleIcon] = useState(false);
 
   const changeNavScroll = () => {
-    if (window.scrollY >= 60) {
+    if (window.scrollY >= 200) {
       setNavScroll(true);
     } else {
       setNavScroll(false);
@@ -47,7 +47,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`w-screen  z-50 scroll-smooth ${NevScroll ? "backdrop-blur-[20px] border-l-indigo-100 bg-opacity-70 shadow-lg py-4 fixed duration-700" : "bg-transparent py-6"
+        className={`w-screen h-[76px] flex items-center  z-50  scroll-smooth ${NevScroll ? "backdrop-blur-[20px]  border-l-indigo-100 bg-opacity-70 shadow-lg py-4 fixed top-0 duration-700" : "bg-transparent py-6"
           } duration-500 `}
       >
         <div className="container mx-auto ">
@@ -68,43 +68,43 @@ const Navbar = () => {
                     Home
                   </div>
                 </Link>
-                <Link href={"../ContactUs"} className={`${currentRoute === '/ContactUs' ? `text-red-900` : ``} hover:text-red-700  font-medium md:text-[14px] lg:text-[15px] xl:text-[17px]  `}>
+                <Link href={"../contact"} className={`${currentRoute === '/contact' ? `text-red-900` : ``} hover:text-red-700  font-medium md:text-[14px] lg:text-[15px] xl:text-[17px]  `}>
                   Contact
                 </Link>
-                <Link href={"../Pricing"} className={`${currentRoute === '/Pricing' ? `text-red-900` : ``} hover:text-red-700  font-medium md:text-[14px] lg:text-[15px] xl:text-[17px] `}>
+                <Link href={"../pricing"} className={`${currentRoute === '/pricing' ? `text-red-900` : ``} hover:text-red-700  font-medium md:text-[14px] lg:text-[15px] xl:text-[17px] `}>
                   Pricing
                 </Link>
-                <Link href={""} className={`${currentRoute === '/Solution/Religious' || currentRoute === '/Solution/Fitness' ||  currentRoute === '/Solution/Game'  ? `text-red-900` : ``} hover:text-red-700  font-medium md:text-[14px] lg:text-[15px] xl:text-[17px] dropdown-menu `}>
+                <Link href={""} className={`${currentRoute === '/solution/religious' || currentRoute === '/solution/fitness' ||  currentRoute === '/Solution/game'  ? `text-red-900` : ``} hover:text-red-700  font-medium md:text-[14px] lg:text-[15px] xl:text-[17px] dropdown-menu `}>
                   <div className="relative">
                     <span className="">Solution <FontAwesomeIcon icon={faAngleDown} className='relative top-[1px]' /></span>
                     <ul className="hidden bg-white absolute z-30 pt-2 top-[100%] shadow-lg w-[280px] p-1 rounded-md">
-                      <Link href={'../Solution/Religious'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Religious</li></Link>
-                      <Link href={'../Solution/Fitness'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Fitness</li></Link>
-                      <Link href={'../Solution/Game'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Game</li></Link>
-                      <Link href={'../Solution/Religious'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Life Couch</li></Link>
-                      <Link href={'../Solution/Religious'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Marketers</li></Link>
-                      <Link href={'../Solution/Religious'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Online Learning</li></Link>
-                      <Link href={'../Solution/Religious'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Music</li></Link>
-                      <Link href={'../Solution/Religious'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Product Launch</li></Link>
+                      <Link href={'../solution/religious'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Religious</li></Link>
+                      <Link href={'../solution/fitness'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Fitness</li></Link>
+                      <Link href={'../solution/game'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Game</li></Link>
+                      <Link href={'../solution/religious'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Life Couch</li></Link>
+                      <Link href={'../solution/religious'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Marketers</li></Link>
+                      <Link href={'../solution/religious'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Online Learning</li></Link>
+                      <Link href={'../solution/religious'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Music</li></Link>
+                      <Link href={'../solution/religious'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Product Launch</li></Link>
                     </ul>
                   </div>
                 </Link>
                 <Link href={"../MainBlog"} className={`${currentRoute === '/MainBlog' ? `text-red-900` : ``} hover:text-red-700  font-medium md:text-[14px] lg:text-[15px] xl:text-[17px]  `}>
                   Blogs & howTo
                 </Link>
-                <Link href={"#"} className={`${currentRoute === '' ? `text-red-900` : ``} hover:text-red-700  font-medium md:text-[14px] lg:text-[15px] xl:text-[17px]  `} >
+                {/* <Link href={"#"} className={`${currentRoute === '' ? `text-red-900` : ``} hover:text-red-700  font-medium md:text-[14px] lg:text-[15px] xl:text-[17px]  `} >
                   Docs
-                </Link>
+                </Link> */}
               </ul>
             </div>
             <div className="hidden md:block">
               <div className="flex ">
-                <Link href={"https://localhost:3000/login"} className="font-bold mt-2 mr-4">
+                <Link href={"https://app.streamway.in/"} className="font-bold mt-2 mr-4">
                   <span className="px-4 lg:px-8 py-2 rounded-[5px] text-white bg-[#EF6458] hover:bg-[#aa1e12] duration-200 ">
                     Login
                   </span>
                 </Link>
-                <Link href={"https://localhost:3000/signup"} className="font-bold mt-2">
+                <Link href={"https://app.streamway.in/signup"} className="font-bold mt-2">
                   <span>
                     SignUp
                   </span>
@@ -149,7 +149,7 @@ const Navbar = () => {
                   Home
                 </li>
               </Link>
-              <Link href={"ContactUs"} className={`${currentRoute === '/ContactUs' ? `text-red-900` : ``} ml-4 hover:text-text-red-700 mt-2`} >
+              <Link href={"contact"} className={`${currentRoute === '/contact' ? `text-red-900` : ``} ml-4 hover:text-text-red-700 mt-2`} >
                 <li>
                   Contact
                 </li>
@@ -159,21 +159,21 @@ const Navbar = () => {
                   Pricing
                 </li>
               </Link>
-              <Link href={"Solution"} className={`${currentRoute === '/Solution' ? `text-red-900` : ``} ml-4 hover:text-text-red-700 mt-2`}>
+              {/* <Link href={"solution"} className={`${currentRoute === '/solution' ? `text-red-900` : ``} ml-4 hover:text-text-red-700 mt-2`}>
                 <li>
                   Solution
                 </li>
-              </Link>
+              </Link> */}
               <Link href={"MainBlog"} className={`${currentRoute === '/MainBlog' ? `text-red-900` : ``} ml-4 hover:text-text-red-700 mt-2`} >
                 <li>
                   Blogs
                 </li>
               </Link>
-              <Link href={"#"} className={` ml-4 hover:text-text-red-700 mt-2`}>
+              {/* <Link href={"#"} className={` ml-4 hover:text-text-red-700 mt-2`}>
                 <li>
                   Docs
                 </li>
-              </Link>
+              </Link> */}
 
               <li className="grid place-items-center">
                 <div className="space-x-4 flex mt-5">
