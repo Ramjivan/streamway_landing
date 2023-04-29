@@ -51,7 +51,7 @@ const Navbar = () => {
           } duration-500 `}
       >
         <div className="container mx-auto ">
-          <nav className=" flex justify-between items-center ">
+          <nav className=" flex justify-between items-center md:px-5">
             <div>
               <Link href={'/'} className="flex items-center text-black ">
                 <Image src={Icon} alt="icon" className="w-12 md:w-16" />
@@ -76,7 +76,7 @@ const Navbar = () => {
                 </Link>
                 <Link href={""} className={`${currentRoute === '/solution/religious' || currentRoute === '/solution/fitness' ||  currentRoute === '/Solution/game'  ? `text-red-900` : ``} hover:text-red-700  font-medium md:text-[14px] lg:text-[15px] xl:text-[17px] dropdown-menu `}>
                   <div className="relative">
-                    <span className="">Solution <FontAwesomeIcon icon={faAngleDown} className='relative top-[1px]' /></span>
+                    <span className="">Solution <FontAwesomeIcon icon={faAngleDown} className='relative top-[1px] w-5  inline' /></span>
                     <ul className="hidden bg-white absolute z-30 pt-2 top-[100%] shadow-lg w-[280px] p-1 rounded-md">
                       <Link href={'../solution/religious'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Religious</li></Link>
                       <Link href={'../solution/fitness'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Fitness</li></Link>
@@ -89,9 +89,12 @@ const Navbar = () => {
                     </ul>
                   </div>
                 </Link>
-                <Link href={"../MainBlog"} className={`${currentRoute === '/MainBlog' ? `text-red-900` : ``} hover:text-red-700  font-medium md:text-[14px] lg:text-[15px] xl:text-[17px]  `}>
+
+                {/* blog >>>>>>>>>>>>>>>>>>>>>>>>>>>>>................................................... */}
+
+                {/* <Link href={"../MainBlog"} className={`${currentRoute === '/MainBlog' ? `text-red-900` : ``} hover:text-red-700  font-medium md:text-[14px] lg:text-[15px] xl:text-[17px]  `}>
                   Blogs & howTo
-                </Link>
+                </Link> */}
                 {/* <Link href={"#"} className={`${currentRoute === '' ? `text-red-900` : ``} hover:text-red-700  font-medium md:text-[14px] lg:text-[15px] xl:text-[17px]  `} >
                   Docs
                 </Link> */}
@@ -113,11 +116,12 @@ const Navbar = () => {
             </div>
           </nav>
         </div>
+
         {/* Mobile  View */}
         <div className=" md:hidden" onClick={() => mobileSlideBar()}>
-          <div className="fixed  top-6 right-0 inline-block mr-3">
+          <div className=" inline-block mr-3">
             <button
-              className="bg-[#973c56]  flex flex-col h-12 w-12 bg- rounded justify-center items-center group"
+              className="bg-[#973c56]  flex flex-col h-12 w-12  rounded justify-center items-center group"
               onClick={() => setIsOpen(!isOpen)}
             >
               <div
@@ -140,7 +144,7 @@ const Navbar = () => {
           </div>
 
           <div
-            className={`w-screen mt-3 pb-6 ttransition ease transform duration-800 bg-[#fbf3ec] pt-5 ${MobileView ? "block" : "hidden "
+            className={`w-screen absolute left-0 z-50 mt-3 pb-6 px-6 transition ease transform duration-800 bg-[#fbf3ec] pt-5 ${MobileView ? "block" : "hidden "
               } `}
           >
             <ul className="divide-y-[1px] divide-opacity-10 divide-gray-400 space-y-4 ">
@@ -154,7 +158,7 @@ const Navbar = () => {
                   Contact
                 </li>
               </Link>
-              <Link href={"Pricing"} className={`${currentRoute === '/Pricing' ? `text-red-900` : ``} ml-4 hover:text-text-red-700 mt-2`} >
+              <Link href={"pricing"} className={`${currentRoute === '/Pricing' ? `text-red-900` : ``} ml-4 hover:text-text-red-700 mt-2`} >
                 <li>
                   Pricing
                 </li>
@@ -164,11 +168,11 @@ const Navbar = () => {
                   Solution
                 </li>
               </Link> */}
-              <Link href={"MainBlog"} className={`${currentRoute === '/MainBlog' ? `text-red-900` : ``} ml-4 hover:text-text-red-700 mt-2`} >
+              {/* <Link href={"MainBlog"} className={`${currentRoute === '/MainBlog' ? `text-red-900` : ``} ml-4 hover:text-text-red-700 mt-2`} >
                 <li>
                   Blogs
                 </li>
-              </Link>
+              </Link> */}
               {/* <Link href={"#"} className={` ml-4 hover:text-text-red-700 mt-2`}>
                 <li>
                   Docs

@@ -44,32 +44,32 @@ export const Footer = () => {
                     <div>
                         <h4 onClick={() => Companybtn()} className='text-base text-[#000000ce] relative font-bold mt-[30px] mb-[5px] md:mb-[14px]'>Company <Image alt='img' className='text-[12px] block lg:hidden absolute right-0 mb-1 ml-1 w-[20px] h-[20px]' src={Dropdown} /></h4>
                         <ul className={`lg:block ${Company ? `block` : `hidden`} `}>
-                            <li><Link href={'../Pricing'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Pricing</Link></li>
-                            <li><Link href={''} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Solution</Link></li>
-                            <li><Link href={'../ContactUs'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Contact Us</Link></li>
-                            <li><Link href={'../MainBlog'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>blogs & how to</Link></li>
+                            <li><Link href={'../pricing'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Pricing</Link></li>
+                            <li><Link href={'../solution/religious'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Solution</Link></li>
+                            <li><Link href={'../contact'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Contact Us</Link></li>
+                            {/* <li><Link href={'../MainBlog'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>blogs & how to</Link></li> */}
                         </ul>
                     </div>
                     <div>
                         <h4 onClick={() => Productbtn()} className='text-base text-[#000000ce] relative font-bold mt-[30px] mb-[5px] md:mb-[14px]'>Product <Image alt='img' className='text-[12px] block lg:hidden absolute right-0 mb-1 ml-1 w-[20px] h-[20px]' src={Dropdown} /></h4>
                         <ul className={`lg:block ${Product ? `block` : `hidden`} `}>
-                            <li><Link href={'#'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Why StreamWay</Link></li>
-                            <li><Link href={'#'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Multistreaming</Link></li>
-                            <li><Link href={'#'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Branded Streams</Link></li>
-                            <li><Link href={'#'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Recordings</Link></li>
-                            <li><Link href={'#'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Guest Interviews</Link></li>
-                            <li><Link href={'#'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Audience Engagement</Link></li>
-                            <li><Link href={'#'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Podcasting</Link></li>
+                            <li><Link href={'../'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Why StreamWay</Link></li>
+                            <li><Link href={'../Features'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Multistreaming</Link></li>
+                            <li><Link href={'../Features'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Branded Streams</Link></li>
+                            <li><Link href={'../What-we-do'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Recordings</Link></li>
+                            <li><Link href={'../Testimonals'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Guest Interviews</Link></li>
+                            <li><Link href={'../'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Audience Engagement</Link></li>
+                            <li><Link href={'../Faq'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>F & Qs</Link></li>
                         </ul>
                     </div>
                     <div>
                         <h4 onClick={() => Communitybtn()} className='text-base text-[#000000ce] relative font-bold mt-[30px] mb-[5px]  md:mb-[14px]'>Community <Image alt='img' className='text-[12px] block lg:hidden absolute right-0 mb-1 ml-1 w-[20px] h-[20px]' src={Dropdown} /></h4>
                         <ul className={`lg:block ${Community ? `block` : `hidden`} `}>
-                            <li><Link href={'#'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Blog</Link></li>
+                            <li><Link href={'../Blog'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Blog</Link></li>
                             <li><Link href={'#'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Affiliates</Link></li>
                             {/* <li><Link href={'#'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Merchandise</Link></li> */}
-                            <li><Link href={'#'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Help Center</Link></li>
-                            <li><Link href={'#'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>What&#39;s New</Link></li>
+                            <li><Link href={'../contact'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Help Center</Link></li>
+                            <li><Link href={'../'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>What&#39;s New</Link></li>
                         </ul>
                     </div>
                     {/* <div>

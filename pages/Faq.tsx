@@ -8,44 +8,30 @@ const Faq = () => {
   const Faq_question_answer = [
     {
       id: 1,
-      question: 'How does the free trial work?',
-      answer: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque perferendis commodi illo quia corporis cupiditate exer minus placeat sequi distinctio architecto atque soluta sunt odio iusto quod.',
+      question: "Can i go live on more than one YouTube channel ?",
+      answer: "Yes, you can live stream on multiple YouTube channels, event on multiple Facebook pages or groups.",
     },
     {
       id: 2,
-      question: 'How to set up two-factor authentication (2FA)',
-      answer: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque perferendis commodi illo quia corporis cupiditate exercitationem rem unde minus accusantium, doloribus inventore mollitia soluta repudiandae nesciunt placeat placeat sequi distincti atque soluta sunt odio iustorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque perferendis commodi illo quia corporis cupiditate exercitationem rerem ipsum, dolor sit amet consectetur adipisicing elit. Cumque perferendis commodi illo quia corporis cupiditate exercitationem rerem ipsum, dolor sit amet consectetur adipisicing elit. Cumque perferendis commodi illo quia corporis cupiditate exercitationem re quod.',
+      question: "Will this require highspeed internet ?",
+      answer: "No, with streamway you only need to have enough internet speed to live stream on single YouTube channel, and with that speed and data you can livestream on multiple destinations.",
     },
     {
       id: 3,
-      question: 'How do you weigh different criteria in your process?',
-      answer: 'Lorem ipsum, dolor s vdknvkas minus placeat sequi distinctio architecto atque soluta sunt odio iusto quod.',
+      question: "What happens if my internet breaks down, will my livestream stop ?",
+      answer: "No, if you internet fails, your livestream will not stop and you'll not lose your precious viewers. As soon as internet recovers, you can start sending live. To stop livestream you can end it from dashboard.",
     },
     {
       id: 4,
-      question: 'What does First Round look for in an idea?',
-      answer: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque perferendis commodi illo quia corporis cupiditate exercitationem rem unde minus accusantium, doloribus inventore mollitia soluta repudiandae nesciunt placeat itaque adipisci. Odit vitae laboriosam, mollitia, sit quis aliquid numquam commodi cum dignissimos laborum exercitationem voluptas minus placeat sequi distinctio architecto atque soluta sunt odio iusto quod.aceat itaque adipisci. Odit aceat itaque adipisci. Odit aceat itaque adipisci. Odit aceat itaque adipisci. Odit aceat itaque adipisci. Odit aceat itaque adipisci. Odit aceat itaque adipisci. Odit aceat itaque adipisci. Odit aceat itaque adipisci. Odit aceat itaque adipisci. Odit aceat itaque adipisci. Odit aceat itaque adipisci. Odit aceat itaque adipisci. Odit aceat itaque adipisci. Odit aceat itaque adipisci. Odit  ',
+      question: "After free trail expire, will i be able to use it ?",
+      answer: "You need to buy a plan in order to continue using it.",
     },
     {
       id: 5,
-      question: 'What do you look for in a founding team?',
-      answer: 'Lorem ipsum, dolor sit ameitationem voluptas minus placeat sequi distinctio architecto atque soluta sunt odio iusto quod.',
+      question: "Should I Buy a monthly plan or small pack like 3 or 7 day plan ?",
+      answer: "If you're live streaming more frequently than we recommend monthly plan, because it's more cost effective. else for infrequent uses small packs are good.",
     },
-    {
-      id: 6,
-      question: 'Do you recommend Pay as you go or Pre pay?',
-      answer: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque perferendis commodi illo quia corporis cupiditate exercitationem rem unde minus accusantium, doloribus inventore mollitia soluta repudiandae nesciunt placeat itaque adipisci. Odit vitae laboriosam, mollitia, sit quis aliquid numquam commodi cum dignissimos laborum exercitationem voluptas minus placeat sequi distinctio architecto atque soluta sunt odio iusto quod.aceat itaque adipisci. Odit vitae laboriosam, mollitia, sit quis aliquid numquam commodi cum dignissimos laborum exercitationem v',
-    },
-    {
-      id: 7,
-      question: 'Can I pass the fees on to my customers?',
-      answer: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque perferendis commodi illo quia corporis cupiditate exercitatientore mollitia soluta repudiandae nesciunt ploluptas minus placeat sequi distinctio architecto atque soluta sunt odio iusto quod.',
-    },
-    {
-      id: 8,
-      question: 'How do I edit the ticket types?',
-      answer: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque perferendis commodi illo quia corporis cupiditate exeuis aliquid numquam commodi cum dignissimos laborum exercitationem voluptas minus placeat sequi distinctio architecto atque soluta sunt odio iusto quod.',
-    },
+    
   ]
 
 

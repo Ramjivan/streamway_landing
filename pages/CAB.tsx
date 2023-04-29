@@ -3,15 +3,21 @@ import Im1 from "./images/210.svg";
 import Im2 from "./images/211.svg";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import axios from "axios";
 
 const CAB = () => {
   const router = useRouter();
   const [getMobileNo, setGetMobileNo] = useState('');
 
 
-  const handleBoostMyViewsBtn = () => {
+  const handleBoostMyViewsBtn = async () => {
     console.log("mobileNo.", getMobileNo)
-    router.push('https://app.streamway.in/');
+    const data = {
+      mobileNumber: getMobileNo
+    }
+    const res = await axios.post('https://api.streamway.in/leads', data)
+    console.log("resssssssssssssss " , res)
+    // router.push('https://app.streamway.in/');
   };
   return (
     <div className=" bg-[#f5fbff] relative max-w-full mx-auto">
@@ -36,11 +42,10 @@ const CAB = () => {
             </span>
           </div>
           <span className=" text-xl md:text-3xl tracking-wider block mt-8">
-            After your 14-day trial of our Professional plan,
+          Get a 14 days free trail now
             <span className="hidden md:inline">
               <br />
             </span>{" "}
-            enjoy the Free version of Calendly - forever.
           </span>
         </div>
         <div className="container justify-center w-fit md:w-[80%] text-center mx-auto md:flex mt-5 md:mt-0 space-y-2 md:space-y-0 ">

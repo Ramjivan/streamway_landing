@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 // import Commentone from './images/commentsone.png'
 // import Commenttwo from './images/commenttwo.png'
 
@@ -10,7 +11,7 @@ export const Heropage = () => {
                 <div className='pt-16'>
                     <h1 className='max-w-[550px] overflow-re  md:overflow-hidden lg:mx-0 lg:text-left text-center mx-auto mb-[110px] relative roboto text-[40px] lg:text-[80px] leading-[48px] lg:leading-[88px] before:content-[url(../pages/images/Group.png)] xl:before:content-[url(../pages/images/Groupline.png)]  before:absolute before:h-[18px] before:bottom-[-12px] lg:before:bottom-[123px] '>Make Your Live Stream Viral</h1>
                     <p className='max-w-[590px] text-[#565657] roboto text-[30px] leading-[33px]  lg:mx-0 lg:text-left text-center mx-auto'>Get more views and reach  more people by going live on  multiple social channels at same time.</p>
-                    <button type='submit' className='w-[184px] text-white rounded-md text-[17px] roboto py-[12.5px] mt-16 border-2 border-solid border-[#fd6a5e] bg-[#fd6a5e]'>Get Started</button>
+                   <Link href={"https://app.streamway.in/"}> <button type='submit' className='w-[184px] text-white rounded-md text-[17px] roboto py-[12.5px] mt-16 border-2 border-solid border-[#fd6a5e] bg-[#fd6a5e] duration-300 hover:bg-[#f04838]'>Get Started</button></Link>
                     <ul className='mt-5  lg:mx-0 lg:text-left text-center mx-auto'>
                         <div>
                             <svg className='inline-block mr-[7.1px]' xmlns="http://www.w3.org/2000/svg" width="9.983" height="9.074" viewBox="0 0 9.983 9.074">

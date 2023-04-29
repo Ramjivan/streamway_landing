@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "streamway-79"
-  }
+  },
+  "targets": {
+    "streamway-79": {
+      "hosting": {
+        "landing-site": [
+          "landing-site-sw"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
