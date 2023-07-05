@@ -21,7 +21,7 @@ const Ourpartners = () => {
                         <span className='text-[18px] sm:text-[23px]  text-gray-400 font-light f'>OUR PARTNERS</span>
                         <span className='text-4xl sm:text-6xl mt-3 sm:mt-7 leading-[50px] sm:leading-[70px] line font-semibold block f'>They Trust Us, & Vice Versa.</span>
                         <p className='text-xl sm:text-2xl mt-5 md:w-[full] lg:w-[450px] tracking-normal f'>
-                            Share content across apps. Evernote connects with the productivity tools you already use, so you can work your way.
+                        Share your content between different apps. Connect with the productivity tools you already use, so you can work in your preferred manner.
                         </p>
                     </div>
                 </div>

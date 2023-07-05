@@ -50,7 +50,7 @@ const Features = () => {
                         <p className='lg:ml-4 max-w-[520px] roboto text-[22px] leading-[34px] text-[#6d6d6d] tracking-wide mt-10 mb-[17px]'>Reach more viewers by live streaming to multiple platforms simultaneously such as Facebook Page, YouTube, Twitch, Vimeo, and many more.</p>
                         <div className="bg-[#f4f9fc] pt-9 pb-6 px-3 lg:pl-9 relative max-w-[460px] rounded lg:ml-4 mt-[55px] before:content-[url(../pages/images/right-quote.png)] before:h-[57px] before:absolute before:top-[-30px] before:left-5 before:rounded-[50%]  before:bg-white">
                             <p className='max-w-[400px] text-lg roboto leading-[28px]'>“Our team really feels great to use StreamWay specially their quality”</p>
-                            <p className='text-base roboto leading-[25px] mt-5 text-[#706d6d]'><b className='text-[#191717] font-normal text-base roboto '>Gautam jangid,</b> Product Manager <br /> <span className='text-[#999999] text-base roboto '>ska.ind.in</span> </p>
+                            <p className='text-base roboto leading-[25px] mt-5 text-[#706d6d]'><b className='text-[#191717] font-normal text-base roboto '>Gautam jangid,</b> Product Manager <br /> <span className='text-[#999999] text-base roboto '></span> </p>
                         </div>
                     </div>
                     <div className='m-auto mt-20 py-10 lg:m-0 relative before:content-[url(../pages/images/Rectangleicon.png)] before:animate-animation-bouncii-rev before:absolute before:top-[-10px] before:left-[-100px] before:h-[57px]'>

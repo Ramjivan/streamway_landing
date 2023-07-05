@@ -81,11 +81,11 @@ const Navbar = () => {
                       <Link href={'../solution/religious'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Religious</li></Link>
                       <Link href={'../solution/fitness'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Fitness</li></Link>
                       <Link href={'../solution/game'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Game</li></Link>
-                      <Link href={'../solution/religious'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Life Couch</li></Link>
+                      {/* <Link href={'../solution/religious'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Life Couch</li></Link>
                       <Link href={'../solution/religious'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Marketers</li></Link>
                       <Link href={'../solution/religious'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Online Learning</li></Link>
                       <Link href={'../solution/religious'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Music</li></Link>
-                      <Link href={'../solution/religious'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Product Launch</li></Link>
+                      <Link href={'../solution/religious'}><li className="text-black py-2 px-3 tracking-wide rounded-sm hover:bg-[#00d597]">Product Launch</li></Link> */}
                     </ul>
                   </div>
                 </Link>
