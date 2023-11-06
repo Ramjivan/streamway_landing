@@ -44,7 +44,7 @@ export const Footer = () => {
                     <div>
                         <h4 onClick={() => Companybtn()} className='text-base text-[#000000ce] relative font-bold mt-[30px] mb-[5px] md:mb-[14px]'>Company <Image alt='img' className='text-[12px] block lg:hidden absolute right-0 mb-1 ml-1 w-[20px] h-[20px]' src={Dropdown} /></h4>
                         <ul className={`lg:block ${Company ? `block` : `hidden`} `}>
-                            <li><Link href={'../pricing'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Pricing</Link></li>
+                            {/* <li><Link href={'../pricing'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Pricing</Link></li> */}
                             <li><Link href={'../solution/religious'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Solution</Link></li>
                             <li><Link href={'../contact'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>Contact Us</Link></li>
                             {/* <li><Link href={'../MainBlog'} className='hover:underline text-base leading-8 text-[#2d2d2fe2] font-medium'>blogs & how to</Link></li> */}

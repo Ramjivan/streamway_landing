@@ -71,9 +71,9 @@ const Navbar = () => {
                 <Link href={"../contact"} className={`${currentRoute === '/contact' ? `text-red-900` : ``} hover:text-red-700  font-medium md:text-[14px] lg:text-[15px] xl:text-[17px]  `}>
                   Contact
                 </Link>
-                <Link href={"../pricing"} className={`${currentRoute === '/pricing' ? `text-red-900` : ``} hover:text-red-700  font-medium md:text-[14px] lg:text-[15px] xl:text-[17px] `}>
+                {/* <Link href={"../pricing"} className={`${currentRoute === '/pricing' ? `text-red-900` : ``} hover:text-red-700  font-medium md:text-[14px] lg:text-[15px] xl:text-[17px] `}>
                   Pricing
-                </Link>
+                </Link> */}
                 <Link href={""} className={`${currentRoute === '/solution/religious' || currentRoute === '/solution/fitness' ||  currentRoute === '/Solution/game'  ? `text-red-900` : ``} hover:text-red-700  font-medium md:text-[14px] lg:text-[15px] xl:text-[17px] dropdown-menu `}>
                   <div className="relative">
                     <span className="">Solution <FontAwesomeIcon icon={faAngleDown} className='relative top-[1px] w-5  inline' /></span>

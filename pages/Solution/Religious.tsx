@@ -22,13 +22,10 @@ const Church = () => {
           <div className="container mx-auto h-full">
             <div className="h-full max-w-[700px] flex flex-col items-start justify-start text-left">
               <h2 className="font-extrabold text-5xl text-[#1b1d25] leading-[58px] capitalize py-6">
-                Get fit from home with our complete live streaming fitness
-                experience.
+                Reach to more devotes with Streamway by multistreaming.
               </h2>
               <p className="text-[22px] font-medium text-[#232532e4]">
-                Improve your health and fitness by watching online fitness
-                classes from the comfort of your own home. Share your classes on
-                popular social media platforms to reach a larger audience.
+                Get more view and reach to devotes on all social media platform for Katha, satsang and other religious events.
               </p>
               <button className="cursor-pointer capitalize bg-[#f65849] hover:bg-[#c93f33] duration-300 px-14 mt-10 rounded-lg h-[60px] text-[#fff] text-xl font-bold ">
                 get started for free

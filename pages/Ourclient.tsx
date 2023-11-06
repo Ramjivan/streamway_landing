@@ -184,7 +184,7 @@ const Ourclient = () => {
           </div>
           <div className="mx-5 h-full">
             <Image
-              src={c18}
+              src={c18} 
               alt=""
               className="h-full"
               width={100}

@@ -5,9 +5,9 @@ import Footer from "../Footer";
 import Image from "next/image";
 import BePresentEverywhere from "../BePresentEverywhere";
 import RTMP_Img from "../images/rtmp-game-solution.png";
-import fitnessCaptions_Img from "../images/fitness Captions.png";
-import TicketEvent_Img from "../images/ticket event.png";
-import HighlightCommentsss_Img from "../images/highlight commentsss.png";
+import gameCaptions_Img from "../images/gameCaptions_Img.png";
+import gameScreenSharing from "../images/gameScreenSharing.png";
+import HighlightCommentsss_Img from "../images/highlightCommentsss.png";
 
 const Game = () => {
   return (
@@ -51,7 +51,7 @@ const Game = () => {
                 RTMP Passthrough    
                 </h2>
                 <p className="text-left  w-full font-medium opacity-90 py-4">
-                Flutin allows you to stream your game in high-quality 4K resolution by connecting it to any software encoder. The bitrate that Flutin passes through is the same as the one it receives, ensuring top-notch streaming quality.
+                Streamway allows you to stream your game in high-quality 4K resolution by connecting it to any software encoder. The bitrate that Streamway passes through is the same as the one it receives, ensuring top-notch streaming quality.
                 </p>
               </div>
               <div className="flex">
@@ -112,8 +112,8 @@ const Game = () => {
             <div>
               <Image
                 style={{ maxWidth: "inherit" }}
-                src={TicketEvent_Img}
-                className="vsm:w-[300px] sm:w-[500px] md:w-[400px] lg:w-[600px]"
+                src={gameScreenSharing}
+                className="vsm:w-[300px] sm:w-[500px] md:w-[400px] lg:w-[600px]  h-[400px] object-cover rounded-3xl"
                 alt="img"
               />
             </div>
@@ -154,8 +154,8 @@ const Game = () => {
             <div>
               <Image
                 style={{ maxWidth: "inherit" }}
-                src={fitnessCaptions_Img}
-                className="w-full sm:w-[500px] md:w-[400px] lg:w-[600px]"
+                src={gameCaptions_Img}
+                className="w-full sm:w-[500px] md:w-[400px] lg:w-[600px]  h-[400px] object-cover rounded-3xl"
                 alt="img"
               />
             </div>
@@ -197,7 +197,7 @@ const Game = () => {
               <Image
                 style={{ maxWidth: "inherit" }}
                 src={HighlightCommentsss_Img}
-                className="vsm:w-[300px] sm:w-[500px] md:w-[400px] lg:w-[600px]"
+                className="vsm:w-[300px] sm:w-[500px] md:w-[400px] lg:w-[600px] h-[400px] object-fill rounded-3xl"
                 alt="img"
               />
             </div>

@@ -35,7 +35,7 @@ const index = ({ posts, butn }: { posts: any, butn: boolean }) => {
           site_name: 'StreamWay'
         }}
       />
-      <News />
+      {/* <News /> */}
       <Navbar />
       <Heropage />
       <Ourclient />
