@@ -83,7 +83,7 @@ const ContactUs = () => {
                     </span>
                     <p className=" w-[265px] font-medium text-xl  text-center relative bottom-2">
                       Contact@streamway.in <br />{" "}
-                      <Link href={"tel:+918386853447"}>+91-8386853447</Link>{" "}
+                      <Link href={"tel:+919256862779"}>+919256862779</Link>{" "}
                       <br />
                       <Link href={"tel:+7229997799"}>+91-7229997799</Link>
                     </p>
