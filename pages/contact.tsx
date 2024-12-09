@@ -63,7 +63,8 @@ const ContactUs = () => {
                       Location
                     </span>
                     <p className=" w-[265px] font-medium text-xl text-center  relative bottom-2">
-                      iStart Nest, W-6, Residency Road, Jodhpur
+                      JIVANM @ iStart Nest, W-6, Residency Road, Jodhpur Rajasthan
+                      PIN - 342001
                     </p>
                   </div>
                 </Link>
@@ -83,9 +84,9 @@ const ContactUs = () => {
                     </span>
                     <p className=" w-[265px] font-medium text-xl  text-center relative bottom-2">
                       Contact@streamway.in <br />{" "}
-                      <Link href={"tel:+918386853447"}>+91-8386853447</Link>{" "}
-                      <br />
                       <Link href={"tel:+7229997799"}>+91-7229997799</Link>
+                      <br />
+                      <Link href={"tel:+918386853447"}>+91-8386853447</Link>{" "}
                     </p>
                   </div>
                 </Link>
@@ -104,7 +105,7 @@ const ContactUs = () => {
                   </span>
                   {/* <p className=' w-[265px] font-medium text-xl  text-center relative bottom-2'>Find on social media</p> */}
                   <Link
-                    href={"https://chat.whatsapp.com/DaQX7Hf5S13E7ACAfDNsvX"}
+                    href={"wa.me/+919256862779"}
                     target={"_blank"}
                   >
                     {" "}
@@ -121,7 +122,7 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-       
+
         {/*-------- Join Community -------- */}
         <div className="md:container mx-auto p-9 md:p-4 my-28 ">
           <div>
@@ -135,7 +136,7 @@ const ContactUs = () => {
           <div className="">
             <ul className="flex justify-between mx-auto py-16 max-w-[700px] flex-wrap">
               <Link
-                href={"https://chat.whatsapp.com/DaQX7Hf5S13E7ACAfDNsvX"}
+                href={"wa.me/+919256862779"}
                 target={"_blank"}
               >
                 <li className="flex flex-col items-center cursor-pointer mb-5 md:mb-0 mr-4 mt-4">

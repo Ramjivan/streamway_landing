@@ -7,15 +7,15 @@ const News = () => {
   const [remove, setRemove] = useState(false);
   return (
     <div
-      className={`${
-        remove === true ? `duration-1000 translate-y-[-90px] absolute w-full` : ``
-      }`}
+      className={`${remove === true ? `duration-1000 translate-y-[-90px] absolute w-full` : ``
+        }`}
     >
       <div className="bg-yellow-100 w-full flex items-center justify-center relative">
         <p className="text-center py-3 text-xl ">
-          Navigate to the old website!{" "}
+          Watch Getting Started Video !{" "}
           <Link
-            href={"https://mvp.streamway.in/"}
+            href={"https://www.youtube.com/watch?v=wRDoIRKBMaM&t=180s"}
+            target="_blank"
             className="hover:underline font-bold cursor-pointer text-base tracking-normal bg-[#d8563e] text-white rounded-md py-1 px-2"
           >
             Click here

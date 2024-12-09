@@ -56,7 +56,7 @@ const Navbar = () => {
               <Link href={'/'} className="flex items-center text-black ">
                 <Image src={Icon} alt="icon" className="w-12 md:w-16" />
                 <span className="f text-lg lg:text-2xl ml-2 font-medium" >
-                  StreamWay
+                  StreamWay by JIVANM
                 </span>
               </Link>
             </div>
@@ -74,7 +74,7 @@ const Navbar = () => {
                 <Link href={"../pricing"} className={`${currentRoute === '/pricing' ? `text-red-900` : ``} hover:text-red-700  font-medium md:text-[14px] lg:text-[15px] xl:text-[17px] `}>
                   Pricing
                 </Link>
-                <Link href={""} className={`${currentRoute === '/solution/religious' || currentRoute === '/solution/fitness' ||  currentRoute === '/Solution/game'  ? `text-red-900` : ``} hover:text-red-700  font-medium md:text-[14px] lg:text-[15px] xl:text-[17px] dropdown-menu `}>
+                <Link href={""} className={`${currentRoute === '/solution/religious' || currentRoute === '/solution/fitness' || currentRoute === '/Solution/game' ? `text-red-900` : ``} hover:text-red-700  font-medium md:text-[14px] lg:text-[15px] xl:text-[17px] dropdown-menu `}>
                   <div className="relative">
                     <span className="">Solution <FontAwesomeIcon icon={faAngleDown} className='relative top-[1px] w-5  inline' /></span>
                     <ul className="hidden bg-white absolute z-30 pt-2 top-[100%] shadow-lg w-[280px] p-1 rounded-md">
