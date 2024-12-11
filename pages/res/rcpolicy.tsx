@@ -32,7 +32,6 @@ const Returnandcancallationpolicy = () => {
                     <li>
                         <p className='text-justify text-xl mt-4'>If a customer downgrades a subscription during the ongoing billing month, effective downgrade date is the next billing date (end of billing cycle). This means that the customer will be billed next time for the downgraded package and will have until that date to use Streamway with the current package. The downgraded package will go into effect on the next billing cycle.</p>
 
-G1 jangid, [11-12-2024 09:59]
 </li>
                     <li>
                         <p className='text-justify text-xl mt-4'>If a customer upgrades a subscription during the ongoing billing month, effective upgrade date is immediate and it will be prorated for the remaining days until the next billing date (end of billing cycle). The customer will be billed next time for the upgraded package and thereon.</p>
