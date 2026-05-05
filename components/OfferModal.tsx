@@ -9,6 +9,7 @@ const REGULAR_PRICE = 350;
 const OFFER_PRICE = 51;
 const SAVINGS = REGULAR_PRICE - OFFER_PRICE;
 const DISCOUNT_PERCENT = Math.round((SAVINGS / REGULAR_PRICE) * 100);
+const MONTHLY_EQUIVALENT = (OFFER_PRICE / 18).toFixed(2);
 
 const TOOL_FEATURES = [
   {
@@ -98,7 +99,7 @@ const OfferModal = () => {
   }
 
   return (
-    <div className="fixed inset-0 z-[90] flex items-start justify-center p-3 sm:items-center sm:p-6">
+    <div className="fixed inset-0 z-[120] flex items-start justify-center p-3 sm:items-center sm:p-6">
       <button
         type="button"
         aria-label="Close offer popup"
@@ -121,29 +122,125 @@ const OfferModal = () => {
           ×
         </button>
 
-        <div className="bg-gradient-to-br from-[#edf4ff] via-[#f7faff] to-[#eef8ff] px-4 pb-5 pt-4 sm:px-7 sm:pb-7 sm:pt-6">
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="inline-flex rounded-full bg-[#0f172a] px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-white">
-              Limited Offer
-            </span>
-            <span className="inline-flex rounded-full border border-[#D5E3F8] bg-white px-3 py-1 text-xs font-medium text-[#334155]">
-              18-month premium plan
-            </span>
-          </div>
+        <div className="bg-gradient-to-br from-[#edf4ff] via-[#f7faff] to-[#eef8ff] px-3 pb-4 pt-4 sm:px-6 sm:pb-6">
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-[0.98fr_1.02fr] lg:gap-5">
+            <div className="order-1 rounded-2xl border border-[#CBDCF7] bg-white p-4 shadow-[0_16px_45px_-35px_rgba(29,78,216,0.9)] sm:p-5">
+              <div className="flex items-center justify-between gap-2">
+                <div className="inline-flex items-center gap-2">
+                  <Image
+                    src="/logos/gemini.svg"
+                    alt="Gemini logo"
+                    width={20}
+                    height={20}
+                  />
+                  <p className="text-xs font-semibold uppercase tracking-[0.08em] text-[#0f172a] sm:text-sm">
+                    Google Gemini AI Pro
+                  </p>
+                </div>
+                <span className="rounded-full bg-[#0f172a] px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-white sm:text-xs">
+                  Limited Offer
+                </span>
+              </div>
 
-          <div className="mt-3 grid grid-cols-1 gap-4 lg:grid-cols-[1.45fr_0.85fr] lg:gap-5">
-            <div>
               <h2
                 id="offer-title"
-                className="max-w-[780px] text-[36px] font-extrabold leading-[0.98] tracking-tight text-[#0f172a] sm:text-[50px]"
+                className="mt-2 text-[30px] font-black leading-[0.94] tracking-tight text-[#0f172a] sm:text-[42px]"
               >
-                18 Months Google Gemini AI Pro
+                18 Months Access
               </h2>
-              <p className="mt-3 max-w-[760px] text-sm leading-6 text-[#334155] sm:text-[19px]">
-                Premium AI tools + 5 TB Google storage for one low price.
+              <p className="mt-1 text-sm leading-5 text-[#475467] sm:text-base">
+                One-time payment. Instant activation after checkout.
               </p>
 
-              <div className="mt-4 rounded-2xl border border-[#dbe5f7] bg-white/95 p-3.5 sm:p-4">
+              <div className="mt-3 rounded-2xl border border-[#dbe5f7] bg-[radial-gradient(circle_at_top,#eaf2ff_0%,#f7faff_42%,#ffffff_100%)] p-3 sm:p-4">
+                <div className="flex items-end justify-between gap-2">
+                  <div>
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.08em] text-[#9f1239]">
+                      Regular Price
+                    </p>
+                    <p className="mt-0.5 text-4xl font-extrabold leading-none text-[#B42318] line-through decoration-2 sm:text-5xl">
+                      ${REGULAR_PRICE}
+                    </p>
+                  </div>
+                  <span className="rounded-full bg-[#ECFDF3] px-3 py-1 text-xs font-semibold text-[#067647]">
+                    {DISCOUNT_PERCENT}% OFF
+                  </span>
+                </div>
+
+                <div className="mt-2 rounded-xl border border-[#dbe5f7] bg-white px-3 py-2.5">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.08em] text-[#475467]">
+                    Today You Pay
+                  </p>
+                  <div className="mt-1 flex items-end gap-2">
+                    <p className="text-[64px] font-black leading-none text-[#0f172a] sm:text-[78px]">
+                      ${OFFER_PRICE}
+                    </p>
+                    <div className="pb-2 text-[11px] text-[#475467] sm:text-sm">
+                      <p className="font-semibold">one-time</p>
+                      <p>~${MONTHLY_EQUIVALENT}/month for 18 months</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-3 flex flex-wrap gap-2">
+                <span className="rounded-full bg-[#FFF4ED] px-3 py-1 text-xs font-semibold text-[#9A3412]">
+                  Save ${SAVINGS}
+                </span>
+                <span className="rounded-full bg-[#EEF4FF] px-3 py-1 text-xs font-semibold text-[#1D4ED8]">
+                  5 TB Google Storage Included
+                </span>
+              </div>
+
+              <div className="mt-3 grid gap-1.5 text-xs text-[#334155] sm:text-sm">
+                <p>18-month premium plan with top Google AI tools</p>
+                <p>Secure checkout with region-based payment options</p>
+                <p>Priority WhatsApp support after purchase</p>
+              </div>
+
+              <div className="mt-4 flex flex-col gap-2.5">
+                <a
+                  href={OFFER_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={rememberDismissal}
+                  className="inline-flex min-h-[52px] items-center justify-center rounded-xl bg-[#1D4ED8] px-5 text-center text-sm font-bold text-white transition hover:bg-[#1E40AF] sm:text-base"
+                >
+                  Activate Plan for ${OFFER_PRICE}
+                </a>
+                <a
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={rememberDismissal}
+                  className="inline-flex min-h-[50px] items-center justify-center gap-2 rounded-xl border border-[#B8E5C8] bg-[#F2FFF6] px-5 text-sm font-semibold text-[#067647] transition hover:bg-[#E8FAF0] sm:text-base"
+                >
+                  <Image
+                    src="/logos/whatsapp.svg"
+                    alt="WhatsApp"
+                    width={18}
+                    height={18}
+                  />
+                  WhatsApp Support
+                </a>
+              </div>
+            </div>
+
+            <div className="order-2 rounded-2xl border border-[#D8E4F8] bg-white/95 p-4 sm:p-5">
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="inline-flex rounded-full bg-[#0f172a] px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-white">
+                  What You Get
+                </span>
+                <span className="inline-flex rounded-full border border-[#D5E3F8] bg-white px-3 py-1 text-xs font-medium text-[#334155]">
+                  18-month premium plan
+                </span>
+              </div>
+
+              <p className="mt-3 max-w-[760px] text-sm leading-6 text-[#334155] sm:text-[18px]">
+                Premium Google AI tools + secure storage in one plan.
+              </p>
+
+              <div className="mt-4 rounded-2xl border border-[#dbe5f7] bg-white p-3.5 sm:p-4">
                 <div className="flex items-start gap-3">
                   <div className="h-10 w-10 shrink-0 rounded-lg border border-[#E4EAF6] bg-white p-2">
                     <Image
@@ -168,9 +265,9 @@ const OfferModal = () => {
 
               <div className="mt-4">
                 <p className="text-xs font-semibold uppercase tracking-[0.1em] text-[#475467]">
-                  Includes Top Tools
+                  Included Tools
                 </p>
-                <div className="mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2 xl:grid-cols-3">
+                <div className="mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2">
                   {TOOL_FEATURES.map((item) => (
                     <div
                       key={item.name}
@@ -197,68 +294,7 @@ const OfferModal = () => {
                     </div>
                   ))}
                 </div>
-                <p className="mt-2 text-xs text-[#667085] sm:text-sm">
-                  All included inside this 18-month plan.
-                </p>
               </div>
-            </div>
-
-            <div className="rounded-2xl border border-[#D8E4F8] bg-white p-4 shadow-[0_8px_30px_-20px_rgba(29,78,216,0.45)] sm:p-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.08em] text-[#667085]">
-                Offer Price
-              </p>
-              <p className="mt-2 text-sm font-medium text-[#B42318] line-through">
-                Worth ${REGULAR_PRICE}
-              </p>
-
-              <div className="mt-1 flex items-end gap-2">
-                <p className="text-6xl font-black leading-none text-[#0f172a] sm:text-7xl">
-                  ${OFFER_PRICE}
-                </p>
-                <p className="pb-2 text-sm font-semibold text-[#475467]">
-                  one-time
-                </p>
-              </div>
-
-              <div className="mt-3 flex flex-wrap gap-2">
-                <span className="rounded-full bg-[#FFF4ED] px-3 py-1 text-xs font-semibold text-[#9A3412]">
-                  Save ${SAVINGS}
-                </span>
-                <span className="rounded-full bg-[#ECFDF3] px-3 py-1 text-xs font-semibold text-[#067647]">
-                  {DISCOUNT_PERCENT}% OFF
-                </span>
-              </div>
-
-              <div className="mt-4 flex flex-col gap-2.5">
-                <a
-                  href={OFFER_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={rememberDismissal}
-                  className="inline-flex min-h-[50px] items-center justify-center rounded-xl bg-[#1D4ED8] px-5 text-center text-sm font-bold text-white transition hover:bg-[#1E40AF] sm:text-base"
-                >
-                  Activate Plan for ${OFFER_PRICE}
-                </a>
-                <a
-                  href={WHATSAPP_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={rememberDismissal}
-                  className="inline-flex min-h-[50px] items-center justify-center gap-2 rounded-xl border border-[#B8E5C8] bg-[#F2FFF6] px-5 text-sm font-semibold text-[#067647] transition hover:bg-[#E8FAF0] sm:text-base"
-                >
-                  <Image
-                    src="/logos/whatsapp.svg"
-                    alt="WhatsApp"
-                    width={18}
-                    height={18}
-                  />
-                  WhatsApp Support
-                </a>
-              </div>
-
-              <p className="mt-3 text-center text-xs text-[#667085]">
-                Secure checkout with region-based payment options.
-              </p>
             </div>
           </div>
         </div>
