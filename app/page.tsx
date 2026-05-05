@@ -1,4 +1,5 @@
 import styles from './page.module.css'
+import OfferPopup from './components/OfferPopup'
 
 const trustMetrics = [
   { value: '2.8x', label: 'Faster campaign launches' },
@@ -47,6 +48,7 @@ const steps = [
 export default function Home() {
   return (
     <div className={styles.page} id="top">
+      <OfferPopup />
       <div className={styles.backdrop} aria-hidden />
 
       <header className={styles.navbar}>
