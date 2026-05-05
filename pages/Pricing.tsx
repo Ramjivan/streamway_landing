@@ -1,4 +1,4 @@
-import React, { useState, useEffect, use } from "react";
+import React, { useState, useEffect } from "react";
 import { NextSeo } from "next-seo";
 import axios from "axios";
 import Image from "next/image";
@@ -32,7 +32,6 @@ export const Pricing = () => {
         data.filter((plan: any) => plan.type === "subscription")
       );
       setLoading(false);
-      console.log("byybyy", dataArray);
     }
     fetchData();
   }, []);
