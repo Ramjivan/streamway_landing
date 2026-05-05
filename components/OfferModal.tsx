@@ -10,13 +10,37 @@ const OFFER_PRICE = 51;
 const SAVINGS = REGULAR_PRICE - OFFER_PRICE;
 const DISCOUNT_PERCENT = Math.round((SAVINGS / REGULAR_PRICE) * 100);
 
-const TOOL_LOGOS = [
-  { name: "Gemini", src: "/logos/gemini.svg" },
-  { name: "Google Drive", src: "/logos/googledrive.svg" },
-  { name: "Nano Banana", src: "/logos/nanobanana.svg" },
-  { name: "Veo", src: "/logos/veo.png" },
-  { name: "Antigravity", src: "/logos/antigravity.svg" },
-  { name: "NotebookLM", src: "/logos/notebooklm.svg" },
+const TOOL_FEATURES = [
+  {
+    name: "Gemini",
+    src: "/logos/gemini.svg",
+    detail: "Advanced AI assistant for writing, ideas and deep research.",
+  },
+  {
+    name: "Nano Banana 2",
+    src: "/logos/nanobanana.svg",
+    detail: "High-quality creative generation for complex visual outputs.",
+  },
+  {
+    name: "Veo 3.1",
+    src: "/logos/veo.png",
+    detail: "Turn prompts and photos into cinematic AI video content.",
+  },
+  {
+    name: "Antigravity",
+    src: "/logos/antigravity.svg",
+    detail: "Coding-focused AI support to build and troubleshoot faster.",
+  },
+  {
+    name: "NotebookLM",
+    src: "/logos/notebooklm.svg",
+    detail: "AI thinking partner for notes, summaries and structured insights.",
+  },
+  {
+    name: "Google Drive",
+    src: "/logos/googledrive.svg",
+    detail: "5 TB secure storage with private sharing for family members.",
+  },
 ];
 
 const OfferModal = () => {
@@ -119,7 +143,7 @@ const OfferModal = () => {
                 Premium AI tools + 5 TB Google storage for one low price.
               </p>
 
-              <div className="mt-4 rounded-2xl border border-[#dbe5f7] bg-white/95 p-3.5 sm:p-4.5">
+              <div className="mt-4 rounded-2xl border border-[#dbe5f7] bg-white/95 p-3.5 sm:p-4">
                 <div className="flex items-start gap-3">
                   <div className="h-10 w-10 shrink-0 rounded-lg border border-[#E4EAF6] bg-white p-2">
                     <Image
@@ -146,28 +170,35 @@ const OfferModal = () => {
                 <p className="text-xs font-semibold uppercase tracking-[0.1em] text-[#475467]">
                   Includes Top Tools
                 </p>
-                <div className="mt-2 grid grid-cols-3 gap-2 sm:grid-cols-6">
-                  {TOOL_LOGOS.map((item) => (
+                <div className="mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2 xl:grid-cols-3">
+                  {TOOL_FEATURES.map((item) => (
                     <div
                       key={item.name}
-                      className="rounded-xl border border-[#E4EAF6] bg-white px-2 py-2.5 shadow-[0_1px_0_0_#eef3ff]"
+                      className="rounded-xl border border-[#E4EAF6] bg-white p-3 shadow-[0_1px_0_0_#eef3ff]"
                       title={item.name}
                     >
-                      <div className="mx-auto h-8 w-8">
-                        <Image
-                          src={item.src}
-                          alt={`${item.name} logo`}
-                          width={32}
-                          height={32}
-                          className="h-full w-full object-contain"
-                        />
+                      <div className="flex items-center gap-2">
+                        <div className="h-8 w-8 shrink-0">
+                          <Image
+                            src={item.src}
+                            alt={`${item.name} logo`}
+                            width={32}
+                            height={32}
+                            className="h-full w-full object-contain"
+                          />
+                        </div>
+                        <p className="text-sm font-semibold text-[#0f172a]">
+                          {item.name}
+                        </p>
                       </div>
+                      <p className="mt-1 text-xs leading-5 text-[#556173]">
+                        {item.detail}
+                      </p>
                     </div>
                   ))}
                 </div>
                 <p className="mt-2 text-xs text-[#667085] sm:text-sm">
-                  Gemini, Nano Banana 2, Veo 3.1, Antigravity, NotebookLM and
-                  more.
+                  All included inside this 18-month plan.
                 </p>
               </div>
             </div>
