@@ -7,7 +7,6 @@ import Ourpartners from './Ourpartners'
 import Features from './Features'
 import CAB from './CAB'
 import Footer from './Footer'
-import OfferModal from '../components/OfferModal'
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -35,7 +34,6 @@ const index = ({ posts, butn }: { posts: any, butn: boolean }) => {
           site_name: 'StreamWay'
         }}
       />
-      <OfferModal />
       {/* <News /> */}
       <Navbar />
       <Heropage />

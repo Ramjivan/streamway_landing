@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import {DefaultSeo} from 'next-seo';
 import {ArticleJsonLd} from 'next-seo';
+import OfferModal from '../components/OfferModal';
 function MyApp({ Component, pageProps }:{Component:any, pageProps:any}) {
   return(
   <>
@@ -34,6 +35,7 @@ function MyApp({ Component, pageProps }:{Component:any, pageProps:any}) {
             authorName="Author Name"
             description="Next SEO packages simplifies the SEO management in Next Apps with less configurations"
         />
+    <OfferModal />
     <Component {...pageProps} />
     </main>
   </>
