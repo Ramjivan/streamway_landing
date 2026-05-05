@@ -1,5 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaypal } from "@fortawesome/free-brands-svg-icons";
 
 const OFFER_URL = "https://digitalgoods.streamway.in/google-ai-pro";
 const WHATSAPP_URL = "https://wa.me/917229997799";
@@ -11,41 +13,61 @@ const SAVINGS = REGULAR_PRICE - OFFER_PRICE;
 const DISCOUNT_PERCENT = Math.round((SAVINGS / REGULAR_PRICE) * 100);
 
 type Benefit = {
-  name: string;
+  title: string;
   detail: string;
   logo: string;
 };
 
 const BENEFITS: Benefit[] = [
   {
-    name: "Google Gemini AI Pro",
-    detail: "18 months premium access",
-    logo: "/logos/gemini.svg",
-  },
-  {
-    name: "Google Drive",
-    detail: "5 TB storage, share with 5 family members",
+    title: "Secure storage",
+    detail:
+      "Get 5 TB total storage across Gmail, Photos and Drive. Share privately with up to 5 people.",
     logo: "/logos/googledrive.svg",
   },
   {
-    name: "Nano Banana",
-    detail: "Advanced AI creation tools",
+    title: "Higher access to Gemini features",
+    detail:
+      "Create and edit images with precision and control across premium Gemini tools.",
+    logo: "/logos/gemini.svg",
+  },
+  {
+    title: "Nano Banana 2",
+    detail:
+      "Powered by a more advanced model and engineered for complex, sophisticated outputs.",
     logo: "/logos/nanobanana.svg",
   },
   {
-    name: "Veo",
-    detail: "AI photo and video generation",
+    title: "Generate stunning videos",
+    detail: "Turn your photos into videos with Veo 3.1.",
     logo: "/logos/veo.png",
   },
   {
-    name: "Antigravity",
-    detail: "Coding assistant capabilities",
-    logo: "/logos/antigravity.svg",
+    title: "Create 30s custom soundtracks",
+    detail:
+      "Transform text and images into high-quality soundtracks with Lyria 3.",
+    logo: "/logos/gemini.svg",
   },
   {
-    name: "NotebookLM",
-    detail: "Research and note intelligence",
+    title: "Write, organise and visualise",
+    detail: "Use Gemini across Gmail, Docs and other apps across Google.",
+    logo: "/logos/gemini.svg",
+  },
+  {
+    title: "Tackle complex tasks",
+    detail: "Solve difficult problems and generate ideas with Gemini 3 Pro.",
+    logo: "/logos/gemini.svg",
+  },
+  {
+    title: "NotebookLM",
+    detail: "More access to AI research tools and your thinking partner.",
     logo: "/logos/notebooklm.svg",
+  },
+  {
+    title: "Flow",
+    detail:
+      "Higher access to AI filmmaking to create cinematic scenes and stories with Veo 3.1.",
+    logo: "/logos/veo.png",
   },
 ];
 
@@ -116,7 +138,7 @@ const OfferModal = () => {
         role="dialog"
         aria-modal="true"
         aria-labelledby="google-ai-offer-title"
-        className="relative z-10 w-full max-w-4xl overflow-hidden rounded-3xl border border-[#D6E0F2] bg-white shadow-2xl"
+        className="relative z-10 w-full max-w-4xl max-h-[92vh] overflow-y-auto rounded-3xl border border-[#D6E0F2] bg-white shadow-2xl"
       >
         <button
           type="button"
@@ -136,12 +158,12 @@ const OfferModal = () => {
               id="google-ai-offer-title"
               className="mt-3 text-[26px] font-bold leading-tight text-[#0f172a] sm:text-[34px]"
             >
-              Google Gemini AI Pro
-              <span className="block text-[#1d4ed8]">18 Months Access</span>
+              18 Months Google Gemini AI Pro
+              <span className="block text-[#1d4ed8]">Premium Plan at $51</span>
             </h2>
             <p className="mt-2 max-w-xl text-sm leading-6 text-[#334155] sm:text-base">
-              Premium AI tools for creation, coding, research, and storage in
-              one plan.
+              Premium storage + advanced Gemini + Veo 3.1 + NotebookLM + Flow
+              in one plan.
             </p>
 
             <div className="mt-5 rounded-2xl border border-[#D7E4FF] bg-white p-4 shadow-sm sm:p-5">
@@ -177,22 +199,35 @@ const OfferModal = () => {
                 WhatsApp Support
               </p>
             </div>
+
+            <div className="mt-3 flex flex-wrap gap-2 text-xs">
+              <span className="rounded-full border border-[#D7E4FF] bg-white px-3 py-1 text-[#334155]">
+                UPI / Cards
+              </span>
+              <span className="inline-flex items-center gap-1 rounded-full border border-[#D7E4FF] bg-white px-3 py-1 text-[#334155]">
+                <FontAwesomeIcon icon={faPaypal} className="text-[#003087]" />
+                PayPal
+              </span>
+              <span className="rounded-full border border-[#D7E4FF] bg-white px-3 py-1 text-[#334155]">
+                Encrypted Checkout
+              </span>
+            </div>
           </div>
 
           <div className="px-5 pb-6 pt-5 sm:px-8 sm:pb-8">
             <h3 className="text-sm font-semibold uppercase tracking-[0.08em] text-[#475467]">
               Plan Includes
             </h3>
-            <div className="mt-3 grid grid-cols-1 gap-3">
+            <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
               {BENEFITS.map((item) => (
                 <div
-                  key={item.name}
+                  key={item.title}
                   className="flex items-center gap-3 rounded-xl border border-[#E4EAF6] bg-white px-3 py-3"
                 >
                   <div className="h-11 w-11 shrink-0 overflow-hidden rounded-md border border-[#ECF0F8] bg-white p-1">
                     <Image
                       src={item.logo}
-                      alt={`${item.name} logo`}
+                      alt={`${item.title} logo`}
                       width={34}
                       height={34}
                       className="h-full w-full object-contain"
@@ -200,7 +235,7 @@ const OfferModal = () => {
                   </div>
                   <div>
                     <p className="text-sm font-semibold text-[#0F172A]">
-                      {item.name}
+                      {item.title}
                     </p>
                     <p className="text-xs leading-5 text-[#475467]">
                       {item.detail}
@@ -236,9 +271,13 @@ const OfferModal = () => {
                 width={18}
                 height={18}
               />
-              Talk on WhatsApp
+              Talk Before Purchase
             </a>
           </div>
+          <p className="mt-3 text-center text-xs text-[#667085]">
+            Payment options shown at checkout can vary by region and method
+            availability.
+          </p>
         </div>
       </div>
     </div>
