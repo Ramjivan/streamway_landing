@@ -58,6 +58,7 @@ export default function Home() {
           <a href="#features">Features</a>
           <a href="#workflow">Workflow</a>
           <a href="#pricing">Pricing</a>
+          <a href="/contact">Contact</a>
         </nav>
 
         <a href="#demo" className={styles.navCta}>
