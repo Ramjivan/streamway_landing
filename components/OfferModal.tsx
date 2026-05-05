@@ -86,40 +86,40 @@ const OfferModal = () => {
         role="dialog"
         aria-modal="true"
         aria-labelledby="offer-title"
-        className="relative z-10 w-full max-w-4xl max-h-[92vh] overflow-y-auto rounded-3xl border border-[#D5E3F8] bg-white shadow-2xl"
+        className="relative z-10 w-full max-w-5xl max-h-[92vh] overflow-y-auto overscroll-contain rounded-3xl border border-[#D5E3F8] bg-white shadow-2xl"
       >
         <button
           type="button"
           onClick={closeModal}
-          className="absolute right-3 top-3 z-10 h-9 w-9 rounded-full border border-[#DAE4F7] bg-white text-xl leading-none text-[#0f172a] transition hover:bg-[#F5F8FF]"
+          className="absolute right-3 top-3 z-20 h-9 w-9 rounded-full border border-[#DAE4F7] bg-white text-xl leading-none text-[#0f172a] transition hover:bg-[#F5F8FF]"
           aria-label="Close popup"
         >
           ×
         </button>
 
-        <div className="bg-gradient-to-br from-[#e9f1ff] via-[#f5f8ff] to-[#edf9ff] px-4 pb-5 pt-4 sm:px-7 sm:pb-7 sm:pt-6">
+        <div className="bg-gradient-to-br from-[#edf4ff] via-[#f7faff] to-[#eef8ff] px-4 pb-5 pt-4 sm:px-7 sm:pb-7 sm:pt-6">
           <div className="flex flex-wrap items-center gap-2">
             <span className="inline-flex rounded-full bg-[#0f172a] px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-white">
               Limited Offer
             </span>
-            <span className="text-xs font-medium text-[#475467]">
+            <span className="inline-flex rounded-full border border-[#D5E3F8] bg-white px-3 py-1 text-xs font-medium text-[#334155]">
               18-month premium plan
             </span>
           </div>
 
-          <div className="mt-3 grid grid-cols-1 gap-4 md:grid-cols-[1.2fr_0.8fr] md:items-start">
+          <div className="mt-3 grid grid-cols-1 gap-4 lg:grid-cols-[1.45fr_0.85fr] lg:gap-5">
             <div>
               <h2
                 id="offer-title"
-                className="text-[30px] font-bold leading-[1.12] text-[#0f172a] sm:text-[42px]"
+                className="max-w-[780px] text-[36px] font-extrabold leading-[0.98] tracking-tight text-[#0f172a] sm:text-[50px]"
               >
                 18 Months Google Gemini AI Pro
               </h2>
-              <p className="mt-2 text-sm text-[#334155] sm:text-base">
+              <p className="mt-3 max-w-[760px] text-sm leading-6 text-[#334155] sm:text-[19px]">
                 Premium AI tools + 5 TB Google storage for one low price.
               </p>
 
-              <div className="mt-4 rounded-2xl border border-[#dbe5f7] bg-white/90 p-3 sm:p-4">
+              <div className="mt-4 rounded-2xl border border-[#dbe5f7] bg-white/95 p-3.5 sm:p-4.5">
                 <div className="flex items-start gap-3">
                   <div className="h-10 w-10 shrink-0 rounded-lg border border-[#E4EAF6] bg-white p-2">
                     <Image
@@ -131,10 +131,10 @@ const OfferModal = () => {
                     />
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-[#0f172a] sm:text-base">
+                    <p className="text-sm font-semibold text-[#0f172a] sm:text-[18px]">
                       Secure Google storage included
                     </p>
-                    <p className="mt-1 text-xs leading-5 text-[#475467] sm:text-sm">
+                    <p className="mt-1 text-xs leading-5 text-[#475467] sm:text-base">
                       Get 5 TB across Gmail, Photos and Drive. Share privately
                       with up to 5 family members.
                     </p>
@@ -143,14 +143,14 @@ const OfferModal = () => {
               </div>
 
               <div className="mt-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.09em] text-[#475467]">
+                <p className="text-xs font-semibold uppercase tracking-[0.1em] text-[#475467]">
                   Includes Top Tools
                 </p>
                 <div className="mt-2 grid grid-cols-3 gap-2 sm:grid-cols-6">
                   {TOOL_LOGOS.map((item) => (
                     <div
                       key={item.name}
-                      className="rounded-xl border border-[#E4EAF6] bg-white px-2 py-2"
+                      className="rounded-xl border border-[#E4EAF6] bg-white px-2 py-2.5 shadow-[0_1px_0_0_#eef3ff]"
                       title={item.name}
                     >
                       <div className="mx-auto h-8 w-8">
@@ -165,20 +165,21 @@ const OfferModal = () => {
                     </div>
                   ))}
                 </div>
-                <p className="mt-2 text-xs text-[#667085]">
+                <p className="mt-2 text-xs text-[#667085] sm:text-sm">
                   Gemini, Nano Banana 2, Veo 3.1, Antigravity, NotebookLM and
                   more.
                 </p>
               </div>
             </div>
 
-            <div className="rounded-2xl border border-[#D8E4F8] bg-white p-4 shadow-sm sm:p-5">
+            <div className="rounded-2xl border border-[#D8E4F8] bg-white p-4 shadow-[0_8px_30px_-20px_rgba(29,78,216,0.45)] sm:p-5">
               <p className="text-xs font-semibold uppercase tracking-[0.08em] text-[#667085]">
                 Offer Price
               </p>
               <p className="mt-2 text-sm font-medium text-[#B42318] line-through">
                 Worth ${REGULAR_PRICE}
               </p>
+
               <div className="mt-1 flex items-end gap-2">
                 <p className="text-6xl font-black leading-none text-[#0f172a] sm:text-7xl">
                   ${OFFER_PRICE}
@@ -187,6 +188,7 @@ const OfferModal = () => {
                   one-time
                 </p>
               </div>
+
               <div className="mt-3 flex flex-wrap gap-2">
                 <span className="rounded-full bg-[#FFF4ED] px-3 py-1 text-xs font-semibold text-[#9A3412]">
                   Save ${SAVINGS}
@@ -196,13 +198,13 @@ const OfferModal = () => {
                 </span>
               </div>
 
-              <div className="mt-4 flex flex-col gap-2">
+              <div className="mt-4 flex flex-col gap-2.5">
                 <a
                   href={OFFER_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={rememberDismissal}
-                  className="inline-flex min-h-[50px] items-center justify-center rounded-xl bg-[#1D4ED8] px-5 text-center text-sm font-bold text-white transition hover:bg-[#1E40AF]"
+                  className="inline-flex min-h-[50px] items-center justify-center rounded-xl bg-[#1D4ED8] px-5 text-center text-sm font-bold text-white transition hover:bg-[#1E40AF] sm:text-base"
                 >
                   Activate Plan for ${OFFER_PRICE}
                 </a>
@@ -211,7 +213,7 @@ const OfferModal = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={rememberDismissal}
-                  className="inline-flex min-h-[50px] items-center justify-center gap-2 rounded-xl border border-[#B8E5C8] bg-[#F2FFF6] px-5 text-sm font-semibold text-[#067647] transition hover:bg-[#E8FAF0]"
+                  className="inline-flex min-h-[50px] items-center justify-center gap-2 rounded-xl border border-[#B8E5C8] bg-[#F2FFF6] px-5 text-sm font-semibold text-[#067647] transition hover:bg-[#E8FAF0] sm:text-base"
                 >
                   <Image
                     src="/logos/whatsapp.svg"
