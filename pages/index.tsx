@@ -44,15 +44,15 @@ const index = ({ posts, butn }: { posts: any, butn: boolean }) => {
         rel="noopener noreferrer"
         className="offer-strip-neon block text-white"
       >
-        <div className="offer-strip-content container mx-auto flex items-center gap-2 px-3 py-2 text-[11px] font-medium leading-5 sm:text-sm">
+        <div className="offer-strip-content container mx-auto flex items-center gap-2 px-3 py-2.5 text-xs font-medium leading-5 sm:text-[15px]">
           <Image
             src="/logos/gemini.svg"
             alt="Gemini"
-            width={16}
-            height={16}
-            className="h-4 w-4 shrink-0"
+            width={18}
+            height={18}
+            className="h-[18px] w-[18px] shrink-0"
           />
-          <div className="text-[11px] font-medium leading-5 sm:text-sm">
+          <div className="text-xs font-medium leading-5 sm:text-[15px]">
             Google One AI Pro 18-Month Plan:
             <span className="ml-1 font-semibold text-[#FECACA] line-through">$350</span>
             <span className="ml-1 font-bold text-[#86EFAC]">$51</span>.
@@ -61,9 +61,9 @@ const index = ({ posts, butn }: { posts: any, butn: boolean }) => {
               <Image
                 src="/logos/googledrive.svg"
                 alt="Google Drive"
-                width={14}
-                height={14}
-                className="h-3.5 w-3.5 shrink-0"
+                width={16}
+                height={16}
+                className="h-4 w-4 shrink-0"
               />
               <span>5 TB storage</span>
             </span>
