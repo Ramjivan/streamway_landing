@@ -193,6 +193,17 @@ const OfferModal = () => {
                 </span>
               </div>
 
+              <div className="mt-3 rounded-xl border border-[#dbe5f7] bg-white px-3 py-2.5">
+                <div className="flex items-start gap-2 text-xs text-[#334155] sm:text-sm">
+                  <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-[#22c55e]" />
+                  <p>Pay once and use for 1.5 years. No monthly charges.</p>
+                </div>
+                <div className="mt-1.5 flex items-start gap-2 text-xs text-[#334155] sm:text-sm">
+                  <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-[#1d4ed8]" />
+                  <p>Official Google partner offer.</p>
+                </div>
+              </div>
+
               <div className="mt-3.5 flex flex-col gap-2.5">
                 <a
                   href={OFFER_URL}
