@@ -42,24 +42,36 @@ const index = ({ posts, butn }: { posts: any, butn: boolean }) => {
         href={OFFER_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className="block bg-[#0f172a] text-white transition hover:bg-[#111827]"
+        className="offer-strip-neon block text-white"
       >
-        <div className="container mx-auto flex items-center gap-2 px-3 py-2 text-[11px] font-medium leading-5 sm:text-sm">
+        <div className="offer-strip-content container mx-auto flex items-center gap-2 px-3 py-2 text-[11px] font-medium leading-5 sm:text-sm">
           <Image
-            src="/logos/googledrive.svg"
-            alt="Google"
+            src="/logos/gemini.svg"
+            alt="Gemini"
             width={16}
             height={16}
             className="h-4 w-4 shrink-0"
           />
-          <p>
-            Google One AI Pro 18-Month Plan:{" "}
-            <span className="font-semibold text-[#FECACA] line-through">$350</span>{" "}
-            now <span className="font-bold text-[#86EFAC]">$51</span>. Includes 5 TB storage + Gemini AI.
+          <div className="text-[11px] font-medium leading-5 sm:text-sm">
+            Google One AI Pro 18-Month Plan:
+            <span className="ml-1 font-semibold text-[#FECACA] line-through">$350</span>
+            <span className="ml-1 font-bold text-[#86EFAC]">$51</span>.
+            <span className="ml-1">Includes</span>
+            <span className="ml-1 inline-flex items-center gap-1">
+              <Image
+                src="/logos/googledrive.svg"
+                alt="Google Drive"
+                width={14}
+                height={14}
+                className="h-3.5 w-3.5 shrink-0"
+              />
+              <span>5 TB storage</span>
+            </span>
+            <span className="ml-1">+ Gemini AI.</span>
             <span className="ml-1 font-semibold underline underline-offset-2">
               Checkout special offer
             </span>
-          </p>
+          </div>
         </div>
       </a>
       <Navbar />
