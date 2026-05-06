@@ -133,27 +133,27 @@ const OfferModal = () => {
                     width={20}
                     height={20}
                   />
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.08em] text-[#0f172a] sm:text-xs">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.08em] text-[#1e3a8a] sm:text-xs">
                     Official Google Plan
                   </p>
                 </div>
-                <span className="rounded-full bg-[#0f172a] px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-white sm:text-xs">
+                <span className="rounded-full bg-gradient-to-r from-[#0f172a] to-[#1d4ed8] px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-white sm:text-xs">
                   Limited Offer
                 </span>
               </div>
 
               <h2
                 id="offer-title"
-                className="mt-2 text-[33px] font-black leading-[0.92] tracking-tight text-[#0f172a] sm:text-[44px]"
+                className="mt-1 text-[34px] font-black leading-[1.02] tracking-tight sm:text-[48px] sm:leading-[1.01]"
               >
-                Google Gemini AI Pro Plan
-                <span className="block text-[#1D4ED8]">18 Months Access</span>
+                <span className="block text-[#0b1736]">Google Gemini AI</span>
+                <span className="block text-[#0b1736]">Pro Plan</span>
+                <span className="mt-0.5 block bg-gradient-to-r from-[#1D4ED8] via-[#2563EB] to-[#0EA5E9] bg-clip-text text-transparent">
+                  18 Months Access
+                </span>
               </h2>
-              <p className="mt-1 text-sm leading-5 text-[#475467]">
-                One-time payment with instant activation.
-              </p>
 
-              <div className="mt-3 rounded-2xl border border-[#dbe5f7] bg-[radial-gradient(circle_at_top,#eaf2ff_0%,#f7faff_42%,#ffffff_100%)] p-3 sm:p-4">
+              <div className="mt-2 rounded-2xl border border-[#dbe5f7] bg-[radial-gradient(circle_at_top,#eaf2ff_0%,#f7faff_42%,#ffffff_100%)] p-3 sm:p-4">
                 <div className="flex items-end justify-between gap-2">
                   <div>
                     <p className="text-[11px] font-semibold uppercase tracking-[0.08em] text-[#9f1239]">
@@ -163,7 +163,7 @@ const OfferModal = () => {
                       ${REGULAR_PRICE}
                     </p>
                   </div>
-                  <span className="rounded-full bg-[#ECFDF3] px-3 py-1 text-xs font-semibold text-[#067647]">
+                  <span className="rounded-full border border-[#86efac] bg-[#ECFDF3] px-3.5 py-1.5 text-sm font-extrabold tracking-tight text-[#047857] sm:text-base">
                     {DISCOUNT_PERCENT}% OFF
                   </span>
                 </div>
@@ -194,14 +194,16 @@ const OfferModal = () => {
               </div>
 
               <div className="mt-3 rounded-xl border border-[#dbe5f7] bg-white px-3 py-2.5">
-                <div className="flex items-start gap-2 text-xs text-[#334155] sm:text-sm">
-                  <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-[#22c55e]" />
-                  <p>Pay once and use for 1.5 years. No monthly charges.</p>
-                </div>
-                <div className="mt-1.5 flex items-start gap-2 text-xs text-[#334155] sm:text-sm">
-                  <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-[#1d4ed8]" />
-                  <p>Official Google partner offer.</p>
-                </div>
+                <ul className="space-y-1.5 text-sm leading-6 text-[#1f2937] sm:text-[17px]">
+                  <li className="flex items-start gap-2.5">
+                    <span className="mt-[9px] h-2.5 w-2.5 shrink-0 rounded-full bg-[#22c55e]" />
+                    <span>Pay once and use for 1.5 years. No monthly charges.</span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <span className="mt-[9px] h-2.5 w-2.5 shrink-0 rounded-full bg-[#1d4ed8]" />
+                    <span>Official Google partner offer.</span>
+                  </li>
+                </ul>
               </div>
 
               <div className="mt-3.5 flex flex-col gap-2.5">
