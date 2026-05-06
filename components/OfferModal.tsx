@@ -111,7 +111,7 @@ const OfferModal = () => {
         role="dialog"
         aria-modal="true"
         aria-labelledby="offer-title"
-        className="relative z-10 w-full max-w-5xl max-h-[92vh] overflow-y-auto overscroll-contain rounded-3xl border border-[#D5E3F8] bg-white shadow-2xl"
+        className="relative z-10 w-full max-w-4xl max-h-[88vh] overflow-y-auto overscroll-contain rounded-3xl border border-[#D5E3F8] bg-white shadow-2xl"
       >
         <button
           type="button"
@@ -122,9 +122,9 @@ const OfferModal = () => {
           ×
         </button>
 
-        <div className="bg-gradient-to-br from-[#edf4ff] via-[#f7faff] to-[#eef8ff] px-3 pb-4 pt-4 sm:px-6 sm:pb-6">
-          <div className="grid grid-cols-1 gap-4 lg:grid-cols-[0.98fr_1.02fr] lg:gap-5">
-            <div className="order-1 rounded-2xl border border-[#CBDCF7] bg-white p-4 shadow-[0_16px_45px_-35px_rgba(29,78,216,0.9)] sm:p-5">
+        <div className="bg-gradient-to-br from-[#edf4ff] via-[#f7faff] to-[#eef8ff] px-3 pb-3 pt-3 sm:px-5 sm:pb-5">
+          <div className="grid grid-cols-1 gap-3 lg:grid-cols-[1fr_1fr] lg:gap-4">
+            <div className="order-1 rounded-2xl border border-[#CBDCF7] bg-white p-3.5 shadow-[0_16px_45px_-35px_rgba(29,78,216,0.9)] sm:p-4">
               <div className="flex items-center justify-between gap-2">
                 <div className="inline-flex items-center gap-2">
                   <Image
@@ -133,8 +133,8 @@ const OfferModal = () => {
                     width={20}
                     height={20}
                   />
-                  <p className="text-xs font-semibold uppercase tracking-[0.08em] text-[#0f172a] sm:text-sm">
-                    Google Gemini AI Pro
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.08em] text-[#0f172a] sm:text-xs">
+                    Official Google Plan
                   </p>
                 </div>
                 <span className="rounded-full bg-[#0f172a] px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-white sm:text-xs">
@@ -144,12 +144,13 @@ const OfferModal = () => {
 
               <h2
                 id="offer-title"
-                className="mt-2 text-[30px] font-black leading-[0.94] tracking-tight text-[#0f172a] sm:text-[42px]"
+                className="mt-2 text-[33px] font-black leading-[0.92] tracking-tight text-[#0f172a] sm:text-[44px]"
               >
-                18 Months Access
+                Google Gemini AI Pro Plan
+                <span className="block text-[#1D4ED8]">18 Months Access</span>
               </h2>
-              <p className="mt-1 text-sm leading-5 text-[#475467] sm:text-base">
-                One-time payment. Instant activation after checkout.
+              <p className="mt-1 text-sm leading-5 text-[#475467]">
+                One-time payment with instant activation.
               </p>
 
               <div className="mt-3 rounded-2xl border border-[#dbe5f7] bg-[radial-gradient(circle_at_top,#eaf2ff_0%,#f7faff_42%,#ffffff_100%)] p-3 sm:p-4">
@@ -177,7 +178,7 @@ const OfferModal = () => {
                     </p>
                     <div className="pb-2 text-[11px] text-[#475467] sm:text-sm">
                       <p className="font-semibold">one-time</p>
-                      <p>~${MONTHLY_EQUIVALENT}/month for 18 months</p>
+                      <p>${MONTHLY_EQUIVALENT}/month equivalent</p>
                     </div>
                   </div>
                 </div>
@@ -192,13 +193,7 @@ const OfferModal = () => {
                 </span>
               </div>
 
-              <div className="mt-3 grid gap-1.5 text-xs text-[#334155] sm:text-sm">
-                <p>18-month premium plan with top Google AI tools</p>
-                <p>Secure checkout with region-based payment options</p>
-                <p>Priority WhatsApp support after purchase</p>
-              </div>
-
-              <div className="mt-4 flex flex-col gap-2.5">
+              <div className="mt-3.5 flex flex-col gap-2.5">
                 <a
                   href={OFFER_URL}
                   target="_blank"
@@ -226,7 +221,7 @@ const OfferModal = () => {
               </div>
             </div>
 
-            <div className="order-2 rounded-2xl border border-[#D8E4F8] bg-white/95 p-4 sm:p-5">
+            <div className="order-2 rounded-2xl border border-[#D8E4F8] bg-white/95 p-3.5 sm:p-4">
               <div className="flex flex-wrap items-center gap-2">
                 <span className="inline-flex rounded-full bg-[#0f172a] px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-white">
                   What You Get
